@@ -37,6 +37,8 @@ Invalid claims include absolute rankings of search demand across independently n
 
 Google Trends subregions are broader than point weather locations. The visualization will label this explicitly and avoid claiming that a city-centre temperature is a spatial average for the entire administrative region.
 
+For London, Google Trends does not support the Greater London code in this workflow. England (`GB-ENG`) is the narrowest available fallback, paired with London weather and flagged as a geographic proxy in the output.
+
 The World Bank CCKP national aggregation was assessed but not selected: its documented ERA5 time series currently ends in 2022, while this project requires five complete years through 2025.
 
 ## Proposed analytical fields

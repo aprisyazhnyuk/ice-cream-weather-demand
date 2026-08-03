@@ -1,6 +1,6 @@
 market_id,label,country_iso2,country_iso3,scope,trends_geo,weather_source,latitude,longitude,timezone,hemisphere,climate_profile,analysis_role
 toronto,Toronto · Canada,CA,CAN,region,CA-ON,open_meteo,43.6532,-79.3832,America/Toronto,north,humid continental,comparison
-london,London · United Kingdom,GB,GBR,region,GB-LND,open_meteo,51.5074,-0.1278,Europe/London,north,cool maritime,comparison
+london,London · United Kingdom,GB,GBR,region,GB-ENG,open_meteo,51.5074,-0.1278,Europe/London,north,cool maritime,comparison
 rome,Rome · Italy,IT,ITA,region,IT-62,open_meteo,41.9028,12.4964,Europe/Rome,north,mediterranean,comparison
 tokyo,Tokyo · Japan,JP,JPN,region,JP-13,open_meteo,35.6762,139.6503,Asia/Tokyo,north,humid subtropical,comparison
 delhi,Delhi · India,IN,IND,region,IN-DL,open_meteo,28.6139,77.2090,Asia/Kolkata,north,hot semi-arid and monsoonal,comparison

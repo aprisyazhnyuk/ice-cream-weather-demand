@@ -12,7 +12,7 @@ Google Trends is treated as a **demand-intent proxy**, not a measure of units so
 
 ## Initial coverage
 
-The comparison uses ten metropolitan regions across Canada, the United Kingdom, Italy, Japan, India, Singapore, Brazil, Australia, South Africa, and Russia. Local search-interest geography is paired with local weather coordinates to keep both measures geographically aligned.
+The comparison uses ten metropolitan regions across Canada, the United Kingdom, Italy, Japan, India, Singapore, Brazil, Australia, South Africa, and Russia. Local search-interest geography is paired with local weather coordinates wherever Google Trends supports it. London is the documented exception: England interest is paired with London weather as the narrowest available proxy.
 
 Moscow (`RU-MOW`) is included as a highlighted Central Russia deep dive.
 

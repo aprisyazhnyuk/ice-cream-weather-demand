@@ -23,7 +23,7 @@ For each row below:
 | Market | Trends geography | Query | Save as |
 |---|---|---|---|
 | Toronto | Ontario | [Open](https://trends.google.com/trends/explore?date=2021-01-01%202025-12-31&geo=CA-ON&q=%2Fm%2F0cxn2) | `data/raw/google_trends/toronto.csv` |
-| London | Greater London | [Open](https://trends.google.com/trends/explore?date=2021-01-01%202025-12-31&geo=GB-LND&q=%2Fm%2F0cxn2) | `data/raw/google_trends/london.csv` |
+| London | England (London weather proxy) | [Open](https://trends.google.com/trends/explore?date=2021-01-01%202025-12-31&geo=GB-ENG&q=%2Fm%2F0cxn2) | `data/raw/google_trends/london.csv` |
 | Rome | Lazio | [Open](https://trends.google.com/trends/explore?date=2021-01-01%202025-12-31&geo=IT-62&q=%2Fm%2F0cxn2) | `data/raw/google_trends/rome.csv` |
 | Tokyo | Tokyo | [Open](https://trends.google.com/trends/explore?date=2021-01-01%202025-12-31&geo=JP-13&q=%2Fm%2F0cxn2) | `data/raw/google_trends/tokyo.csv` |
 | Delhi | Delhi | [Open](https://trends.google.com/trends/explore?date=2021-01-01%202025-12-31&geo=IN-DL&q=%2Fm%2F0cxn2) | `data/raw/google_trends/delhi.csv` |
@@ -34,6 +34,10 @@ For each row below:
 | Moscow | Moscow | [Open](https://trends.google.com/trends/explore?date=2021-01-01%202025-12-31&geo=RU-MOW&q=%2Fm%2F0cxn2) | `data/raw/google_trends/moscow.csv` |
 
 If Google Trends rejects a geography code or reports insufficient data, record the displayed message before selecting a broader fallback. Do not silently substitute a national series.
+
+### London exception
+
+Google Trends does not expose Greater London as a selectable time-series geography for this query. The London series therefore uses England search interest (`GB-ENG`) paired with London temperature as a clearly labeled proxy. It must not be described as Greater London-only search behavior.
 
 ## Import
 
