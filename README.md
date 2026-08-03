@@ -79,7 +79,7 @@ Build the joined analytical table, market metrics, and web-ready JSON with:
 - [x] Acquire and snapshot Google Trends data
 - [x] Build analytical model and insight table
 - [x] Build and test the interactive visualization
-- [ ] Publish with GitHub Pages
+- [x] Publish with GitHub Pages
 
 ## Attribution
 
