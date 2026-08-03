@@ -1,0 +1,12 @@
+market_id,label,country_iso2,country_iso3,scope,trends_geo,weather_source,latitude,longitude,hemisphere,climate_profile,analysis_role
+canada,Canada,CA,CAN,country,CA,cckp,,,north,cold continental,comparison
+united_kingdom,United Kingdom,GB,GBR,country,GB,cckp,,,north,cool maritime,comparison
+italy,Italy,IT,ITA,country,IT,cckp,,,north,mediterranean,comparison
+japan,Japan,JP,JPN,country,JP,cckp,,,north,humid subtropical and temperate,comparison
+india,India,IN,IND,country,IN,cckp,,,north,hot monsoonal,comparison
+singapore,Singapore,SG,SGP,country,SG,cckp,,,north,equatorial,comparison
+brazil,Brazil,BR,BRA,country,BR,cckp,,,south,tropical and subtropical,comparison
+australia,Australia,AU,AUS,country,AU,cckp,,,south,arid to temperate,comparison
+south_africa,South Africa,ZA,ZAF,country,ZA,cckp,,,south,subtropical and semi-arid,comparison
+russia,Russia,RU,RUS,country,RU,cckp,,,north,continental,comparison
+moscow,Moscow · Central Russia,RU,RUS,region,RU-MOW,open_meteo,55.7558,37.6173,north,humid continental,deep_dive
