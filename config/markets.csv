@@ -1,12 +1,11 @@
-market_id,label,country_iso2,country_iso3,scope,trends_geo,weather_source,latitude,longitude,hemisphere,climate_profile,analysis_role
-canada,Canada,CA,CAN,country,CA,cckp,,,north,cold continental,comparison
-united_kingdom,United Kingdom,GB,GBR,country,GB,cckp,,,north,cool maritime,comparison
-italy,Italy,IT,ITA,country,IT,cckp,,,north,mediterranean,comparison
-japan,Japan,JP,JPN,country,JP,cckp,,,north,humid subtropical and temperate,comparison
-india,India,IN,IND,country,IN,cckp,,,north,hot monsoonal,comparison
-singapore,Singapore,SG,SGP,country,SG,cckp,,,north,equatorial,comparison
-brazil,Brazil,BR,BRA,country,BR,cckp,,,south,tropical and subtropical,comparison
-australia,Australia,AU,AUS,country,AU,cckp,,,south,arid to temperate,comparison
-south_africa,South Africa,ZA,ZAF,country,ZA,cckp,,,south,subtropical and semi-arid,comparison
-russia,Russia,RU,RUS,country,RU,cckp,,,north,continental,comparison
-moscow,Moscow · Central Russia,RU,RUS,region,RU-MOW,open_meteo,55.7558,37.6173,north,humid continental,deep_dive
+market_id,label,country_iso2,country_iso3,scope,trends_geo,weather_source,latitude,longitude,timezone,hemisphere,climate_profile,analysis_role
+toronto,Toronto · Canada,CA,CAN,region,CA-ON,open_meteo,43.6532,-79.3832,America/Toronto,north,humid continental,comparison
+london,London · United Kingdom,GB,GBR,region,GB-LND,open_meteo,51.5074,-0.1278,Europe/London,north,cool maritime,comparison
+rome,Rome · Italy,IT,ITA,region,IT-62,open_meteo,41.9028,12.4964,Europe/Rome,north,mediterranean,comparison
+tokyo,Tokyo · Japan,JP,JPN,region,JP-13,open_meteo,35.6762,139.6503,Asia/Tokyo,north,humid subtropical,comparison
+delhi,Delhi · India,IN,IND,region,IN-DL,open_meteo,28.6139,77.2090,Asia/Kolkata,north,hot semi-arid and monsoonal,comparison
+singapore,Singapore,SG,SGP,city_state,SG,open_meteo,1.3521,103.8198,Asia/Singapore,north,equatorial,comparison
+sao_paulo,São Paulo · Brazil,BR,BRA,region,BR-SP,open_meteo,-23.5505,-46.6333,America/Sao_Paulo,south,humid subtropical,comparison
+sydney,Sydney · Australia,AU,AUS,region,AU-NSW,open_meteo,-33.8688,151.2093,Australia/Sydney,south,humid subtropical,comparison
+johannesburg,Johannesburg · South Africa,ZA,ZAF,region,ZA-GT,open_meteo,-26.2041,28.0473,Africa/Johannesburg,south,subtropical highland,comparison
+moscow,Moscow · Central Russia,RU,RUS,region,RU-MOW,open_meteo,55.7558,37.6173,Europe/Moscow,north,humid continental,deep_dive

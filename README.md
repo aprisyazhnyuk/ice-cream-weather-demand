@@ -12,15 +12,14 @@ Google Trends is treated as a **demand-intent proxy**, not a measure of units so
 
 ## Initial coverage
 
-The national comparison includes Canada, the United Kingdom, Italy, Japan, India, Singapore, Brazil, Australia, South Africa, and Russia.
+The comparison uses ten metropolitan regions across Canada, the United Kingdom, Italy, Japan, India, Singapore, Brazil, Australia, South Africa, and Russia. Local search-interest geography is paired with local weather coordinates to keep both measures geographically aligned.
 
-Moscow (`RU-MOW`) is included as a highlighted regional deep dive. Its local Google Trends series will be paired with Moscow weather so that the geography of interest and temperature is as closely aligned as the source data permits.
+Moscow (`RU-MOW`) is included as a highlighted Central Russia deep dive.
 
 ## Data
 
 - Google Trends: weekly interest in the language-independent **Ice cream** topic, aggregated to monthly values.
-- World Bank Climate Change Knowledge Portal: country-level ERA5 mean surface-air temperature.
-- Open-Meteo ERA5/ERA5-Land: Moscow daily weather, aggregated to the same period as Trends.
+- Open-Meteo ERA5-Land: daily metropolitan weather, aggregated to the same period as Trends.
 - Analysis window: complete calendar years 2021–2025.
 
 See [docs/data-sources.md](docs/data-sources.md) for the source assessment and methodological constraints.
@@ -54,23 +53,25 @@ Run the current data-contract check with:
 python3 scripts/validate_markets.py
 ```
 
-Download and aggregate the Moscow weather series with:
+Download and aggregate all ten weather series with:
 
 ```bash
-.venv/bin/python scripts/fetch_moscow_weather.py
+.venv/bin/python scripts/fetch_weather.py
 ```
+
+Follow [docs/google-trends-export.md](docs/google-trends-export.md) to acquire and validate the ten official Trends exports.
 
 ## Project status
 
 - [x] Dataset feasibility assessment
 - [x] Repository and environment scaffold
-- [x] National market list plus Moscow regional deep dive
+- [x] Metropolitan market list plus Moscow regional deep dive
+- [x] Acquire and validate ERA5-Land temperature data
 - [ ] Acquire and snapshot Google Trends data
-- [ ] Acquire ERA5 temperature data
 - [ ] Build analytical model and insight table
 - [ ] Build and test the interactive visualization
 - [ ] Publish with GitHub Pages
 
 ## Attribution
 
-Data source: Google Trends. Weather data will be attributed to the World Bank Climate Change Knowledge Portal, Copernicus/ECMWF ERA5, and Open-Meteo as applicable.
+Data source: Google Trends. Weather data is attributed to Open-Meteo and Copernicus/ECMWF ERA5-Land.

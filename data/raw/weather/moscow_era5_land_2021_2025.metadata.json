@@ -1,10 +1,11 @@
 {
   "source": "https://archive-api.open-meteo.com/v1/archive",
   "request_url": "https://archive-api.open-meteo.com/v1/archive?latitude=55.7558&longitude=37.6173&start_date=2021-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_min%2Ctemperature_2m_max&timezone=Europe%2FMoscow&models=era5_land",
-  "retrieved_at_utc": "2026-08-03T18:43:26.286946+00:00",
+  "retrieved_at_utc": "2026-08-03T18:59:59.102510+00:00",
   "model": "era5_land",
   "license": "CC BY 4.0",
   "market_id": "moscow",
+  "trends_geo": "RU-MOW",
   "coordinates": {
     "latitude": 55.7558,
     "longitude": 37.6173

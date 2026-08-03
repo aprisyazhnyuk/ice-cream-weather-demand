@@ -17,6 +17,9 @@ REQUIRED_FIELDS = {
     "scope",
     "trends_geo",
     "weather_source",
+    "latitude",
+    "longitude",
+    "timezone",
     "hemisphere",
     "analysis_role",
 }
@@ -37,7 +40,9 @@ def main() -> None:
     if len(market_ids) != len(set(market_ids)):
         raise SystemExit("market_id values must be unique")
 
-    invalid_scopes = {row["scope"] for row in rows}.difference({"country", "region"})
+    invalid_scopes = {row["scope"] for row in rows}.difference(
+        {"region", "city_state"}
+    )
     if invalid_scopes:
         raise SystemExit(f"Invalid scopes: {sorted(invalid_scopes)}")
 
@@ -47,7 +52,18 @@ def main() -> None:
     if moscow["scope"] != "region" or not moscow["latitude"] or not moscow["longitude"]:
         raise SystemExit("Moscow must be a geocoded regional market")
 
-    print(f"Validated {len(rows)} markets: 10 countries and 1 regional deep dive.")
+    missing_coordinates = [
+        row["market_id"]
+        for row in rows
+        if not row["latitude"] or not row["longitude"]
+    ]
+    if missing_coordinates:
+        raise SystemExit(f"Missing weather coordinates: {missing_coordinates}")
+
+    if len(rows) != 10:
+        raise SystemExit(f"Expected 10 metropolitan markets, received {len(rows)}")
+
+    print("Validated 10 metropolitan markets, including the Moscow deep dive.")
 
 
 if __name__ == "__main__":

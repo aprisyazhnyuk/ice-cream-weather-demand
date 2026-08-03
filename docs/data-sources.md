@@ -10,7 +10,7 @@ This project measures **relative search interest** as a proxy for demand intent.
 - Window: 2021-01-01 through 2025-12-31.
 - Raw resolution: weekly where available.
 - Analytical resolution: monthly.
-- Geography: one independently exported series per country; Moscow uses `RU-MOW` if Google Trends returns sufficient observations.
+- Geography: one independently exported subregional series per metropolitan market.
 - Acquisition: official CSV export from Google Trends Explore. The official API is currently restricted to approved alpha testers.
 - Attribution: `Data source: Google Trends` with a link to Google Trends.
 
@@ -27,25 +27,17 @@ Valid comparisons include:
 
 Invalid claims include absolute rankings of search demand across independently normalized country exports.
 
-## Country weather
-
-- Source: World Bank Climate Change Knowledge Portal (CCKP).
-- Underlying dataset: ERA5 0.25-degree reanalysis from ECMWF.
-- Variable: mean surface-air temperature (`tas`).
-- Resolution: monthly, spatially aggregated to national boundaries.
-- License: World Bank-produced datasets default to CC BY 4.0; exact downloaded artifact metadata must be retained.
-
-Country aggregation is preferred to capital-city weather because the corresponding search-interest series is national.
-
-## Moscow weather
+## Metropolitan weather
 
 - Source interface: Open-Meteo Historical Weather API.
 - Underlying data: ERA5/ERA5-Land reanalysis.
-- Point: 55.7558 N, 37.6173 E.
+- Points: one documented city-centre coordinate per metropolitan market.
 - Variables: daily mean, minimum, and maximum 2 m temperature. ERA5-Land did not provide valid apparent-temperature or precipitation values for the tested request, so those fields are deliberately excluded.
 - License: CC BY 4.0 for the Historical Weather API.
 
-Moscow is treated as a separate regional case study rather than mixed into national rankings without a scope indicator.
+Google Trends subregions are broader than point weather locations. The visualization will label this explicitly and avoid claiming that a city-centre temperature is a spatial average for the entire administrative region.
+
+The World Bank CCKP national aggregation was assessed but not selected: its documented ERA5 time series currently ends in 2022, while this project requires five complete years through 2025.
 
 ## Proposed analytical fields
 
@@ -77,6 +69,5 @@ Moscow is treated as a separate regional case study rather than mixed into natio
 - Google Trends FAQ: https://support.google.com/trends/answer/4365533
 - Google Trends export and citation guidance: https://support.google.com/trends/answer/4365538
 - Google Trends API alpha: https://developers.google.com/search/apis/trends
-- World Bank CCKP downloads and API: https://climateknowledgeportal.worldbank.org/download-data
-- World Bank CCKP metadata: https://climateknowledgeportal.worldbank.org/metadata
 - Open-Meteo Historical Weather API: https://open-meteo.com/en/docs/historical-weather-api
+- World Bank CCKP assessment reference: https://worldbank.github.io/climateknowledgeportal/README.html
