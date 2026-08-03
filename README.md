@@ -2,6 +2,8 @@
 
 An interactive data-visualization project exploring how outdoor temperature relates to Google search interest in ice cream across climates and hemispheres.
 
+**Live visualization:** https://aprisyazhnyuk.github.io/ice-cream-weather-demand/
+
 The project is designed as a BI/data-engineering portfolio piece: source data is documented, transformations are reproducible, analytical limitations are explicit, and the final visualization can be hosted directly with GitHub Pages.
 
 ## Research question
@@ -76,7 +78,7 @@ Build the joined analytical table, market metrics, and web-ready JSON with:
 - [x] Acquire and validate ERA5-Land temperature data
 - [x] Acquire and snapshot Google Trends data
 - [x] Build analytical model and insight table
-- [ ] Build and test the interactive visualization
+- [x] Build and test the interactive visualization
 - [ ] Publish with GitHub Pages
 
 ## Attribution

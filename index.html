@@ -3,32 +3,199 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="An interactive analysis of temperature and ice-cream search interest across world markets.">
+    <meta name="description" content="An interactive analysis of the temperatures that spark ice-cream search interest across ten world markets.">
+    <meta name="theme-color" content="#f8f2e6">
     <title>When Does Ice Cream Season Start?</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='24' r='20' fill='%23cc4c68'/%3E%3Cpath d='M17 36h30L32 63z' fill='%23f4cc72'/%3E%3C/svg%3E">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/app.js" defer></script>
   </head>
   <body>
-    <main>
-      <p class="eyebrow">Temperature × search interest · 2021–2025</p>
-      <h1>When does ice cream season start?</h1>
-      <p class="lede">
-        A cross-market study of the temperature that turns a passing craving into a seasonal surge.
-      </p>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Scoop Point home">Scoop Point</a>
+      <nav aria-label="Page sections">
+        <a href="#thresholds">Thresholds</a>
+        <a href="#explorer">Explorer</a>
+        <a href="#method">Method</a>
+      </nav>
+    </header>
 
-      <section class="status-card" aria-labelledby="status-heading">
-        <div>
-          <p class="kicker">Project status</p>
-          <h2 id="status-heading">The data pipeline is being prepared.</h2>
-          <p>
-            Ten metropolitan markets will be compared, with Moscow and Central Russia featured as a regional deep dive.
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Temperature × search interest · 2021–2025</p>
+          <h1>When does ice cream season <em>start?</em></h1>
+          <p class="lede">
+            Ten places. Five years of weather and search behavior. One deceptively simple question:
+            how warm does it need to feel before ice cream is on our minds?
           </p>
+          <a class="text-link" href="#thresholds">See where cravings begin <span aria-hidden="true">↓</span></a>
         </div>
-        <div class="scoop" aria-hidden="true">🍦</div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="scoop-art scoop-top"></div>
+          <div class="scoop-art scoop-middle"></div>
+          <div class="cone-art"></div>
+          <span class="degree degree-one">14°</span>
+          <span class="degree degree-two">29°</span>
+        </div>
       </section>
 
-      <p class="source-note">
-        Search interest is a relative demand-intent proxy, not sales volume. Sources: Google Trends and ERA5 weather data.
-      </p>
+      <section class="metric-strip" aria-label="Dataset summary">
+        <article>
+          <strong id="market-count">10</strong>
+          <span>markets</span>
+        </article>
+        <article>
+          <strong id="observation-count">600</strong>
+          <span>monthly observations</span>
+        </article>
+        <article>
+          <strong>5 years</strong>
+          <span>of paired signals</span>
+        </article>
+        <article>
+          <strong id="scoop-range">12.9–29.0°C</strong>
+          <span>scoop-point range</span>
+        </article>
+      </section>
+
+      <section id="thresholds" class="story-section threshold-section">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">01 · The threshold</p>
+            <h2>Every market has its own definition of <em>warm.</em></h2>
+          </div>
+          <p>
+            The scoop point marks where fitted seasonal interest reaches half of its rise. Select a market to carry it through the story.
+          </p>
+        </div>
+
+        <div class="chart-card threshold-layout">
+          <div id="threshold-chart" class="chart threshold-chart" aria-live="polite"></div>
+          <aside class="selection-card" aria-live="polite">
+            <p class="kicker">Selected market</p>
+            <h3 id="selected-label">Moscow · Central Russia</h3>
+            <div class="selected-temperature">
+              <span id="selected-scoop">14.6</span><sup>°C</sup>
+            </div>
+            <p id="selected-copy">Ice-cream interest reaches the midpoint of its fitted seasonal rise at this temperature.</p>
+            <dl class="mini-stats">
+              <div><dt>Peak month</dt><dd id="selected-peak">Jun</dd></div>
+              <div><dt>Seasonal r</dt><dd id="selected-seasonal">0.72</dd></div>
+              <div><dt>Weather r</dt><dd id="selected-anomaly">0.12</dd></div>
+            </dl>
+          </aside>
+        </div>
+
+        <div class="insight-callout">
+          <span class="callout-number">16°C</span>
+          <p><strong>A world of difference.</strong> Toronto’s interest wakes up around 12.9°C. Delhi does not reach the same relative stage until 29.0°C.</p>
+        </div>
+      </section>
+
+      <section id="explorer" class="story-section explorer-section">
+        <div class="section-heading compact">
+          <div>
+            <p class="kicker">02 · Explore a market</p>
+            <h2>Follow the craving from cold months to hot.</h2>
+          </div>
+        </div>
+
+        <div id="market-controls" class="market-controls" aria-label="Choose a market"></div>
+
+        <div class="explorer-grid">
+          <article class="chart-card response-card">
+            <div class="card-heading">
+              <div>
+                <p class="kicker">Monthly observations</p>
+                <h3>Temperature response</h3>
+              </div>
+              <span class="legend-key"><i class="dot-key"></i> One month</span>
+            </div>
+            <div id="response-chart" class="chart response-chart"></div>
+          </article>
+
+          <article class="chart-card seasonal-card">
+            <div class="card-heading">
+              <div>
+                <p class="kicker">Five-year average</p>
+                <h3>The seasonal rhythm</h3>
+              </div>
+              <div class="dual-legend" aria-label="Chart legend">
+                <span><i class="line-key interest-key"></i>Interest</span>
+                <span><i class="line-key temperature-key"></i>Temperature</span>
+              </div>
+            </div>
+            <div id="seasonal-chart" class="chart seasonal-chart"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="story-section anomaly-section">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">03 · Beyond the calendar</p>
+            <h2>Summer explains the pattern. Extra warmth tests the response.</h2>
+          </div>
+          <p>
+            After removing each market’s normal month-of-year cycle, positive values mean unusually warm months still coincide with unusually high interest.
+          </p>
+        </div>
+        <div class="chart-card anomaly-layout">
+          <div id="anomaly-chart" class="chart anomaly-chart"></div>
+          <aside class="annotation-panel">
+            <span class="annotation-rule"></span>
+            <p class="kicker">What stands out</p>
+            <h3>Johannesburg and Sydney react to the weather, not just the season.</h3>
+            <p>Their anomaly correlations both exceed 0.61. Moscow and Rome, by contrast, look more calendar-led over this five-year window.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="moscow-feature">
+        <div>
+          <p class="kicker light">Moscow focus</p>
+          <h2>In Central Russia, the craving arrives before the real heat.</h2>
+          <p>
+            Moscow’s scoop point is <strong>14.6°C</strong>—second only to Toronto. Search interest peaks in June, but warmer-than-usual months add little once the regular seasonal cycle is removed.
+          </p>
+        </div>
+        <div class="moscow-stat" aria-label="Moscow scoop point 14.6 degrees Celsius">
+          <span>14.6</span><sup>°C</sup>
+          <small>scoop point</small>
+        </div>
+      </section>
+
+      <section id="method" class="method-section">
+        <div>
+          <p class="kicker">Method & caveats</p>
+          <h2>A signal of curiosity, not a receipt.</h2>
+        </div>
+        <div class="method-copy">
+          <p>
+            Google Trends is a normalized search-interest index, used here as a demand-intent proxy—not sales volume. Each market is analyzed within its own 0–100 scale.
+          </p>
+          <p>
+            The scoop point comes from an increasing isotonic fit of twelve monthly climatology points. Correlations are descriptive and do not establish causation.
+          </p>
+          <p>
+            Weather is ERA5-Land at city-centre coordinates. Search geographies are administrative regions; London uses England as the narrowest supported fallback.
+          </p>
+          <a class="text-link" href="docs/analysis-methodology.md">Read the full methodology <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
     </main>
+
+    <footer>
+      <p>Data: Google Trends · Open-Meteo · Copernicus ERA5-Land</p>
+      <p>Analysis period: January 2021–December 2025</p>
+    </footer>
+
+    <div id="tooltip" class="tooltip" role="status" aria-hidden="true"></div>
+    <div id="load-error" class="load-error" hidden>
+      The visualization data could not be loaded. Serve this project over HTTP and try again.
+    </div>
   </body>
 </html>
