@@ -1,0 +1,5635 @@
+{
+  "metadata": {
+    "period_start": "2021-01-01",
+    "period_end": "2025-12-31",
+    "market_count": 10,
+    "monthly_observation_count": 600,
+    "demand_proxy": "Google Trends relative search interest",
+    "weather_source": "Open-Meteo ERA5-Land",
+    "scoop_point_definition": "Temperature where the monotonic monthly climatology reaches half of its fitted interest rise"
+  },
+  "markets": [
+    {
+      "market_id": "toronto",
+      "label": "Toronto · Canada",
+      "country_iso2": "CA",
+      "trends_geo": "CA-ON",
+      "hemisphere": "north",
+      "analysis_role": "comparison",
+      "seasonal_correlation": 0.7919,
+      "seasonal_p_value": 0.0,
+      "seasonal_slope_per_c": 1.5322,
+      "anomaly_correlation": -0.0293,
+      "anomaly_p_value": 0.8242,
+      "anomaly_slope_per_c": -0.0909,
+      "anomaly_response_strength": "weak",
+      "scoop_point_c": 12.9082,
+      "peak_interest_month": "Jul",
+      "peak_interest_index": 81.6968,
+      "peak_temperature_c": 22.1226,
+      "minimum_temperature_c": -6.8548,
+      "maximum_temperature_c": 23.6452,
+      "temperature_span_c": 30.5
+    },
+    {
+      "market_id": "moscow",
+      "label": "Moscow · Central Russia",
+      "country_iso2": "RU",
+      "trends_geo": "RU-MOW",
+      "hemisphere": "north",
+      "analysis_role": "deep_dive",
+      "seasonal_correlation": 0.7237,
+      "seasonal_p_value": 0.0,
+      "seasonal_slope_per_c": 1.0587,
+      "anomaly_correlation": 0.1245,
+      "anomaly_p_value": 0.3434,
+      "anomaly_slope_per_c": 0.2625,
+      "anomaly_response_strength": "weak",
+      "scoop_point_c": 14.5839,
+      "peak_interest_month": "Jun",
+      "peak_interest_index": 74.2667,
+      "peak_temperature_c": 18.208,
+      "minimum_temperature_c": -12.7607,
+      "maximum_temperature_c": 22.4484,
+      "temperature_span_c": 35.2091
+    },
+    {
+      "market_id": "johannesburg",
+      "label": "Johannesburg · South Africa",
+      "country_iso2": "ZA",
+      "trends_geo": "ZA-GT",
+      "hemisphere": "south",
+      "analysis_role": "comparison",
+      "seasonal_correlation": 0.723,
+      "seasonal_p_value": 0.0,
+      "seasonal_slope_per_c": 2.5555,
+      "anomaly_correlation": 0.6173,
+      "anomaly_p_value": 0.0,
+      "anomaly_slope_per_c": 3.3512,
+      "anomaly_response_strength": "strong",
+      "scoop_point_c": 15.1646,
+      "peak_interest_month": "Oct",
+      "peak_interest_index": 74.4323,
+      "peak_temperature_c": 18.0174,
+      "minimum_temperature_c": 8.29,
+      "maximum_temperature_c": 21.5871,
+      "temperature_span_c": 13.2971
+    },
+    {
+      "market_id": "london",
+      "label": "London · United Kingdom",
+      "country_iso2": "GB",
+      "trends_geo": "GB-ENG",
+      "hemisphere": "north",
+      "analysis_role": "comparison",
+      "seasonal_correlation": 0.7577,
+      "seasonal_p_value": 0.0,
+      "seasonal_slope_per_c": 2.3803,
+      "anomaly_correlation": 0.4898,
+      "anomaly_p_value": 0.0001,
+      "anomaly_slope_per_c": 2.5462,
+      "anomaly_response_strength": "moderate",
+      "scoop_point_c": 15.9607,
+      "peak_interest_month": "Jul",
+      "peak_interest_index": 68.9613,
+      "peak_temperature_c": 18.5329,
+      "minimum_temperature_c": 3.5032,
+      "maximum_temperature_c": 20.1742,
+      "temperature_span_c": 16.671
+    },
+    {
+      "market_id": "tokyo",
+      "label": "Tokyo · Japan",
+      "country_iso2": "JP",
+      "trends_geo": "JP-13",
+      "hemisphere": "north",
+      "analysis_role": "comparison",
+      "seasonal_correlation": 0.72,
+      "seasonal_p_value": 0.0,
+      "seasonal_slope_per_c": 1.2142,
+      "anomaly_correlation": 0.3403,
+      "anomaly_p_value": 0.0078,
+      "anomaly_slope_per_c": 2.8231,
+      "anomaly_response_strength": "moderate",
+      "scoop_point_c": 17.8764,
+      "peak_interest_month": "Jul",
+      "peak_interest_index": 69.7548,
+      "peak_temperature_c": 26.6587,
+      "minimum_temperature_c": 2.7677,
+      "maximum_temperature_c": 29.2161,
+      "temperature_span_c": 26.4484
+    },
+    {
+      "market_id": "sydney",
+      "label": "Sydney · Australia",
+      "country_iso2": "AU",
+      "trends_geo": "AU-NSW",
+      "hemisphere": "south",
+      "analysis_role": "comparison",
+      "seasonal_correlation": 0.5634,
+      "seasonal_p_value": 0.0,
+      "seasonal_slope_per_c": 1.6584,
+      "anomaly_correlation": 0.6168,
+      "anomaly_p_value": 0.0,
+      "anomaly_slope_per_c": 5.2818,
+      "anomaly_response_strength": "strong",
+      "scoop_point_c": 18.7962,
+      "peak_interest_month": "Dec",
+      "peak_interest_index": 76.3871,
+      "peak_temperature_c": 21.0052,
+      "minimum_temperature_c": 12.04,
+      "maximum_temperature_c": 22.9806,
+      "temperature_span_c": 10.9406
+    },
+    {
+      "market_id": "sao_paulo",
+      "label": "São Paulo · Brazil",
+      "country_iso2": "BR",
+      "trends_geo": "BR-SP",
+      "hemisphere": "south",
+      "analysis_role": "comparison",
+      "seasonal_correlation": 0.7261,
+      "seasonal_p_value": 0.0,
+      "seasonal_slope_per_c": 2.8091,
+      "anomaly_correlation": 0.4573,
+      "anomaly_p_value": 0.0002,
+      "anomaly_slope_per_c": 2.2769,
+      "anomaly_response_strength": "moderate",
+      "scoop_point_c": 19.8852,
+      "peak_interest_month": "Dec",
+      "peak_interest_index": 52.2258,
+      "peak_temperature_c": 21.8542,
+      "minimum_temperature_c": 14.671,
+      "maximum_temperature_c": 23.9179,
+      "temperature_span_c": 9.2469
+    },
+    {
+      "market_id": "rome",
+      "label": "Rome · Italy",
+      "country_iso2": "IT",
+      "trends_geo": "IT-62",
+      "hemisphere": "north",
+      "analysis_role": "comparison",
+      "seasonal_correlation": 0.7984,
+      "seasonal_p_value": 0.0,
+      "seasonal_slope_per_c": 2.7031,
+      "anomaly_correlation": 0.0803,
+      "anomaly_p_value": 0.5417,
+      "anomaly_slope_per_c": 0.5839,
+      "anomaly_response_strength": "weak",
+      "scoop_point_c": 22.8023,
+      "peak_interest_month": "Jul",
+      "peak_interest_index": 77.7484,
+      "peak_temperature_c": 27.0613,
+      "minimum_temperature_c": 7.0806,
+      "maximum_temperature_c": 28.1935,
+      "temperature_span_c": 21.1129
+    },
+    {
+      "market_id": "singapore",
+      "label": "Singapore",
+      "country_iso2": "SG",
+      "trends_geo": "SG",
+      "hemisphere": "north",
+      "analysis_role": "comparison",
+      "seasonal_correlation": 0.5667,
+      "seasonal_p_value": 0.0,
+      "seasonal_slope_per_c": 6.4889,
+      "anomaly_correlation": 0.0867,
+      "anomaly_p_value": 0.5099,
+      "anomaly_slope_per_c": 1.2549,
+      "anomaly_response_strength": "weak",
+      "scoop_point_c": 26.5542,
+      "peak_interest_month": "Jun",
+      "peak_interest_index": 76.8533,
+      "peak_temperature_c": 27.164,
+      "minimum_temperature_c": 25.2323,
+      "maximum_temperature_c": 27.7806,
+      "temperature_span_c": 2.5484
+    },
+    {
+      "market_id": "delhi",
+      "label": "Delhi · India",
+      "country_iso2": "IN",
+      "trends_geo": "IN-DL",
+      "hemisphere": "north",
+      "analysis_role": "comparison",
+      "seasonal_correlation": 0.7571,
+      "seasonal_p_value": 0.0,
+      "seasonal_slope_per_c": 1.6341,
+      "anomaly_correlation": 0.2055,
+      "anomaly_p_value": 0.1153,
+      "anomaly_slope_per_c": 0.9129,
+      "anomaly_response_strength": "weak",
+      "scoop_point_c": 28.987,
+      "peak_interest_month": "May",
+      "peak_interest_index": 56.4516,
+      "peak_temperature_c": 31.531,
+      "minimum_temperature_c": 12.071,
+      "maximum_temperature_c": 34.8133,
+      "temperature_span_c": 22.7424
+    }
+  ],
+  "series": [
+    {
+      "period": "2021-01-01",
+      "market_id": "delhi",
+      "temperature_c": 13.8129,
+      "interest_index": 19.1613,
+      "interest_scaled": 0.0252,
+      "temperature_anomaly_c": 0.7819,
+      "interest_anomaly": -0.1419
+    },
+    {
+      "period": "2021-02-01",
+      "market_id": "delhi",
+      "temperature_c": 18.5643,
+      "interest_index": 26.6071,
+      "interest_scaled": 0.1487,
+      "temperature_anomaly_c": 1.0934,
+      "interest_anomaly": 0.5958
+    },
+    {
+      "period": "2021-03-01",
+      "market_id": "delhi",
+      "temperature_c": 24.4516,
+      "interest_index": 40.1935,
+      "interest_scaled": 0.3742,
+      "temperature_anomaly_c": 1.3323,
+      "interest_anomaly": 0.7935
+    },
+    {
+      "period": "2021-04-01",
+      "market_id": "delhi",
+      "temperature_c": 28.7567,
+      "interest_index": 40.8333,
+      "interest_scaled": 0.3848,
+      "temperature_anomaly_c": -0.36,
+      "interest_anomaly": -9.5933
+    },
+    {
+      "period": "2021-05-01",
+      "market_id": "delhi",
+      "temperature_c": 29.8484,
+      "interest_index": 39.2903,
+      "interest_scaled": 0.3592,
+      "temperature_anomaly_c": -1.6826,
+      "interest_anomaly": -17.1613
+    },
+    {
+      "period": "2021-06-01",
+      "market_id": "delhi",
+      "temperature_c": 32.3133,
+      "interest_index": 46.2,
+      "interest_scaled": 0.4739,
+      "temperature_anomaly_c": -0.4553,
+      "interest_anomaly": -8.4333
+    },
+    {
+      "period": "2021-07-01",
+      "market_id": "delhi",
+      "temperature_c": 31.2065,
+      "interest_index": 39.0,
+      "interest_scaled": 0.3544,
+      "temperature_anomaly_c": 1.4303,
+      "interest_anomaly": -0.0645
+    },
+    {
+      "period": "2021-08-01",
+      "market_id": "delhi",
+      "temperature_c": 29.2935,
+      "interest_index": 31.2258,
+      "interest_scaled": 0.2254,
+      "temperature_anomaly_c": 0.4219,
+      "interest_anomaly": 0.8452
+    },
+    {
+      "period": "2021-09-01",
+      "market_id": "delhi",
+      "temperature_c": 27.4933,
+      "interest_index": 29.1333,
+      "interest_scaled": 0.1906,
+      "temperature_anomaly_c": -0.5807,
+      "interest_anomaly": 0.0533
+    },
+    {
+      "period": "2021-10-01",
+      "market_id": "delhi",
+      "temperature_c": 24.7677,
+      "interest_index": 25.2258,
+      "interest_scaled": 0.1258,
+      "temperature_anomaly_c": -0.2477,
+      "interest_anomaly": 0.4516
+    },
+    {
+      "period": "2021-11-01",
+      "market_id": "delhi",
+      "temperature_c": 19.2667,
+      "interest_index": 19.4333,
+      "interest_scaled": 0.0297,
+      "temperature_anomaly_c": -0.9613,
+      "interest_anomaly": -0.5467
+    },
+    {
+      "period": "2021-12-01",
+      "market_id": "delhi",
+      "temperature_c": 14.7806,
+      "interest_index": 19.4516,
+      "interest_scaled": 0.03,
+      "temperature_anomaly_c": -0.4458,
+      "interest_anomaly": -0.0774
+    },
+    {
+      "period": "2022-01-01",
+      "market_id": "delhi",
+      "temperature_c": 12.829,
+      "interest_index": 20.2258,
+      "interest_scaled": 0.0428,
+      "temperature_anomaly_c": -0.2019,
+      "interest_anomaly": 0.9226
+    },
+    {
+      "period": "2022-02-01",
+      "market_id": "delhi",
+      "temperature_c": 15.7321,
+      "interest_index": 29.1071,
+      "interest_scaled": 0.1902,
+      "temperature_anomaly_c": -1.7387,
+      "interest_anomaly": 3.0958
+    },
+    {
+      "period": "2022-03-01",
+      "market_id": "delhi",
+      "temperature_c": 24.4032,
+      "interest_index": 44.5484,
+      "interest_scaled": 0.4465,
+      "temperature_anomaly_c": 1.2839,
+      "interest_anomaly": 5.1484
+    },
+    {
+      "period": "2022-04-01",
+      "market_id": "delhi",
+      "temperature_c": 31.0633,
+      "interest_index": 55.6333,
+      "interest_scaled": 0.6304,
+      "temperature_anomaly_c": 1.9467,
+      "interest_anomaly": 5.2067
+    },
+    {
+      "period": "2022-05-01",
+      "market_id": "delhi",
+      "temperature_c": 32.6129,
+      "interest_index": 55.1613,
+      "interest_scaled": 0.6226,
+      "temperature_anomaly_c": 1.0819,
+      "interest_anomaly": -1.2903
+    },
+    {
+      "period": "2022-06-01",
+      "market_id": "delhi",
+      "temperature_c": 33.7467,
+      "interest_index": 50.9333,
+      "interest_scaled": 0.5524,
+      "temperature_anomaly_c": 0.978,
+      "interest_anomaly": -3.7
+    },
+    {
+      "period": "2022-07-01",
+      "market_id": "delhi",
+      "temperature_c": 29.5355,
+      "interest_index": 38.0323,
+      "interest_scaled": 0.3383,
+      "temperature_anomaly_c": -0.2406,
+      "interest_anomaly": -1.0323
+    },
+    {
+      "period": "2022-08-01",
+      "market_id": "delhi",
+      "temperature_c": 28.7774,
+      "interest_index": 28.3871,
+      "interest_scaled": 0.1783,
+      "temperature_anomaly_c": -0.0942,
+      "interest_anomaly": -1.9935
+    },
+    {
+      "period": "2022-09-01",
+      "market_id": "delhi",
+      "temperature_c": 28.39,
+      "interest_index": 29.1,
+      "interest_scaled": 0.1901,
+      "temperature_anomaly_c": 0.316,
+      "interest_anomaly": 0.02
+    },
+    {
+      "period": "2022-10-01",
+      "market_id": "delhi",
+      "temperature_c": 23.8226,
+      "interest_index": 24.9677,
+      "interest_scaled": 0.1215,
+      "temperature_anomaly_c": -1.1929,
+      "interest_anomaly": 0.1935
+    },
+    {
+      "period": "2022-11-01",
+      "market_id": "delhi",
+      "temperature_c": 20.17,
+      "interest_index": 20.2667,
+      "interest_scaled": 0.0435,
+      "temperature_anomaly_c": -0.058,
+      "interest_anomaly": 0.2867
+    },
+    {
+      "period": "2022-12-01",
+      "market_id": "delhi",
+      "temperature_c": 15.2065,
+      "interest_index": 18.5484,
+      "interest_scaled": 0.015,
+      "temperature_anomaly_c": -0.02,
+      "interest_anomaly": -0.9806
+    },
+    {
+      "period": "2023-01-01",
+      "market_id": "delhi",
+      "temperature_c": 12.7323,
+      "interest_index": 19.5161,
+      "interest_scaled": 0.031,
+      "temperature_anomaly_c": -0.2987,
+      "interest_anomaly": 0.2129
+    },
+    {
+      "period": "2023-02-01",
+      "market_id": "delhi",
+      "temperature_c": 18.8393,
+      "interest_index": 25.9286,
+      "interest_scaled": 0.1375,
+      "temperature_anomaly_c": 1.3684,
+      "interest_anomaly": -0.0828
+    },
+    {
+      "period": "2023-03-01",
+      "market_id": "delhi",
+      "temperature_c": 22.329,
+      "interest_index": 39.871,
+      "interest_scaled": 0.3688,
+      "temperature_anomaly_c": -0.7903,
+      "interest_anomaly": 0.471
+    },
+    {
+      "period": "2023-04-01",
+      "market_id": "delhi",
+      "temperature_c": 26.8467,
+      "interest_index": 51.2333,
+      "interest_scaled": 0.5574,
+      "temperature_anomaly_c": -2.27,
+      "interest_anomaly": 0.8067
+    },
+    {
+      "period": "2023-05-01",
+      "market_id": "delhi",
+      "temperature_c": 29.4484,
+      "interest_index": 51.6452,
+      "interest_scaled": 0.5642,
+      "temperature_anomaly_c": -2.0826,
+      "interest_anomaly": -4.8065
+    },
+    {
+      "period": "2023-06-01",
+      "market_id": "delhi",
+      "temperature_c": 31.4433,
+      "interest_index": 55.0667,
+      "interest_scaled": 0.621,
+      "temperature_anomaly_c": -1.3253,
+      "interest_anomaly": 0.4333
+    },
+    {
+      "period": "2023-07-01",
+      "market_id": "delhi",
+      "temperature_c": 29.1161,
+      "interest_index": 38.1613,
+      "interest_scaled": 0.3405,
+      "temperature_anomaly_c": -0.66,
+      "interest_anomaly": -0.9032
+    },
+    {
+      "period": "2023-08-01",
+      "market_id": "delhi",
+      "temperature_c": 29.8516,
+      "interest_index": 32.129,
+      "interest_scaled": 0.2404,
+      "temperature_anomaly_c": 0.98,
+      "interest_anomaly": 1.7484
+    },
+    {
+      "period": "2023-09-01",
+      "market_id": "delhi",
+      "temperature_c": 28.8867,
+      "interest_index": 29.3333,
+      "interest_scaled": 0.194,
+      "temperature_anomaly_c": 0.8127,
+      "interest_anomaly": 0.2533
+    },
+    {
+      "period": "2023-10-01",
+      "market_id": "delhi",
+      "temperature_c": 25.7419,
+      "interest_index": 25.2258,
+      "interest_scaled": 0.1258,
+      "temperature_anomaly_c": 0.7265,
+      "interest_anomaly": 0.4516
+    },
+    {
+      "period": "2023-11-01",
+      "market_id": "delhi",
+      "temperature_c": 21.1367,
+      "interest_index": 18.2333,
+      "interest_scaled": 0.0098,
+      "temperature_anomaly_c": 0.9087,
+      "interest_anomaly": -1.7467
+    },
+    {
+      "period": "2023-12-01",
+      "market_id": "delhi",
+      "temperature_c": 15.9387,
+      "interest_index": 18.2258,
+      "interest_scaled": 0.0096,
+      "temperature_anomaly_c": 0.7123,
+      "interest_anomaly": -1.3032
+    },
+    {
+      "period": "2024-01-01",
+      "market_id": "delhi",
+      "temperature_c": 12.071,
+      "interest_index": 18.2258,
+      "interest_scaled": 0.0096,
+      "temperature_anomaly_c": -0.96,
+      "interest_anomaly": -1.0774
+    },
+    {
+      "period": "2024-02-01",
+      "market_id": "delhi",
+      "temperature_c": 16.2793,
+      "interest_index": 23.4138,
+      "interest_scaled": 0.0957,
+      "temperature_anomaly_c": -1.1916,
+      "interest_anomaly": -2.5975
+    },
+    {
+      "period": "2024-03-01",
+      "market_id": "delhi",
+      "temperature_c": 21.6484,
+      "interest_index": 33.2258,
+      "interest_scaled": 0.2586,
+      "temperature_anomaly_c": -1.471,
+      "interest_anomaly": -6.1742
+    },
+    {
+      "period": "2024-04-01",
+      "market_id": "delhi",
+      "temperature_c": 28.8433,
+      "interest_index": 47.8333,
+      "interest_scaled": 0.501,
+      "temperature_anomaly_c": -0.2733,
+      "interest_anomaly": -2.5933
+    },
+    {
+      "period": "2024-05-01",
+      "market_id": "delhi",
+      "temperature_c": 33.9484,
+      "interest_index": 58.2581,
+      "interest_scaled": 0.674,
+      "temperature_anomaly_c": 2.4174,
+      "interest_anomaly": 1.8065
+    },
+    {
+      "period": "2024-06-01",
+      "market_id": "delhi",
+      "temperature_c": 34.8133,
+      "interest_index": 55.6667,
+      "interest_scaled": 0.631,
+      "temperature_anomaly_c": 2.0447,
+      "interest_anomaly": 1.0333
+    },
+    {
+      "period": "2024-07-01",
+      "market_id": "delhi",
+      "temperature_c": 30.2484,
+      "interest_index": 37.0645,
+      "interest_scaled": 0.3223,
+      "temperature_anomaly_c": 0.4723,
+      "interest_anomaly": -2.0
+    },
+    {
+      "period": "2024-08-01",
+      "market_id": "delhi",
+      "temperature_c": 28.2806,
+      "interest_index": 27.2903,
+      "interest_scaled": 0.1601,
+      "temperature_anomaly_c": -0.591,
+      "interest_anomaly": -3.0903
+    },
+    {
+      "period": "2024-09-01",
+      "market_id": "delhi",
+      "temperature_c": 27.5133,
+      "interest_index": 27.0,
+      "interest_scaled": 0.1552,
+      "temperature_anomaly_c": -0.5607,
+      "interest_anomaly": -2.08
+    },
+    {
+      "period": "2024-10-01",
+      "market_id": "delhi",
+      "temperature_c": 26.4,
+      "interest_index": 23.5484,
+      "interest_scaled": 0.098,
+      "temperature_anomaly_c": 1.3845,
+      "interest_anomaly": -1.2258
+    },
+    {
+      "period": "2024-11-01",
+      "market_id": "delhi",
+      "temperature_c": 21.6533,
+      "interest_index": 19.1333,
+      "interest_scaled": 0.0247,
+      "temperature_anomaly_c": 1.4253,
+      "interest_anomaly": -0.8467
+    },
+    {
+      "period": "2024-12-01",
+      "market_id": "delhi",
+      "temperature_c": 14.8839,
+      "interest_index": 17.6452,
+      "interest_scaled": 0.0,
+      "temperature_anomaly_c": -0.3426,
+      "interest_anomaly": -1.8839
+    },
+    {
+      "period": "2025-01-01",
+      "market_id": "delhi",
+      "temperature_c": 13.7097,
+      "interest_index": 19.3871,
+      "interest_scaled": 0.0289,
+      "temperature_anomaly_c": 0.6787,
+      "interest_anomaly": 0.0839
+    },
+    {
+      "period": "2025-02-01",
+      "market_id": "delhi",
+      "temperature_c": 17.9393,
+      "interest_index": 25.0,
+      "interest_scaled": 0.1221,
+      "temperature_anomaly_c": 0.4684,
+      "interest_anomaly": -1.0113
+    },
+    {
+      "period": "2025-03-01",
+      "market_id": "delhi",
+      "temperature_c": 22.7645,
+      "interest_index": 39.1613,
+      "interest_scaled": 0.3571,
+      "temperature_anomaly_c": -0.3548,
+      "interest_anomaly": -0.2387
+    },
+    {
+      "period": "2025-04-01",
+      "market_id": "delhi",
+      "temperature_c": 30.0733,
+      "interest_index": 56.6,
+      "interest_scaled": 0.6465,
+      "temperature_anomaly_c": 0.9567,
+      "interest_anomaly": 6.1733
+    },
+    {
+      "period": "2025-05-01",
+      "market_id": "delhi",
+      "temperature_c": 31.7968,
+      "interest_index": 77.9032,
+      "interest_scaled": 1.0,
+      "temperature_anomaly_c": 0.2658,
+      "interest_anomaly": 21.4516
+    },
+    {
+      "period": "2025-06-01",
+      "market_id": "delhi",
+      "temperature_c": 31.5267,
+      "interest_index": 65.3,
+      "interest_scaled": 0.7908,
+      "temperature_anomaly_c": -1.242,
+      "interest_anomaly": 10.6667
+    },
+    {
+      "period": "2025-07-01",
+      "market_id": "delhi",
+      "temperature_c": 28.7742,
+      "interest_index": 43.0645,
+      "interest_scaled": 0.4218,
+      "temperature_anomaly_c": -1.0019,
+      "interest_anomaly": 4.0
+    },
+    {
+      "period": "2025-08-01",
+      "market_id": "delhi",
+      "temperature_c": 28.1548,
+      "interest_index": 32.871,
+      "interest_scaled": 0.2527,
+      "temperature_anomaly_c": -0.7168,
+      "interest_anomaly": 2.4903
+    },
+    {
+      "period": "2025-09-01",
+      "market_id": "delhi",
+      "temperature_c": 28.0867,
+      "interest_index": 30.8333,
+      "interest_scaled": 0.2189,
+      "temperature_anomaly_c": 0.0127,
+      "interest_anomaly": 1.7533
+    },
+    {
+      "period": "2025-10-01",
+      "market_id": "delhi",
+      "temperature_c": 24.3452,
+      "interest_index": 24.9032,
+      "interest_scaled": 0.1204,
+      "temperature_anomaly_c": -0.6703,
+      "interest_anomaly": 0.129
+    },
+    {
+      "period": "2025-11-01",
+      "market_id": "delhi",
+      "temperature_c": 18.9133,
+      "interest_index": 22.8333,
+      "interest_scaled": 0.0861,
+      "temperature_anomaly_c": -1.3147,
+      "interest_anomaly": 2.8533
+    },
+    {
+      "period": "2025-12-01",
+      "market_id": "delhi",
+      "temperature_c": 15.3226,
+      "interest_index": 23.7742,
+      "interest_scaled": 0.1017,
+      "temperature_anomaly_c": 0.0961,
+      "interest_anomaly": 4.2452
+    },
+    {
+      "period": "2021-01-01",
+      "market_id": "johannesburg",
+      "temperature_c": 19.4032,
+      "interest_index": 65.6452,
+      "interest_scaled": 0.5864,
+      "temperature_anomaly_c": 0.16,
+      "interest_anomaly": 6.9484
+    },
+    {
+      "period": "2021-02-01",
+      "market_id": "johannesburg",
+      "temperature_c": 17.8821,
+      "interest_index": 50.9643,
+      "interest_scaled": 0.2769,
+      "temperature_anomaly_c": -1.0727,
+      "interest_anomaly": -3.2567
+    },
+    {
+      "period": "2021-03-01",
+      "market_id": "johannesburg",
+      "temperature_c": 17.4129,
+      "interest_index": 49.1935,
+      "interest_scaled": 0.2395,
+      "temperature_anomaly_c": -0.6703,
+      "interest_anomaly": -5.0645
+    },
+    {
+      "period": "2021-04-01",
+      "market_id": "johannesburg",
+      "temperature_c": 16.3933,
+      "interest_index": 45.3,
+      "interest_scaled": 0.1574,
+      "temperature_anomaly_c": 1.4107,
+      "interest_anomaly": -1.2533
+    },
+    {
+      "period": "2021-05-01",
+      "market_id": "johannesburg",
+      "temperature_c": 12.2581,
+      "interest_index": 39.7097,
+      "interest_scaled": 0.0396,
+      "temperature_anomaly_c": -0.0006,
+      "interest_anomaly": -2.8129
+    },
+    {
+      "period": "2021-06-01",
+      "market_id": "johannesburg",
+      "temperature_c": 9.6867,
+      "interest_index": 37.8333,
+      "interest_scaled": 0.0,
+      "temperature_anomaly_c": 0.534,
+      "interest_anomaly": -2.1067
+    },
+    {
+      "period": "2021-07-01",
+      "market_id": "johannesburg",
+      "temperature_c": 8.3194,
+      "interest_index": 40.4194,
+      "interest_scaled": 0.0545,
+      "temperature_anomaly_c": -0.9652,
+      "interest_anomaly": -2.5935
+    },
+    {
+      "period": "2021-08-01",
+      "market_id": "johannesburg",
+      "temperature_c": 12.6548,
+      "interest_index": 49.0968,
+      "interest_scaled": 0.2375,
+      "temperature_anomaly_c": -0.1619,
+      "interest_anomaly": -8.0065
+    },
+    {
+      "period": "2021-09-01",
+      "market_id": "johannesburg",
+      "temperature_c": 16.97,
+      "interest_index": 62.3333,
+      "interest_scaled": 0.5166,
+      "temperature_anomaly_c": -0.0447,
+      "interest_anomaly": -10.12
+    },
+    {
+      "period": "2021-10-01",
+      "market_id": "johannesburg",
+      "temperature_c": 16.4645,
+      "interest_index": 59.3548,
+      "interest_scaled": 0.4538,
+      "temperature_anomaly_c": -1.5529,
+      "interest_anomaly": -15.0774
+    },
+    {
+      "period": "2021-11-01",
+      "market_id": "johannesburg",
+      "temperature_c": 18.9133,
+      "interest_index": 61.1,
+      "interest_scaled": 0.4906,
+      "temperature_anomaly_c": 0.4613,
+      "interest_anomaly": -7.62
+    },
+    {
+      "period": "2021-12-01",
+      "market_id": "johannesburg",
+      "temperature_c": 17.8129,
+      "interest_index": 63.5161,
+      "interest_scaled": 0.5415,
+      "temperature_anomaly_c": -1.2555,
+      "interest_anomaly": -9.871
+    },
+    {
+      "period": "2022-01-01",
+      "market_id": "johannesburg",
+      "temperature_c": 18.3194,
+      "interest_index": 52.9677,
+      "interest_scaled": 0.3191,
+      "temperature_anomaly_c": -0.9239,
+      "interest_anomaly": -5.729
+    },
+    {
+      "period": "2022-02-01",
+      "market_id": "johannesburg",
+      "temperature_c": 19.0429,
+      "interest_index": 58.1429,
+      "interest_scaled": 0.4282,
+      "temperature_anomaly_c": 0.088,
+      "interest_anomaly": 3.9219
+    },
+    {
+      "period": "2022-03-01",
+      "market_id": "johannesburg",
+      "temperature_c": 17.1,
+      "interest_index": 52.3548,
+      "interest_scaled": 0.3062,
+      "temperature_anomaly_c": -0.9832,
+      "interest_anomaly": -1.9032
+    },
+    {
+      "period": "2022-04-01",
+      "market_id": "johannesburg",
+      "temperature_c": 13.3333,
+      "interest_index": 42.3333,
+      "interest_scaled": 0.0949,
+      "temperature_anomaly_c": -1.6493,
+      "interest_anomaly": -4.22
+    },
+    {
+      "period": "2022-05-01",
+      "market_id": "johannesburg",
+      "temperature_c": 11.1839,
+      "interest_index": 40.3548,
+      "interest_scaled": 0.0532,
+      "temperature_anomaly_c": -1.0748,
+      "interest_anomaly": -2.1677
+    },
+    {
+      "period": "2022-06-01",
+      "market_id": "johannesburg",
+      "temperature_c": 8.29,
+      "interest_index": 38.7667,
+      "interest_scaled": 0.0197,
+      "temperature_anomaly_c": -0.8627,
+      "interest_anomaly": -1.1733
+    },
+    {
+      "period": "2022-07-01",
+      "market_id": "johannesburg",
+      "temperature_c": 9.7968,
+      "interest_index": 45.129,
+      "interest_scaled": 0.1538,
+      "temperature_anomaly_c": 0.5123,
+      "interest_anomaly": 2.1161
+    },
+    {
+      "period": "2022-08-01",
+      "market_id": "johannesburg",
+      "temperature_c": 12.2161,
+      "interest_index": 55.0323,
+      "interest_scaled": 0.3627,
+      "temperature_anomaly_c": -0.6006,
+      "interest_anomaly": -2.071
+    },
+    {
+      "period": "2022-09-01",
+      "market_id": "johannesburg",
+      "temperature_c": 17.3033,
+      "interest_index": 73.5333,
+      "interest_scaled": 0.7528,
+      "temperature_anomaly_c": 0.2887,
+      "interest_anomaly": 1.08
+    },
+    {
+      "period": "2022-10-01",
+      "market_id": "johannesburg",
+      "temperature_c": 20.0387,
+      "interest_index": 82.5806,
+      "interest_scaled": 0.9435,
+      "temperature_anomaly_c": 2.0213,
+      "interest_anomaly": 8.1484
+    },
+    {
+      "period": "2022-11-01",
+      "market_id": "johannesburg",
+      "temperature_c": 17.3633,
+      "interest_index": 66.9,
+      "interest_scaled": 0.6129,
+      "temperature_anomaly_c": -1.0887,
+      "interest_anomaly": -1.82
+    },
+    {
+      "period": "2022-12-01",
+      "market_id": "johannesburg",
+      "temperature_c": 18.3194,
+      "interest_index": 68.871,
+      "interest_scaled": 0.6545,
+      "temperature_anomaly_c": -0.749,
+      "interest_anomaly": -4.5161
+    },
+    {
+      "period": "2023-01-01",
+      "market_id": "johannesburg",
+      "temperature_c": 19.7161,
+      "interest_index": 57.5806,
+      "interest_scaled": 0.4164,
+      "temperature_anomaly_c": 0.4729,
+      "interest_anomaly": -1.1161
+    },
+    {
+      "period": "2023-02-01",
+      "market_id": "johannesburg",
+      "temperature_c": 18.125,
+      "interest_index": 47.4643,
+      "interest_scaled": 0.2031,
+      "temperature_anomaly_c": -0.8299,
+      "interest_anomaly": -6.7567
+    },
+    {
+      "period": "2023-03-01",
+      "market_id": "johannesburg",
+      "temperature_c": 18.2,
+      "interest_index": 54.7742,
+      "interest_scaled": 0.3572,
+      "temperature_anomaly_c": 0.1168,
+      "interest_anomaly": 0.5161
+    },
+    {
+      "period": "2023-04-01",
+      "market_id": "johannesburg",
+      "temperature_c": 15.78,
+      "interest_index": 52.0333,
+      "interest_scaled": 0.2994,
+      "temperature_anomaly_c": 0.7973,
+      "interest_anomaly": 5.48
+    },
+    {
+      "period": "2023-05-01",
+      "market_id": "johannesburg",
+      "temperature_c": 12.4355,
+      "interest_index": 40.6129,
+      "interest_scaled": 0.0586,
+      "temperature_anomaly_c": 0.1768,
+      "interest_anomaly": -1.9097
+    },
+    {
+      "period": "2023-06-01",
+      "market_id": "johannesburg",
+      "temperature_c": 9.9933,
+      "interest_index": 40.7667,
+      "interest_scaled": 0.0619,
+      "temperature_anomaly_c": 0.8407,
+      "interest_anomaly": 0.8267
+    },
+    {
+      "period": "2023-07-01",
+      "market_id": "johannesburg",
+      "temperature_c": 9.0355,
+      "interest_index": 41.2258,
+      "interest_scaled": 0.0715,
+      "temperature_anomaly_c": -0.249,
+      "interest_anomaly": -1.7871
+    },
+    {
+      "period": "2023-08-01",
+      "market_id": "johannesburg",
+      "temperature_c": 12.3871,
+      "interest_index": 60.5484,
+      "interest_scaled": 0.479,
+      "temperature_anomaly_c": -0.4297,
+      "interest_anomaly": 3.4452
+    },
+    {
+      "period": "2023-09-01",
+      "market_id": "johannesburg",
+      "temperature_c": 17.03,
+      "interest_index": 80.8,
+      "interest_scaled": 0.906,
+      "temperature_anomaly_c": 0.0153,
+      "interest_anomaly": 8.3467
+    },
+    {
+      "period": "2023-10-01",
+      "market_id": "johannesburg",
+      "temperature_c": 18.4419,
+      "interest_index": 85.2581,
+      "interest_scaled": 1.0,
+      "temperature_anomaly_c": 0.4245,
+      "interest_anomaly": 10.8258
+    },
+    {
+      "period": "2023-11-01",
+      "market_id": "johannesburg",
+      "temperature_c": 19.6733,
+      "interest_index": 83.7333,
+      "interest_scaled": 0.9678,
+      "temperature_anomaly_c": 1.2213,
+      "interest_anomaly": 15.0133
+    },
+    {
+      "period": "2023-12-01",
+      "market_id": "johannesburg",
+      "temperature_c": 20.0677,
+      "interest_index": 82.0968,
+      "interest_scaled": 0.9333,
+      "temperature_anomaly_c": 0.9994,
+      "interest_anomaly": 8.7097
+    },
+    {
+      "period": "2024-01-01",
+      "market_id": "johannesburg",
+      "temperature_c": 19.4387,
+      "interest_index": 58.1613,
+      "interest_scaled": 0.4286,
+      "temperature_anomaly_c": 0.1955,
+      "interest_anomaly": -0.5355
+    },
+    {
+      "period": "2024-02-01",
+      "market_id": "johannesburg",
+      "temperature_c": 20.6207,
+      "interest_index": 60.069,
+      "interest_scaled": 0.4689,
+      "temperature_anomaly_c": 1.6658,
+      "interest_anomaly": 5.848
+    },
+    {
+      "period": "2024-03-01",
+      "market_id": "johannesburg",
+      "temperature_c": 20.2226,
+      "interest_index": 63.1613,
+      "interest_scaled": 0.5341,
+      "temperature_anomaly_c": 2.1394,
+      "interest_anomaly": 8.9032
+    },
+    {
+      "period": "2024-04-01",
+      "market_id": "johannesburg",
+      "temperature_c": 15.2733,
+      "interest_index": 47.8,
+      "interest_scaled": 0.2102,
+      "temperature_anomaly_c": 0.2907,
+      "interest_anomaly": 1.2467
+    },
+    {
+      "period": "2024-05-01",
+      "market_id": "johannesburg",
+      "temperature_c": 14.6355,
+      "interest_index": 45.4516,
+      "interest_scaled": 0.1606,
+      "temperature_anomaly_c": 2.3768,
+      "interest_anomaly": 2.929
+    },
+    {
+      "period": "2024-06-01",
+      "market_id": "johannesburg",
+      "temperature_c": 9.4967,
+      "interest_index": 41.2333,
+      "interest_scaled": 0.0717,
+      "temperature_anomaly_c": 0.344,
+      "interest_anomaly": 1.2933
+    },
+    {
+      "period": "2024-07-01",
+      "market_id": "johannesburg",
+      "temperature_c": 10.3387,
+      "interest_index": 42.7097,
+      "interest_scaled": 0.1028,
+      "temperature_anomaly_c": 1.0542,
+      "interest_anomaly": -0.3032
+    },
+    {
+      "period": "2024-08-01",
+      "market_id": "johannesburg",
+      "temperature_c": 14.0516,
+      "interest_index": 61.6129,
+      "interest_scaled": 0.5014,
+      "temperature_anomaly_c": 1.2348,
+      "interest_anomaly": 4.5097
+    },
+    {
+      "period": "2024-09-01",
+      "market_id": "johannesburg",
+      "temperature_c": 16.78,
+      "interest_index": 64.9,
+      "interest_scaled": 0.5707,
+      "temperature_anomaly_c": -0.2347,
+      "interest_anomaly": -7.5533
+    },
+    {
+      "period": "2024-10-01",
+      "market_id": "johannesburg",
+      "temperature_c": 17.9258,
+      "interest_index": 74.1935,
+      "interest_scaled": 0.7667,
+      "temperature_anomaly_c": -0.0916,
+      "interest_anomaly": -0.2387
+    },
+    {
+      "period": "2024-11-01",
+      "market_id": "johannesburg",
+      "temperature_c": 20.15,
+      "interest_index": 72.8667,
+      "interest_scaled": 0.7387,
+      "temperature_anomaly_c": 1.698,
+      "interest_anomaly": 4.1467
+    },
+    {
+      "period": "2024-12-01",
+      "market_id": "johannesburg",
+      "temperature_c": 21.5871,
+      "interest_index": 81.0323,
+      "interest_scaled": 0.9109,
+      "temperature_anomaly_c": 2.5187,
+      "interest_anomaly": 7.6452
+    },
+    {
+      "period": "2025-01-01",
+      "market_id": "johannesburg",
+      "temperature_c": 19.3387,
+      "interest_index": 59.129,
+      "interest_scaled": 0.449,
+      "temperature_anomaly_c": 0.0955,
+      "interest_anomaly": 0.4323
+    },
+    {
+      "period": "2025-02-01",
+      "market_id": "johannesburg",
+      "temperature_c": 19.1036,
+      "interest_index": 54.4643,
+      "interest_scaled": 0.3507,
+      "temperature_anomaly_c": 0.1487,
+      "interest_anomaly": 0.2433
+    },
+    {
+      "period": "2025-03-01",
+      "market_id": "johannesburg",
+      "temperature_c": 17.4806,
+      "interest_index": 51.8065,
+      "interest_scaled": 0.2946,
+      "temperature_anomaly_c": -0.6026,
+      "interest_anomaly": -2.4516
+    },
+    {
+      "period": "2025-04-01",
+      "market_id": "johannesburg",
+      "temperature_c": 14.1333,
+      "interest_index": 45.3,
+      "interest_scaled": 0.1574,
+      "temperature_anomaly_c": -0.8493,
+      "interest_anomaly": -1.2533
+    },
+    {
+      "period": "2025-05-01",
+      "market_id": "johannesburg",
+      "temperature_c": 10.7806,
+      "interest_index": 46.4839,
+      "interest_scaled": 0.1824,
+      "temperature_anomaly_c": -1.4781,
+      "interest_anomaly": 3.9613
+    },
+    {
+      "period": "2025-06-01",
+      "market_id": "johannesburg",
+      "temperature_c": 8.2967,
+      "interest_index": 41.1,
+      "interest_scaled": 0.0689,
+      "temperature_anomaly_c": -0.856,
+      "interest_anomaly": 1.16
+    },
+    {
+      "period": "2025-07-01",
+      "market_id": "johannesburg",
+      "temperature_c": 8.9323,
+      "interest_index": 45.5806,
+      "interest_scaled": 0.1634,
+      "temperature_anomaly_c": -0.3523,
+      "interest_anomaly": 2.5677
+    },
+    {
+      "period": "2025-08-01",
+      "market_id": "johannesburg",
+      "temperature_c": 12.7742,
+      "interest_index": 59.2258,
+      "interest_scaled": 0.4511,
+      "temperature_anomaly_c": -0.0426,
+      "interest_anomaly": 2.1226
+    },
+    {
+      "period": "2025-09-01",
+      "market_id": "johannesburg",
+      "temperature_c": 16.99,
+      "interest_index": 80.7,
+      "interest_scaled": 0.9039,
+      "temperature_anomaly_c": -0.0247,
+      "interest_anomaly": 8.2467
+    },
+    {
+      "period": "2025-10-01",
+      "market_id": "johannesburg",
+      "temperature_c": 17.2161,
+      "interest_index": 70.7742,
+      "interest_scaled": 0.6946,
+      "temperature_anomaly_c": -0.8013,
+      "interest_anomaly": -3.6581
+    },
+    {
+      "period": "2025-11-01",
+      "market_id": "johannesburg",
+      "temperature_c": 16.16,
+      "interest_index": 59.0,
+      "interest_scaled": 0.4463,
+      "temperature_anomaly_c": -2.292,
+      "interest_anomaly": -9.72
+    },
+    {
+      "period": "2025-12-01",
+      "market_id": "johannesburg",
+      "temperature_c": 17.5548,
+      "interest_index": 71.4194,
+      "interest_scaled": 0.7082,
+      "temperature_anomaly_c": -1.5135,
+      "interest_anomaly": -1.9677
+    },
+    {
+      "period": "2021-01-01",
+      "market_id": "london",
+      "temperature_c": 3.5032,
+      "interest_index": 33.1935,
+      "interest_scaled": 0.1613,
+      "temperature_anomaly_c": -0.8284,
+      "interest_anomaly": 3.1677
+    },
+    {
+      "period": "2021-02-01",
+      "market_id": "london",
+      "temperature_c": 5.25,
+      "interest_index": 40.5,
+      "interest_scaled": 0.3003,
+      "temperature_anomaly_c": -1.0658,
+      "interest_anomaly": 4.7911
+    },
+    {
+      "period": "2021-03-01",
+      "market_id": "london",
+      "temperature_c": 6.9226,
+      "interest_index": 41.9032,
+      "interest_scaled": 0.327,
+      "temperature_anomaly_c": -0.6445,
+      "interest_anomaly": 1.7226
+    },
+    {
+      "period": "2021-04-01",
+      "market_id": "london",
+      "temperature_c": 6.5833,
+      "interest_index": 45.7667,
+      "interest_scaled": 0.4005,
+      "temperature_anomaly_c": -2.54,
+      "interest_anomaly": -4.34
+    },
+    {
+      "period": "2021-05-01",
+      "market_id": "london",
+      "temperature_c": 10.8839,
+      "interest_index": 45.0968,
+      "interest_scaled": 0.3877,
+      "temperature_anomaly_c": -2.1697,
+      "interest_anomaly": -13.4516
+    },
+    {
+      "period": "2021-06-01",
+      "market_id": "london",
+      "temperature_c": 16.8867,
+      "interest_index": 64.6667,
+      "interest_scaled": 0.7599,
+      "temperature_anomaly_c": -0.0687,
+      "interest_anomaly": -4.02
+    },
+    {
+      "period": "2021-07-01",
+      "market_id": "london",
+      "temperature_c": 18.0581,
+      "interest_index": 62.4516,
+      "interest_scaled": 0.7178,
+      "temperature_anomaly_c": -0.4748,
+      "interest_anomaly": -6.5097
+    },
+    {
+      "period": "2021-08-01",
+      "market_id": "london",
+      "temperature_c": 16.5032,
+      "interest_index": 49.5484,
+      "interest_scaled": 0.4724,
+      "temperature_anomaly_c": -1.7052,
+      "interest_anomaly": -11.9419
+    },
+    {
+      "period": "2021-09-01",
+      "market_id": "london",
+      "temperature_c": 16.5333,
+      "interest_index": 36.5333,
+      "interest_scaled": 0.2249,
+      "temperature_anomaly_c": 0.5813,
+      "interest_anomaly": -3.6333
+    },
+    {
+      "period": "2021-10-01",
+      "market_id": "london",
+      "temperature_c": 12.5387,
+      "interest_index": 27.2581,
+      "interest_scaled": 0.0485,
+      "temperature_anomaly_c": -0.2606,
+      "interest_anomaly": -5.4839
+    },
+    {
+      "period": "2021-11-01",
+      "market_id": "london",
+      "temperature_c": 7.59,
+      "interest_index": 26.6333,
+      "interest_scaled": 0.0366,
+      "temperature_anomaly_c": -0.8907,
+      "interest_anomaly": -3.5467
+    },
+    {
+      "period": "2021-12-01",
+      "market_id": "london",
+      "temperature_c": 7.0839,
+      "interest_index": 24.7097,
+      "interest_scaled": 0.0,
+      "temperature_anomaly_c": 0.3135,
+      "interest_anomaly": -7.0
+    },
+    {
+      "period": "2022-01-01",
+      "market_id": "london",
+      "temperature_c": 4.5935,
+      "interest_index": 28.0,
+      "interest_scaled": 0.0626,
+      "temperature_anomaly_c": 0.2619,
+      "interest_anomaly": -2.0258
+    },
+    {
+      "period": "2022-02-01",
+      "market_id": "london",
+      "temperature_c": 7.3643,
+      "interest_index": 32.2143,
+      "interest_scaled": 0.1427,
+      "temperature_anomaly_c": 1.0485,
+      "interest_anomaly": -3.4946
+    },
+    {
+      "period": "2022-03-01",
+      "market_id": "london",
+      "temperature_c": 7.9806,
+      "interest_index": 37.0968,
+      "interest_scaled": 0.2356,
+      "temperature_anomaly_c": 0.4135,
+      "interest_anomaly": -3.0839
+    },
+    {
+      "period": "2022-04-01",
+      "market_id": "london",
+      "temperature_c": 9.5,
+      "interest_index": 44.9333,
+      "interest_scaled": 0.3846,
+      "temperature_anomaly_c": 0.3767,
+      "interest_anomaly": -5.1733
+    },
+    {
+      "period": "2022-05-01",
+      "market_id": "london",
+      "temperature_c": 13.7935,
+      "interest_index": 49.5806,
+      "interest_scaled": 0.473,
+      "temperature_anomaly_c": 0.74,
+      "interest_anomaly": -8.9677
+    },
+    {
+      "period": "2022-06-01",
+      "market_id": "london",
+      "temperature_c": 16.1067,
+      "interest_index": 61.4333,
+      "interest_scaled": 0.6984,
+      "temperature_anomaly_c": -0.8487,
+      "interest_anomaly": -7.2533
+    },
+    {
+      "period": "2022-07-01",
+      "market_id": "london",
+      "temperature_c": 20.0806,
+      "interest_index": 77.1613,
+      "interest_scaled": 0.9975,
+      "temperature_anomaly_c": 1.5477,
+      "interest_anomaly": 8.2
+    },
+    {
+      "period": "2022-08-01",
+      "market_id": "london",
+      "temperature_c": 20.1742,
+      "interest_index": 61.4839,
+      "interest_scaled": 0.6994,
+      "temperature_anomaly_c": 1.9658,
+      "interest_anomaly": -0.0065
+    },
+    {
+      "period": "2022-09-01",
+      "market_id": "london",
+      "temperature_c": 15.1067,
+      "interest_index": 35.0,
+      "interest_scaled": 0.1957,
+      "temperature_anomaly_c": -0.8453,
+      "interest_anomaly": -5.1667
+    },
+    {
+      "period": "2022-10-01",
+      "market_id": "london",
+      "temperature_c": 13.7323,
+      "interest_index": 33.6129,
+      "interest_scaled": 0.1693,
+      "temperature_anomaly_c": 0.9329,
+      "interest_anomaly": 0.871
+    },
+    {
+      "period": "2022-11-01",
+      "market_id": "london",
+      "temperature_c": 9.8967,
+      "interest_index": 28.6667,
+      "interest_scaled": 0.0753,
+      "temperature_anomaly_c": 1.416,
+      "interest_anomaly": -1.5133
+    },
+    {
+      "period": "2022-12-01",
+      "market_id": "london",
+      "temperature_c": 4.4645,
+      "interest_index": 26.5161,
+      "interest_scaled": 0.0344,
+      "temperature_anomaly_c": -2.3058,
+      "interest_anomaly": -5.1935
+    },
+    {
+      "period": "2023-01-01",
+      "market_id": "london",
+      "temperature_c": 5.0839,
+      "interest_index": 26.6774,
+      "interest_scaled": 0.0374,
+      "temperature_anomaly_c": 0.7523,
+      "interest_anomaly": -3.3484
+    },
+    {
+      "period": "2023-02-01",
+      "market_id": "london",
+      "temperature_c": 5.9286,
+      "interest_index": 32.2143,
+      "interest_scaled": 0.1427,
+      "temperature_anomaly_c": -0.3872,
+      "interest_anomaly": -3.4946
+    },
+    {
+      "period": "2023-03-01",
+      "market_id": "london",
+      "temperature_c": 7.2935,
+      "interest_index": 36.5161,
+      "interest_scaled": 0.2245,
+      "temperature_anomaly_c": -0.2735,
+      "interest_anomaly": -3.6645
+    },
+    {
+      "period": "2023-04-01",
+      "market_id": "london",
+      "temperature_c": 8.76,
+      "interest_index": 48.2333,
+      "interest_scaled": 0.4474,
+      "temperature_anomaly_c": -0.3633,
+      "interest_anomaly": -1.8733
+    },
+    {
+      "period": "2023-05-01",
+      "market_id": "london",
+      "temperature_c": 12.5355,
+      "interest_index": 61.6774,
+      "interest_scaled": 0.7031,
+      "temperature_anomaly_c": -0.5181,
+      "interest_anomaly": 3.129
+    },
+    {
+      "period": "2023-06-01",
+      "market_id": "london",
+      "temperature_c": 17.8833,
+      "interest_index": 77.1667,
+      "interest_scaled": 0.9976,
+      "temperature_anomaly_c": 0.928,
+      "interest_anomaly": 8.48
+    },
+    {
+      "period": "2023-07-01",
+      "market_id": "london",
+      "temperature_c": 17.4548,
+      "interest_index": 60.5484,
+      "interest_scaled": 0.6816,
+      "temperature_anomaly_c": -1.0781,
+      "interest_anomaly": -8.4129
+    },
+    {
+      "period": "2023-08-01",
+      "market_id": "london",
+      "temperature_c": 17.1839,
+      "interest_index": 57.2903,
+      "interest_scaled": 0.6196,
+      "temperature_anomaly_c": -1.0245,
+      "interest_anomaly": -4.2
+    },
+    {
+      "period": "2023-09-01",
+      "market_id": "london",
+      "temperature_c": 18.1367,
+      "interest_index": 47.8,
+      "interest_scaled": 0.4391,
+      "temperature_anomaly_c": 2.1847,
+      "interest_anomaly": 7.6333
+    },
+    {
+      "period": "2023-10-01",
+      "market_id": "london",
+      "temperature_c": 13.2677,
+      "interest_index": 33.9677,
+      "interest_scaled": 0.1761,
+      "temperature_anomaly_c": 0.4684,
+      "interest_anomaly": 1.2258
+    },
+    {
+      "period": "2023-11-01",
+      "market_id": "london",
+      "temperature_c": 7.8233,
+      "interest_index": 30.6333,
+      "interest_scaled": 0.1127,
+      "temperature_anomaly_c": -0.6573,
+      "interest_anomaly": 0.4533
+    },
+    {
+      "period": "2023-12-01",
+      "market_id": "london",
+      "temperature_c": 7.6419,
+      "interest_index": 35.2581,
+      "interest_scaled": 0.2006,
+      "temperature_anomaly_c": 0.8716,
+      "interest_anomaly": 3.5484
+    },
+    {
+      "period": "2024-01-01",
+      "market_id": "london",
+      "temperature_c": 4.7645,
+      "interest_index": 30.8065,
+      "interest_scaled": 0.116,
+      "temperature_anomaly_c": 0.4329,
+      "interest_anomaly": 0.7806
+    },
+    {
+      "period": "2024-02-01",
+      "market_id": "london",
+      "temperature_c": 8.1897,
+      "interest_index": 34.7586,
+      "interest_scaled": 0.1911,
+      "temperature_anomaly_c": 1.8739,
+      "interest_anomaly": -0.9502
+    },
+    {
+      "period": "2024-03-01",
+      "market_id": "london",
+      "temperature_c": 8.4452,
+      "interest_index": 39.0645,
+      "interest_scaled": 0.273,
+      "temperature_anomaly_c": 0.8781,
+      "interest_anomaly": -1.1161
+    },
+    {
+      "period": "2024-04-01",
+      "market_id": "london",
+      "temperature_c": 9.9567,
+      "interest_index": 48.6,
+      "interest_scaled": 0.4544,
+      "temperature_anomaly_c": 0.8333,
+      "interest_anomaly": -1.5067
+    },
+    {
+      "period": "2024-05-01",
+      "market_id": "london",
+      "temperature_c": 13.8613,
+      "interest_index": 67.6452,
+      "interest_scaled": 0.8166,
+      "temperature_anomaly_c": 0.8077,
+      "interest_anomaly": 9.0968
+    },
+    {
+      "period": "2024-06-01",
+      "market_id": "london",
+      "temperature_c": 15.4167,
+      "interest_index": 65.7333,
+      "interest_scaled": 0.7802,
+      "temperature_anomaly_c": -1.5387,
+      "interest_anomaly": -2.9533
+    },
+    {
+      "period": "2024-07-01",
+      "market_id": "london",
+      "temperature_c": 17.5,
+      "interest_index": 67.3548,
+      "interest_scaled": 0.811,
+      "temperature_anomaly_c": -1.0329,
+      "interest_anomaly": -1.6065
+    },
+    {
+      "period": "2024-08-01",
+      "market_id": "london",
+      "temperature_c": 18.6516,
+      "interest_index": 67.4839,
+      "interest_scaled": 0.8135,
+      "temperature_anomaly_c": 0.4432,
+      "interest_anomaly": 5.9935
+    },
+    {
+      "period": "2024-09-01",
+      "market_id": "london",
+      "temperature_c": 15.0867,
+      "interest_index": 40.1667,
+      "interest_scaled": 0.294,
+      "temperature_anomaly_c": -0.8653,
+      "interest_anomaly": 0.0
+    },
+    {
+      "period": "2024-10-01",
+      "market_id": "london",
+      "temperature_c": 12.2129,
+      "interest_index": 33.3871,
+      "interest_scaled": 0.165,
+      "temperature_anomaly_c": -0.5865,
+      "interest_anomaly": 0.6452
+    },
+    {
+      "period": "2024-11-01",
+      "market_id": "london",
+      "temperature_c": 8.0367,
+      "interest_index": 30.8,
+      "interest_scaled": 0.1158,
+      "temperature_anomaly_c": -0.444,
+      "interest_anomaly": 0.62
+    },
+    {
+      "period": "2024-12-01",
+      "market_id": "london",
+      "temperature_c": 7.4032,
+      "interest_index": 32.4516,
+      "interest_scaled": 0.1472,
+      "temperature_anomaly_c": 0.6329,
+      "interest_anomaly": 0.7419
+    },
+    {
+      "period": "2025-01-01",
+      "market_id": "london",
+      "temperature_c": 3.7129,
+      "interest_index": 31.4516,
+      "interest_scaled": 0.1282,
+      "temperature_anomaly_c": -0.6187,
+      "interest_anomaly": 1.4258
+    },
+    {
+      "period": "2025-02-01",
+      "market_id": "london",
+      "temperature_c": 4.8464,
+      "interest_index": 38.8571,
+      "interest_scaled": 0.2691,
+      "temperature_anomaly_c": -1.4694,
+      "interest_anomaly": 3.1483
+    },
+    {
+      "period": "2025-03-01",
+      "market_id": "london",
+      "temperature_c": 7.1935,
+      "interest_index": 46.3226,
+      "interest_scaled": 0.411,
+      "temperature_anomaly_c": -0.3735,
+      "interest_anomaly": 6.1419
+    },
+    {
+      "period": "2025-04-01",
+      "market_id": "london",
+      "temperature_c": 10.8167,
+      "interest_index": 63.0,
+      "interest_scaled": 0.7282,
+      "temperature_anomaly_c": 1.6933,
+      "interest_anomaly": 12.8933
+    },
+    {
+      "period": "2025-05-01",
+      "market_id": "london",
+      "temperature_c": 14.1935,
+      "interest_index": 68.7419,
+      "interest_scaled": 0.8374,
+      "temperature_anomaly_c": 1.14,
+      "interest_anomaly": 10.1935
+    },
+    {
+      "period": "2025-06-01",
+      "market_id": "london",
+      "temperature_c": 18.4833,
+      "interest_index": 74.4333,
+      "interest_scaled": 0.9457,
+      "temperature_anomaly_c": 1.528,
+      "interest_anomaly": 5.7467
+    },
+    {
+      "period": "2025-07-01",
+      "market_id": "london",
+      "temperature_c": 19.571,
+      "interest_index": 77.2903,
+      "interest_scaled": 1.0,
+      "temperature_anomaly_c": 1.0381,
+      "interest_anomaly": 8.329
+    },
+    {
+      "period": "2025-08-01",
+      "market_id": "london",
+      "temperature_c": 18.529,
+      "interest_index": 71.6452,
+      "interest_scaled": 0.8926,
+      "temperature_anomaly_c": 0.3206,
+      "interest_anomaly": 10.1548
+    },
+    {
+      "period": "2025-09-01",
+      "market_id": "london",
+      "temperature_c": 14.8967,
+      "interest_index": 41.3333,
+      "interest_scaled": 0.3162,
+      "temperature_anomaly_c": -1.0553,
+      "interest_anomaly": 1.1667
+    },
+    {
+      "period": "2025-10-01",
+      "market_id": "london",
+      "temperature_c": 12.2452,
+      "interest_index": 35.4839,
+      "interest_scaled": 0.2049,
+      "temperature_anomaly_c": -0.5542,
+      "interest_anomaly": 2.7419
+    },
+    {
+      "period": "2025-11-01",
+      "market_id": "london",
+      "temperature_c": 9.0567,
+      "interest_index": 34.1667,
+      "interest_scaled": 0.1799,
+      "temperature_anomaly_c": 0.576,
+      "interest_anomaly": 3.9867
+    },
+    {
+      "period": "2025-12-01",
+      "market_id": "london",
+      "temperature_c": 7.2581,
+      "interest_index": 39.6129,
+      "interest_scaled": 0.2834,
+      "temperature_anomaly_c": 0.4877,
+      "interest_anomaly": 7.9032
+    },
+    {
+      "period": "2021-01-01",
+      "market_id": "moscow",
+      "temperature_c": -7.2355,
+      "interest_index": 38.0,
+      "interest_scaled": 0.1754,
+      "temperature_anomaly_c": -0.5516,
+      "interest_anomaly": 0.9677
+    },
+    {
+      "period": "2021-02-01",
+      "market_id": "moscow",
+      "temperature_c": -12.7607,
+      "interest_index": 36.9286,
+      "interest_scaled": 0.1548,
+      "temperature_anomaly_c": -6.2796,
+      "interest_anomaly": 0.0197
+    },
+    {
+      "period": "2021-03-01",
+      "market_id": "moscow",
+      "temperature_c": -3.729,
+      "interest_index": 42.6774,
+      "interest_scaled": 0.2656,
+      "temperature_anomaly_c": -2.3542,
+      "interest_anomaly": 4.1806
+    },
+    {
+      "period": "2021-04-01",
+      "market_id": "moscow",
+      "temperature_c": 5.8833,
+      "interest_index": 49.5,
+      "interest_scaled": 0.3972,
+      "temperature_anomaly_c": -1.06,
+      "interest_anomaly": 2.68
+    },
+    {
+      "period": "2021-05-01",
+      "market_id": "moscow",
+      "temperature_c": 13.5226,
+      "interest_index": 69.0323,
+      "interest_scaled": 0.7738,
+      "temperature_anomaly_c": 1.591,
+      "interest_anomaly": 7.9935
+    },
+    {
+      "period": "2021-06-01",
+      "market_id": "moscow",
+      "temperature_c": 19.9067,
+      "interest_index": 77.0667,
+      "interest_scaled": 0.9287,
+      "temperature_anomaly_c": 1.6987,
+      "interest_anomaly": 2.8
+    },
+    {
+      "period": "2021-07-01",
+      "market_id": "moscow",
+      "temperature_c": 22.4484,
+      "interest_index": 70.3548,
+      "interest_scaled": 0.7993,
+      "temperature_anomaly_c": 1.5471,
+      "interest_anomaly": -0.0258
+    },
+    {
+      "period": "2021-08-01",
+      "market_id": "moscow",
+      "temperature_c": 19.6452,
+      "interest_index": 49.3226,
+      "interest_scaled": 0.3938,
+      "temperature_anomaly_c": 0.3329,
+      "interest_anomaly": -0.3871
+    },
+    {
+      "period": "2021-09-01",
+      "market_id": "moscow",
+      "temperature_c": 9.9533,
+      "interest_index": 32.4,
+      "interest_scaled": 0.0675,
+      "temperature_anomaly_c": -3.218,
+      "interest_anomaly": -5.82
+    },
+    {
+      "period": "2021-10-01",
+      "market_id": "moscow",
+      "temperature_c": 5.8258,
+      "interest_index": 33.2581,
+      "interest_scaled": 0.084,
+      "temperature_anomaly_c": -0.6761,
+      "interest_anomaly": -1.0452
+    },
+    {
+      "period": "2021-11-01",
+      "market_id": "moscow",
+      "temperature_c": 1.5833,
+      "interest_index": 28.9,
+      "interest_scaled": 0.0,
+      "temperature_anomaly_c": 0.7307,
+      "interest_anomaly": -6.06
+    },
+    {
+      "period": "2021-12-01",
+      "market_id": "moscow",
+      "temperature_c": -7.9742,
+      "interest_index": 31.7742,
+      "interest_scaled": 0.0554,
+      "temperature_anomaly_c": -3.1297,
+      "interest_anomaly": -1.7161
+    },
+    {
+      "period": "2022-01-01",
+      "market_id": "moscow",
+      "temperature_c": -6.7645,
+      "interest_index": 35.9677,
+      "interest_scaled": 0.1363,
+      "temperature_anomaly_c": -0.0806,
+      "interest_anomaly": -1.0645
+    },
+    {
+      "period": "2022-02-01",
+      "market_id": "moscow",
+      "temperature_c": -2.9857,
+      "interest_index": 35.1786,
+      "interest_scaled": 0.1211,
+      "temperature_anomaly_c": 3.4954,
+      "interest_anomaly": -1.7303
+    },
+    {
+      "period": "2022-03-01",
+      "market_id": "moscow",
+      "temperature_c": -3.7,
+      "interest_index": 34.0,
+      "interest_scaled": 0.0983,
+      "temperature_anomaly_c": -2.3252,
+      "interest_anomaly": -4.4968
+    },
+    {
+      "period": "2022-04-01",
+      "market_id": "moscow",
+      "temperature_c": 4.3033,
+      "interest_index": 41.6,
+      "interest_scaled": 0.2449,
+      "temperature_anomaly_c": -2.64,
+      "interest_anomaly": -5.22
+    },
+    {
+      "period": "2022-05-01",
+      "market_id": "moscow",
+      "temperature_c": 9.6258,
+      "interest_index": 56.0968,
+      "interest_scaled": 0.5244,
+      "temperature_anomaly_c": -2.3058,
+      "interest_anomaly": -4.9419
+    },
+    {
+      "period": "2022-06-01",
+      "market_id": "moscow",
+      "temperature_c": 18.04,
+      "interest_index": 74.4333,
+      "interest_scaled": 0.8779,
+      "temperature_anomaly_c": -0.168,
+      "interest_anomaly": 0.1667
+    },
+    {
+      "period": "2022-07-01",
+      "market_id": "moscow",
+      "temperature_c": 20.5935,
+      "interest_index": 73.5161,
+      "interest_scaled": 0.8602,
+      "temperature_anomaly_c": -0.3077,
+      "interest_anomaly": 3.1355
+    },
+    {
+      "period": "2022-08-01",
+      "market_id": "moscow",
+      "temperature_c": 21.8806,
+      "interest_index": 30.4194,
+      "interest_scaled": 0.0293,
+      "temperature_anomaly_c": 2.5684,
+      "interest_anomaly": -19.2903
+    },
+    {
+      "period": "2022-09-01",
+      "market_id": "moscow",
+      "temperature_c": 10.31,
+      "interest_index": 32.8333,
+      "interest_scaled": 0.0758,
+      "temperature_anomaly_c": -2.8613,
+      "interest_anomaly": -5.3867
+    },
+    {
+      "period": "2022-10-01",
+      "market_id": "moscow",
+      "temperature_c": 6.9323,
+      "interest_index": 33.5484,
+      "interest_scaled": 0.0896,
+      "temperature_anomaly_c": 0.4303,
+      "interest_anomaly": -0.7548
+    },
+    {
+      "period": "2022-11-01",
+      "market_id": "moscow",
+      "temperature_c": -1.21,
+      "interest_index": 33.4333,
+      "interest_scaled": 0.0874,
+      "temperature_anomaly_c": -2.0627,
+      "interest_anomaly": -1.5267
+    },
+    {
+      "period": "2022-12-01",
+      "market_id": "moscow",
+      "temperature_c": -5.1677,
+      "interest_index": 31.5484,
+      "interest_scaled": 0.0511,
+      "temperature_anomaly_c": -0.3232,
+      "interest_anomaly": -1.9419
+    },
+    {
+      "period": "2023-01-01",
+      "market_id": "moscow",
+      "temperature_c": -6.2065,
+      "interest_index": 39.0645,
+      "interest_scaled": 0.196,
+      "temperature_anomaly_c": 0.4774,
+      "interest_anomaly": 2.0323
+    },
+    {
+      "period": "2023-02-01",
+      "market_id": "moscow",
+      "temperature_c": -5.5071,
+      "interest_index": 36.8571,
+      "interest_scaled": 0.1534,
+      "temperature_anomaly_c": 0.974,
+      "interest_anomaly": -0.0517
+    },
+    {
+      "period": "2023-03-01",
+      "market_id": "moscow",
+      "temperature_c": -1.1903,
+      "interest_index": 42.0,
+      "interest_scaled": 0.2526,
+      "temperature_anomaly_c": 0.1845,
+      "interest_anomaly": 3.5032
+    },
+    {
+      "period": "2023-04-01",
+      "market_id": "moscow",
+      "temperature_c": 8.02,
+      "interest_index": 48.7667,
+      "interest_scaled": 0.383,
+      "temperature_anomaly_c": 1.0767,
+      "interest_anomaly": 1.9467
+    },
+    {
+      "period": "2023-05-01",
+      "market_id": "moscow",
+      "temperature_c": 12.2323,
+      "interest_index": 58.9677,
+      "interest_scaled": 0.5797,
+      "temperature_anomaly_c": 0.3006,
+      "interest_anomaly": -2.071
+    },
+    {
+      "period": "2023-06-01",
+      "market_id": "moscow",
+      "temperature_c": 16.7367,
+      "interest_index": 69.0,
+      "interest_scaled": 0.7731,
+      "temperature_anomaly_c": -1.4713,
+      "interest_anomaly": -5.2667
+    },
+    {
+      "period": "2023-07-01",
+      "market_id": "moscow",
+      "temperature_c": 18.2129,
+      "interest_index": 61.0645,
+      "interest_scaled": 0.6201,
+      "temperature_anomaly_c": -2.6884,
+      "interest_anomaly": -9.3161
+    },
+    {
+      "period": "2023-08-01",
+      "market_id": "moscow",
+      "temperature_c": 19.229,
+      "interest_index": 56.4194,
+      "interest_scaled": 0.5306,
+      "temperature_anomaly_c": -0.0832,
+      "interest_anomaly": 6.7097
+    },
+    {
+      "period": "2023-09-01",
+      "market_id": "moscow",
+      "temperature_c": 14.7833,
+      "interest_index": 40.9333,
+      "interest_scaled": 0.232,
+      "temperature_anomaly_c": 1.612,
+      "interest_anomaly": 2.7133
+    },
+    {
+      "period": "2023-10-01",
+      "market_id": "moscow",
+      "temperature_c": 5.3548,
+      "interest_index": 32.6129,
+      "interest_scaled": 0.0716,
+      "temperature_anomaly_c": -1.1471,
+      "interest_anomaly": -1.6903
+    },
+    {
+      "period": "2023-11-01",
+      "market_id": "moscow",
+      "temperature_c": 0.1633,
+      "interest_index": 34.8333,
+      "interest_scaled": 0.1144,
+      "temperature_anomaly_c": -0.6893,
+      "interest_anomaly": -0.1267
+    },
+    {
+      "period": "2023-12-01",
+      "market_id": "moscow",
+      "temperature_c": -5.8452,
+      "interest_index": 32.3548,
+      "interest_scaled": 0.0666,
+      "temperature_anomaly_c": -1.0006,
+      "interest_anomaly": -1.1355
+    },
+    {
+      "period": "2024-01-01",
+      "market_id": "moscow",
+      "temperature_c": -12.1387,
+      "interest_index": 35.0,
+      "interest_scaled": 0.1176,
+      "temperature_anomaly_c": -5.4548,
+      "interest_anomaly": -2.0323
+    },
+    {
+      "period": "2024-02-01",
+      "market_id": "moscow",
+      "temperature_c": -6.0414,
+      "interest_index": 37.7586,
+      "interest_scaled": 0.1708,
+      "temperature_anomaly_c": 0.4398,
+      "interest_anomaly": 0.8498
+    },
+    {
+      "period": "2024-03-01",
+      "market_id": "moscow",
+      "temperature_c": -1.3387,
+      "interest_index": 37.0968,
+      "interest_scaled": 0.158,
+      "temperature_anomaly_c": 0.0361,
+      "interest_anomaly": -1.4
+    },
+    {
+      "period": "2024-04-01",
+      "market_id": "moscow",
+      "temperature_c": 9.3733,
+      "interest_index": 45.7333,
+      "interest_scaled": 0.3246,
+      "temperature_anomaly_c": 2.43,
+      "interest_anomaly": -1.0867
+    },
+    {
+      "period": "2024-05-01",
+      "market_id": "moscow",
+      "temperature_c": 11.6677,
+      "interest_index": 60.6129,
+      "interest_scaled": 0.6114,
+      "temperature_anomaly_c": -0.2639,
+      "interest_anomaly": -0.4258
+    },
+    {
+      "period": "2024-06-01",
+      "market_id": "moscow",
+      "temperature_c": 19.7533,
+      "interest_index": 70.0667,
+      "interest_scaled": 0.7937,
+      "temperature_anomaly_c": 1.5453,
+      "interest_anomaly": -4.2
+    },
+    {
+      "period": "2024-07-01",
+      "market_id": "moscow",
+      "temperature_c": 21.9806,
+      "interest_index": 72.7419,
+      "interest_scaled": 0.8453,
+      "temperature_anomaly_c": 1.0794,
+      "interest_anomaly": 2.3613
+    },
+    {
+      "period": "2024-08-01",
+      "market_id": "moscow",
+      "temperature_c": 18.8806,
+      "interest_index": 53.8387,
+      "interest_scaled": 0.4808,
+      "temperature_anomaly_c": -0.4316,
+      "interest_anomaly": 4.129
+    },
+    {
+      "period": "2024-09-01",
+      "market_id": "moscow",
+      "temperature_c": 17.2967,
+      "interest_index": 39.8,
+      "interest_scaled": 0.2102,
+      "temperature_anomaly_c": 4.1253,
+      "interest_anomaly": 1.58
+    },
+    {
+      "period": "2024-10-01",
+      "market_id": "moscow",
+      "temperature_c": 7.4903,
+      "interest_index": 32.7097,
+      "interest_scaled": 0.0735,
+      "temperature_anomaly_c": 0.9884,
+      "interest_anomaly": -1.5935
+    },
+    {
+      "period": "2024-11-01",
+      "market_id": "moscow",
+      "temperature_c": 0.8133,
+      "interest_index": 34.6667,
+      "interest_scaled": 0.1112,
+      "temperature_anomaly_c": -0.0393,
+      "interest_anomaly": -0.2933
+    },
+    {
+      "period": "2024-12-01",
+      "market_id": "moscow",
+      "temperature_c": -3.2,
+      "interest_index": 32.2903,
+      "interest_scaled": 0.0654,
+      "temperature_anomaly_c": 1.6445,
+      "interest_anomaly": -1.2
+    },
+    {
+      "period": "2025-01-01",
+      "market_id": "moscow",
+      "temperature_c": -1.0742,
+      "interest_index": 37.129,
+      "interest_scaled": 0.1587,
+      "temperature_anomaly_c": 5.6097,
+      "interest_anomaly": 0.0968
+    },
+    {
+      "period": "2025-02-01",
+      "market_id": "moscow",
+      "temperature_c": -5.1107,
+      "interest_index": 37.8214,
+      "interest_scaled": 0.172,
+      "temperature_anomaly_c": 1.3704,
+      "interest_anomaly": 0.9126
+    },
+    {
+      "period": "2025-03-01",
+      "market_id": "moscow",
+      "temperature_c": 3.0839,
+      "interest_index": 36.7097,
+      "interest_scaled": 0.1506,
+      "temperature_anomaly_c": 4.4587,
+      "interest_anomaly": -1.7871
+    },
+    {
+      "period": "2025-04-01",
+      "market_id": "moscow",
+      "temperature_c": 7.1367,
+      "interest_index": 48.5,
+      "interest_scaled": 0.3779,
+      "temperature_anomaly_c": 0.1933,
+      "interest_anomaly": 1.68
+    },
+    {
+      "period": "2025-05-01",
+      "market_id": "moscow",
+      "temperature_c": 12.6097,
+      "interest_index": 60.4839,
+      "interest_scaled": 0.6089,
+      "temperature_anomaly_c": 0.6781,
+      "interest_anomaly": -0.5548
+    },
+    {
+      "period": "2025-06-01",
+      "market_id": "moscow",
+      "temperature_c": 16.6033,
+      "interest_index": 80.7667,
+      "interest_scaled": 1.0,
+      "temperature_anomaly_c": -1.6047,
+      "interest_anomaly": 6.5
+    },
+    {
+      "period": "2025-07-01",
+      "market_id": "moscow",
+      "temperature_c": 21.271,
+      "interest_index": 74.2258,
+      "interest_scaled": 0.8739,
+      "temperature_anomaly_c": 0.3697,
+      "interest_anomaly": 3.8452
+    },
+    {
+      "period": "2025-08-01",
+      "market_id": "moscow",
+      "temperature_c": 16.9258,
+      "interest_index": 58.5484,
+      "interest_scaled": 0.5716,
+      "temperature_anomaly_c": -2.3865,
+      "interest_anomaly": 8.8387
+    },
+    {
+      "period": "2025-09-01",
+      "market_id": "moscow",
+      "temperature_c": 13.5133,
+      "interest_index": 45.1333,
+      "interest_scaled": 0.313,
+      "temperature_anomaly_c": 0.342,
+      "interest_anomaly": 6.9133
+    },
+    {
+      "period": "2025-10-01",
+      "market_id": "moscow",
+      "temperature_c": 6.9065,
+      "interest_index": 39.3871,
+      "interest_scaled": 0.2022,
+      "temperature_anomaly_c": 0.4045,
+      "interest_anomaly": 5.0839
+    },
+    {
+      "period": "2025-11-01",
+      "market_id": "moscow",
+      "temperature_c": 2.9133,
+      "interest_index": 42.9667,
+      "interest_scaled": 0.2712,
+      "temperature_anomaly_c": 2.0607,
+      "interest_anomaly": 8.0067
+    },
+    {
+      "period": "2025-12-01",
+      "market_id": "moscow",
+      "temperature_c": -2.0355,
+      "interest_index": 39.4839,
+      "interest_scaled": 0.2041,
+      "temperature_anomaly_c": 2.809,
+      "interest_anomaly": 5.9935
+    },
+    {
+      "period": "2021-01-01",
+      "market_id": "rome",
+      "temperature_c": 7.3871,
+      "interest_index": 18.871,
+      "interest_scaled": 0.0409,
+      "temperature_anomaly_c": -1.0871,
+      "interest_anomaly": 0.3935
+    },
+    {
+      "period": "2021-02-01",
+      "market_id": "rome",
+      "temperature_c": 9.8786,
+      "interest_index": 25.1429,
+      "interest_scaled": 0.122,
+      "temperature_anomaly_c": 0.3327,
+      "interest_anomaly": 2.7909
+    },
+    {
+      "period": "2021-03-01",
+      "market_id": "rome",
+      "temperature_c": 10.0968,
+      "interest_index": 30.9677,
+      "interest_scaled": 0.1973,
+      "temperature_anomaly_c": -1.051,
+      "interest_anomaly": 1.7935
+    },
+    {
+      "period": "2021-04-01",
+      "market_id": "rome",
+      "temperature_c": 12.3433,
+      "interest_index": 39.3,
+      "interest_scaled": 0.3051,
+      "temperature_anomaly_c": -1.2213,
+      "interest_anomaly": -2.48
+    },
+    {
+      "period": "2021-05-01",
+      "market_id": "rome",
+      "temperature_c": 17.0161,
+      "interest_index": 55.3548,
+      "interest_scaled": 0.5127,
+      "temperature_anomaly_c": -1.109,
+      "interest_anomaly": 1.1484
+    },
+    {
+      "period": "2021-06-01",
+      "market_id": "rome",
+      "temperature_c": 23.3333,
+      "interest_index": 73.7333,
+      "interest_scaled": 0.7504,
+      "temperature_anomaly_c": -0.6507,
+      "interest_anomaly": -1.4267
+    },
+    {
+      "period": "2021-07-01",
+      "market_id": "rome",
+      "temperature_c": 26.1097,
+      "interest_index": 79.1613,
+      "interest_scaled": 0.8206,
+      "temperature_anomaly_c": -0.9516,
+      "interest_anomaly": 1.4129
+    },
+    {
+      "period": "2021-08-01",
+      "market_id": "rome",
+      "temperature_c": 26.1129,
+      "interest_index": 85.1613,
+      "interest_scaled": 0.8982,
+      "temperature_anomaly_c": -0.3813,
+      "interest_anomaly": 23.8839
+    },
+    {
+      "period": "2021-09-01",
+      "market_id": "rome",
+      "temperature_c": 22.92,
+      "interest_index": 45.7,
+      "interest_scaled": 0.3879,
+      "temperature_anomaly_c": 0.632,
+      "interest_anomaly": 9.5067
+    },
+    {
+      "period": "2021-10-01",
+      "market_id": "rome",
+      "temperature_c": 16.5452,
+      "interest_index": 24.871,
+      "interest_scaled": 0.1185,
+      "temperature_anomaly_c": -1.6077,
+      "interest_anomaly": -0.4
+    },
+    {
+      "period": "2021-11-01",
+      "market_id": "rome",
+      "temperature_c": 13.6367,
+      "interest_index": 21.0667,
+      "interest_scaled": 0.0693,
+      "temperature_anomaly_c": 0.3333,
+      "interest_anomaly": 1.18
+    },
+    {
+      "period": "2021-12-01",
+      "market_id": "rome",
+      "temperature_c": 8.7968,
+      "interest_index": 21.0323,
+      "interest_scaled": 0.0688,
+      "temperature_anomaly_c": -0.9548,
+      "interest_anomaly": 2.5548
+    },
+    {
+      "period": "2022-01-01",
+      "market_id": "rome",
+      "temperature_c": 7.0806,
+      "interest_index": 19.9677,
+      "interest_scaled": 0.0551,
+      "temperature_anomaly_c": -1.3935,
+      "interest_anomaly": 1.4903
+    },
+    {
+      "period": "2022-02-01",
+      "market_id": "rome",
+      "temperature_c": 9.1393,
+      "interest_index": 24.5357,
+      "interest_scaled": 0.1141,
+      "temperature_anomaly_c": -0.4066,
+      "interest_anomaly": 2.1837
+    },
+    {
+      "period": "2022-03-01",
+      "market_id": "rome",
+      "temperature_c": 9.5452,
+      "interest_index": 30.2903,
+      "interest_scaled": 0.1886,
+      "temperature_anomaly_c": -1.6026,
+      "interest_anomaly": 1.1161
+    },
+    {
+      "period": "2022-04-01",
+      "market_id": "rome",
+      "temperature_c": 13.1633,
+      "interest_index": 48.0,
+      "interest_scaled": 0.4176,
+      "temperature_anomaly_c": -0.4013,
+      "interest_anomaly": 6.22
+    },
+    {
+      "period": "2022-05-01",
+      "market_id": "rome",
+      "temperature_c": 20.3194,
+      "interest_index": 69.0323,
+      "interest_scaled": 0.6896,
+      "temperature_anomaly_c": 2.1942,
+      "interest_anomaly": 14.8258
+    },
+    {
+      "period": "2022-06-01",
+      "market_id": "rome",
+      "temperature_c": 25.9133,
+      "interest_index": 90.5333,
+      "interest_scaled": 0.9677,
+      "temperature_anomaly_c": 1.9293,
+      "interest_anomaly": 15.3733
+    },
+    {
+      "period": "2022-07-01",
+      "market_id": "rome",
+      "temperature_c": 27.8097,
+      "interest_index": 93.0323,
+      "interest_scaled": 1.0,
+      "temperature_anomaly_c": 0.7484,
+      "interest_anomaly": 15.2839
+    },
+    {
+      "period": "2022-08-01",
+      "market_id": "rome",
+      "temperature_c": 26.5871,
+      "interest_index": 30.4194,
+      "interest_scaled": 0.1902,
+      "temperature_anomaly_c": 0.0929,
+      "interest_anomaly": -30.8581
+    },
+    {
+      "period": "2022-09-01",
+      "market_id": "rome",
+      "temperature_c": 21.9167,
+      "interest_index": 34.8667,
+      "interest_scaled": 0.2478,
+      "temperature_anomaly_c": -0.3713,
+      "interest_anomaly": -1.3267
+    },
+    {
+      "period": "2022-10-01",
+      "market_id": "rome",
+      "temperature_c": 18.6935,
+      "interest_index": 31.5806,
+      "interest_scaled": 0.2053,
+      "temperature_anomaly_c": 0.5406,
+      "interest_anomaly": 6.3097
+    },
+    {
+      "period": "2022-11-01",
+      "market_id": "rome",
+      "temperature_c": 13.3,
+      "interest_index": 23.5,
+      "interest_scaled": 0.1008,
+      "temperature_anomaly_c": -0.0033,
+      "interest_anomaly": 3.6133
+    },
+    {
+      "period": "2022-12-01",
+      "market_id": "rome",
+      "temperature_c": 11.5323,
+      "interest_index": 20.0,
+      "interest_scaled": 0.0555,
+      "temperature_anomaly_c": 1.7806,
+      "interest_anomaly": 1.5226
+    },
+    {
+      "period": "2023-01-01",
+      "market_id": "rome",
+      "temperature_c": 8.4839,
+      "interest_index": 20.871,
+      "interest_scaled": 0.0668,
+      "temperature_anomaly_c": 0.0097,
+      "interest_anomaly": 2.3935
+    },
+    {
+      "period": "2023-02-01",
+      "market_id": "rome",
+      "temperature_c": 8.0357,
+      "interest_index": 23.4643,
+      "interest_scaled": 0.1003,
+      "temperature_anomaly_c": -1.5101,
+      "interest_anomaly": 1.1123
+    },
+    {
+      "period": "2023-03-01",
+      "market_id": "rome",
+      "temperature_c": 11.5677,
+      "interest_index": 31.2903,
+      "interest_scaled": 0.2015,
+      "temperature_anomaly_c": 0.42,
+      "interest_anomaly": 2.1161
+    },
+    {
+      "period": "2023-04-01",
+      "market_id": "rome",
+      "temperature_c": 12.8167,
+      "interest_index": 45.6333,
+      "interest_scaled": 0.387,
+      "temperature_anomaly_c": -0.748,
+      "interest_anomaly": 3.8533
+    },
+    {
+      "period": "2023-05-01",
+      "market_id": "rome",
+      "temperature_c": 17.571,
+      "interest_index": 54.9032,
+      "interest_scaled": 0.5069,
+      "temperature_anomaly_c": -0.5542,
+      "interest_anomaly": 0.6968
+    },
+    {
+      "period": "2023-06-01",
+      "market_id": "rome",
+      "temperature_c": 22.3467,
+      "interest_index": 76.5,
+      "interest_scaled": 0.7862,
+      "temperature_anomaly_c": -1.6373,
+      "interest_anomaly": 1.34
+    },
+    {
+      "period": "2023-07-01",
+      "market_id": "rome",
+      "temperature_c": 27.1129,
+      "interest_index": 83.7419,
+      "interest_scaled": 0.8798,
+      "temperature_anomaly_c": 0.0516,
+      "interest_anomaly": 5.9935
+    },
+    {
+      "period": "2023-08-01",
+      "market_id": "rome",
+      "temperature_c": 25.6129,
+      "interest_index": 73.0968,
+      "interest_scaled": 0.7422,
+      "temperature_anomaly_c": -0.8813,
+      "interest_anomaly": 11.8194
+    },
+    {
+      "period": "2023-09-01",
+      "market_id": "rome",
+      "temperature_c": 23.2133,
+      "interest_index": 39.9,
+      "interest_scaled": 0.3128,
+      "temperature_anomaly_c": 0.9253,
+      "interest_anomaly": 3.7067
+    },
+    {
+      "period": "2023-10-01",
+      "market_id": "rome",
+      "temperature_c": 20.5,
+      "interest_index": 25.6452,
+      "interest_scaled": 0.1285,
+      "temperature_anomaly_c": 2.3471,
+      "interest_anomaly": 0.3742
+    },
+    {
+      "period": "2023-11-01",
+      "market_id": "rome",
+      "temperature_c": 13.9533,
+      "interest_index": 17.9333,
+      "interest_scaled": 0.0288,
+      "temperature_anomaly_c": 0.65,
+      "interest_anomaly": -1.9533
+    },
+    {
+      "period": "2023-12-01",
+      "market_id": "rome",
+      "temperature_c": 10.2968,
+      "interest_index": 15.8065,
+      "interest_scaled": 0.0013,
+      "temperature_anomaly_c": 0.5452,
+      "interest_anomaly": -2.671
+    },
+    {
+      "period": "2024-01-01",
+      "market_id": "rome",
+      "temperature_c": 9.6871,
+      "interest_index": 16.5484,
+      "interest_scaled": 0.0108,
+      "temperature_anomaly_c": 1.2129,
+      "interest_anomaly": -1.929
+    },
+    {
+      "period": "2024-02-01",
+      "market_id": "rome",
+      "temperature_c": 10.7828,
+      "interest_index": 19.7241,
+      "interest_scaled": 0.0519,
+      "temperature_anomaly_c": 1.2369,
+      "interest_anomaly": -2.6278
+    },
+    {
+      "period": "2024-03-01",
+      "market_id": "rome",
+      "temperature_c": 12.5484,
+      "interest_index": 26.871,
+      "interest_scaled": 0.1443,
+      "temperature_anomaly_c": 1.4006,
+      "interest_anomaly": -2.3032
+    },
+    {
+      "period": "2024-04-01",
+      "market_id": "rome",
+      "temperature_c": 14.98,
+      "interest_index": 38.8667,
+      "interest_scaled": 0.2995,
+      "temperature_anomaly_c": 1.4153,
+      "interest_anomaly": -2.9133
+    },
+    {
+      "period": "2024-05-01",
+      "market_id": "rome",
+      "temperature_c": 18.029,
+      "interest_index": 44.0323,
+      "interest_scaled": 0.3663,
+      "temperature_anomaly_c": -0.0961,
+      "interest_anomaly": -10.1742
+    },
+    {
+      "period": "2024-06-01",
+      "market_id": "rome",
+      "temperature_c": 22.7367,
+      "interest_index": 63.2,
+      "interest_scaled": 0.6142,
+      "temperature_anomaly_c": -1.2473,
+      "interest_anomaly": -11.96
+    },
+    {
+      "period": "2024-07-01",
+      "market_id": "rome",
+      "temperature_c": 27.8581,
+      "interest_index": 62.2903,
+      "interest_scaled": 0.6024,
+      "temperature_anomaly_c": 0.7968,
+      "interest_anomaly": -15.4581
+    },
+    {
+      "period": "2024-08-01",
+      "market_id": "rome",
+      "temperature_c": 28.1935,
+      "interest_index": 55.8387,
+      "interest_scaled": 0.519,
+      "temperature_anomaly_c": 1.6994,
+      "interest_anomaly": -5.4387
+    },
+    {
+      "period": "2024-09-01",
+      "market_id": "rome",
+      "temperature_c": 21.4733,
+      "interest_index": 27.1333,
+      "interest_scaled": 0.1477,
+      "temperature_anomaly_c": -0.8147,
+      "interest_anomaly": -9.06
+    },
+    {
+      "period": "2024-10-01",
+      "market_id": "rome",
+      "temperature_c": 18.2968,
+      "interest_index": 21.8387,
+      "interest_scaled": 0.0793,
+      "temperature_anomaly_c": 0.1439,
+      "interest_anomaly": -3.4323
+    },
+    {
+      "period": "2024-11-01",
+      "market_id": "rome",
+      "temperature_c": 13.1767,
+      "interest_index": 16.5667,
+      "interest_scaled": 0.0111,
+      "temperature_anomaly_c": -0.1267,
+      "interest_anomaly": -3.32
+    },
+    {
+      "period": "2024-12-01",
+      "market_id": "rome",
+      "temperature_c": 8.471,
+      "interest_index": 15.7097,
+      "interest_scaled": 0.0,
+      "temperature_anomaly_c": -1.2806,
+      "interest_anomaly": -2.7677
+    },
+    {
+      "period": "2025-01-01",
+      "market_id": "rome",
+      "temperature_c": 9.7323,
+      "interest_index": 16.129,
+      "interest_scaled": 0.0054,
+      "temperature_anomaly_c": 1.2581,
+      "interest_anomaly": -2.3484
+    },
+    {
+      "period": "2025-02-01",
+      "market_id": "rome",
+      "temperature_c": 9.8929,
+      "interest_index": 18.8929,
+      "interest_scaled": 0.0412,
+      "temperature_anomaly_c": 0.347,
+      "interest_anomaly": -3.4591
+    },
+    {
+      "period": "2025-03-01",
+      "market_id": "rome",
+      "temperature_c": 11.9806,
+      "interest_index": 26.4516,
+      "interest_scaled": 0.1389,
+      "temperature_anomaly_c": 0.8329,
+      "interest_anomaly": -2.7226
+    },
+    {
+      "period": "2025-04-01",
+      "market_id": "rome",
+      "temperature_c": 14.52,
+      "interest_index": 37.1,
+      "interest_scaled": 0.2766,
+      "temperature_anomaly_c": 0.9553,
+      "interest_anomaly": -4.68
+    },
+    {
+      "period": "2025-05-01",
+      "market_id": "rome",
+      "temperature_c": 17.6903,
+      "interest_index": 47.7097,
+      "interest_scaled": 0.4139,
+      "temperature_anomaly_c": -0.4348,
+      "interest_anomaly": -6.4968
+    },
+    {
+      "period": "2025-06-01",
+      "market_id": "rome",
+      "temperature_c": 25.59,
+      "interest_index": 71.8333,
+      "interest_scaled": 0.7258,
+      "temperature_anomaly_c": 1.606,
+      "interest_anomaly": -3.3267
+    },
+    {
+      "period": "2025-07-01",
+      "market_id": "rome",
+      "temperature_c": 26.4161,
+      "interest_index": 70.5161,
+      "interest_scaled": 0.7088,
+      "temperature_anomaly_c": -0.6452,
+      "interest_anomaly": -7.2323
+    },
+    {
+      "period": "2025-08-01",
+      "market_id": "rome",
+      "temperature_c": 25.9645,
+      "interest_index": 61.871,
+      "interest_scaled": 0.597,
+      "temperature_anomaly_c": -0.5297,
+      "interest_anomaly": 0.5935
+    },
+    {
+      "period": "2025-09-01",
+      "market_id": "rome",
+      "temperature_c": 21.9167,
+      "interest_index": 33.3667,
+      "interest_scaled": 0.2284,
+      "temperature_anomaly_c": -0.3713,
+      "interest_anomaly": -2.8267
+    },
+    {
+      "period": "2025-10-01",
+      "market_id": "rome",
+      "temperature_c": 16.729,
+      "interest_index": 22.4194,
+      "interest_scaled": 0.0868,
+      "temperature_anomaly_c": -1.4239,
+      "interest_anomaly": -2.8516
+    },
+    {
+      "period": "2025-11-01",
+      "market_id": "rome",
+      "temperature_c": 12.45,
+      "interest_index": 20.3667,
+      "interest_scaled": 0.0602,
+      "temperature_anomaly_c": -0.8533,
+      "interest_anomaly": 0.48
+    },
+    {
+      "period": "2025-12-01",
+      "market_id": "rome",
+      "temperature_c": 9.6613,
+      "interest_index": 19.8387,
+      "interest_scaled": 0.0534,
+      "temperature_anomaly_c": -0.0903,
+      "interest_anomaly": 1.3613
+    },
+    {
+      "period": "2021-01-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 23.2323,
+      "interest_index": 45.6129,
+      "interest_scaled": 0.713,
+      "temperature_anomaly_c": 0.8445,
+      "interest_anomaly": 1.6387
+    },
+    {
+      "period": "2021-02-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 21.8214,
+      "interest_index": 42.1429,
+      "interest_scaled": 0.633,
+      "temperature_anomaly_c": -0.7711,
+      "interest_anomaly": 0.3123
+    },
+    {
+      "period": "2021-03-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 22.5452,
+      "interest_index": 39.7419,
+      "interest_scaled": 0.5777,
+      "temperature_anomaly_c": 0.109,
+      "interest_anomaly": -0.4258
+    },
+    {
+      "period": "2021-04-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 18.7567,
+      "interest_index": 30.2,
+      "interest_scaled": 0.3578,
+      "temperature_anomaly_c": -1.1173,
+      "interest_anomaly": -0.0867
+    },
+    {
+      "period": "2021-05-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 17.7645,
+      "interest_index": 26.6452,
+      "interest_scaled": 0.2758,
+      "temperature_anomaly_c": -0.4677,
+      "interest_anomaly": -1.4065
+    },
+    {
+      "period": "2021-06-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 16.36,
+      "interest_index": 24.8,
+      "interest_scaled": 0.2333,
+      "temperature_anomaly_c": -0.3113,
+      "interest_anomaly": -1.2267
+    },
+    {
+      "period": "2021-07-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 14.6903,
+      "interest_index": 26.3548,
+      "interest_scaled": 0.2691,
+      "temperature_anomaly_c": -1.4548,
+      "interest_anomaly": -2.8129
+    },
+    {
+      "period": "2021-08-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 17.7806,
+      "interest_index": 35.5806,
+      "interest_scaled": 0.4818,
+      "temperature_anomaly_c": 0.3735,
+      "interest_anomaly": 7.071
+    },
+    {
+      "period": "2021-09-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 20.05,
+      "interest_index": 42.3,
+      "interest_scaled": 0.6366,
+      "temperature_anomaly_c": 0.4367,
+      "interest_anomaly": 1.0
+    },
+    {
+      "period": "2021-10-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 18.5097,
+      "interest_index": 31.8387,
+      "interest_scaled": 0.3955,
+      "temperature_anomaly_c": -1.2594,
+      "interest_anomaly": -4.4323
+    },
+    {
+      "period": "2021-11-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 19.62,
+      "interest_index": 33.9333,
+      "interest_scaled": 0.4438,
+      "temperature_anomaly_c": -0.6193,
+      "interest_anomaly": -5.9733
+    },
+    {
+      "period": "2021-12-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 20.671,
+      "interest_index": 50.9355,
+      "interest_scaled": 0.8356,
+      "temperature_anomaly_c": -1.1832,
+      "interest_anomaly": -1.2903
+    },
+    {
+      "period": "2022-01-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 22.2419,
+      "interest_index": 44.4194,
+      "interest_scaled": 0.6855,
+      "temperature_anomaly_c": -0.1458,
+      "interest_anomaly": 0.4452
+    },
+    {
+      "period": "2022-02-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 21.8964,
+      "interest_index": 44.0714,
+      "interest_scaled": 0.6774,
+      "temperature_anomaly_c": -0.6961,
+      "interest_anomaly": 2.2409
+    },
+    {
+      "period": "2022-03-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 22.7,
+      "interest_index": 44.871,
+      "interest_scaled": 0.6959,
+      "temperature_anomaly_c": 0.2639,
+      "interest_anomaly": 4.7032
+    },
+    {
+      "period": "2022-04-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 19.93,
+      "interest_index": 33.9333,
+      "interest_scaled": 0.4438,
+      "temperature_anomaly_c": 0.056,
+      "interest_anomaly": 3.6467
+    },
+    {
+      "period": "2022-05-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 16.8129,
+      "interest_index": 27.6774,
+      "interest_scaled": 0.2996,
+      "temperature_anomaly_c": -1.4194,
+      "interest_anomaly": -0.3742
+    },
+    {
+      "period": "2022-06-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 15.9867,
+      "interest_index": 27.3333,
+      "interest_scaled": 0.2917,
+      "temperature_anomaly_c": -0.6847,
+      "interest_anomaly": 1.3067
+    },
+    {
+      "period": "2022-07-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 17.9839,
+      "interest_index": 39.3548,
+      "interest_scaled": 0.5687,
+      "temperature_anomaly_c": 1.8387,
+      "interest_anomaly": 10.1871
+    },
+    {
+      "period": "2022-08-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 16.4258,
+      "interest_index": 14.6774,
+      "interest_scaled": 0.0,
+      "temperature_anomaly_c": -0.9813,
+      "interest_anomaly": -13.8323
+    },
+    {
+      "period": "2022-09-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 16.3033,
+      "interest_index": 33.4,
+      "interest_scaled": 0.4315,
+      "temperature_anomaly_c": -3.31,
+      "interest_anomaly": -7.9
+    },
+    {
+      "period": "2022-10-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 20.1742,
+      "interest_index": 42.7097,
+      "interest_scaled": 0.6461,
+      "temperature_anomaly_c": 0.4052,
+      "interest_anomaly": 6.4387
+    },
+    {
+      "period": "2022-11-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 18.4367,
+      "interest_index": 42.2333,
+      "interest_scaled": 0.6351,
+      "temperature_anomaly_c": -1.8027,
+      "interest_anomaly": 2.3267
+    },
+    {
+      "period": "2022-12-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 20.7806,
+      "interest_index": 56.3871,
+      "interest_scaled": 0.9613,
+      "temperature_anomaly_c": -1.0735,
+      "interest_anomaly": 4.1613
+    },
+    {
+      "period": "2023-01-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 21.5484,
+      "interest_index": 46.5484,
+      "interest_scaled": 0.7345,
+      "temperature_anomaly_c": -0.8394,
+      "interest_anomaly": 2.5742
+    },
+    {
+      "period": "2023-02-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 22.3857,
+      "interest_index": 45.8929,
+      "interest_scaled": 0.7194,
+      "temperature_anomaly_c": -0.2068,
+      "interest_anomaly": 4.0623
+    },
+    {
+      "period": "2023-03-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 22.2097,
+      "interest_index": 42.7097,
+      "interest_scaled": 0.6461,
+      "temperature_anomaly_c": -0.2265,
+      "interest_anomaly": 2.5419
+    },
+    {
+      "period": "2023-04-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 19.2333,
+      "interest_index": 30.8,
+      "interest_scaled": 0.3716,
+      "temperature_anomaly_c": -0.6407,
+      "interest_anomaly": 0.5133
+    },
+    {
+      "period": "2023-05-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 17.8903,
+      "interest_index": 30.871,
+      "interest_scaled": 0.3732,
+      "temperature_anomaly_c": -0.3419,
+      "interest_anomaly": 2.8194
+    },
+    {
+      "period": "2023-06-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 16.2933,
+      "interest_index": 27.4667,
+      "interest_scaled": 0.2948,
+      "temperature_anomaly_c": -0.378,
+      "interest_anomaly": 1.44
+    },
+    {
+      "period": "2023-07-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 16.7032,
+      "interest_index": 28.129,
+      "interest_scaled": 0.31,
+      "temperature_anomaly_c": 0.5581,
+      "interest_anomaly": -1.0387
+    },
+    {
+      "period": "2023-08-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 18.5194,
+      "interest_index": 35.0645,
+      "interest_scaled": 0.4699,
+      "temperature_anomaly_c": 1.1123,
+      "interest_anomaly": 6.5548
+    },
+    {
+      "period": "2023-09-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 21.4467,
+      "interest_index": 58.0667,
+      "interest_scaled": 1.0,
+      "temperature_anomaly_c": 1.8333,
+      "interest_anomaly": 16.7667
+    },
+    {
+      "period": "2023-10-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 20.8839,
+      "interest_index": 40.9355,
+      "interest_scaled": 0.6052,
+      "temperature_anomaly_c": 1.1148,
+      "interest_anomaly": 4.6645
+    },
+    {
+      "period": "2023-11-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 22.7333,
+      "interest_index": 56.8333,
+      "interest_scaled": 0.9716,
+      "temperature_anomaly_c": 2.494,
+      "interest_anomaly": 16.9267
+    },
+    {
+      "period": "2023-12-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 23.0484,
+      "interest_index": 57.0968,
+      "interest_scaled": 0.9776,
+      "temperature_anomaly_c": 1.1942,
+      "interest_anomaly": 4.871
+    },
+    {
+      "period": "2024-01-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 22.5452,
+      "interest_index": 42.3226,
+      "interest_scaled": 0.6371,
+      "temperature_anomaly_c": 0.1574,
+      "interest_anomaly": -1.6516
+    },
+    {
+      "period": "2024-02-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 22.9414,
+      "interest_index": 34.7241,
+      "interest_scaled": 0.462,
+      "temperature_anomaly_c": 0.3488,
+      "interest_anomaly": -7.1064
+    },
+    {
+      "period": "2024-03-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 22.529,
+      "interest_index": 35.4516,
+      "interest_scaled": 0.4788,
+      "temperature_anomaly_c": 0.0929,
+      "interest_anomaly": -4.7161
+    },
+    {
+      "period": "2024-04-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 21.7067,
+      "interest_index": 28.2333,
+      "interest_scaled": 0.3124,
+      "temperature_anomaly_c": 1.8327,
+      "interest_anomaly": -2.0533
+    },
+    {
+      "period": "2024-05-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 20.4645,
+      "interest_index": 28.5806,
+      "interest_scaled": 0.3204,
+      "temperature_anomaly_c": 2.2323,
+      "interest_anomaly": 0.529
+    },
+    {
+      "period": "2024-06-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 18.3633,
+      "interest_index": 26.3,
+      "interest_scaled": 0.2679,
+      "temperature_anomaly_c": 1.692,
+      "interest_anomaly": 0.2733
+    },
+    {
+      "period": "2024-07-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 16.6774,
+      "interest_index": 24.6129,
+      "interest_scaled": 0.229,
+      "temperature_anomaly_c": 0.5323,
+      "interest_anomaly": -4.5548
+    },
+    {
+      "period": "2024-08-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 17.6677,
+      "interest_index": 27.7097,
+      "interest_scaled": 0.3004,
+      "temperature_anomaly_c": 0.2606,
+      "interest_anomaly": -0.8
+    },
+    {
+      "period": "2024-09-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 21.6033,
+      "interest_index": 39.0,
+      "interest_scaled": 0.5606,
+      "temperature_anomaly_c": 1.99,
+      "interest_anomaly": -2.3
+    },
+    {
+      "period": "2024-10-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 20.1774,
+      "interest_index": 32.129,
+      "interest_scaled": 0.4022,
+      "temperature_anomaly_c": 0.4084,
+      "interest_anomaly": -4.1419
+    },
+    {
+      "period": "2024-11-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 20.8233,
+      "interest_index": 32.3333,
+      "interest_scaled": 0.4069,
+      "temperature_anomaly_c": 0.584,
+      "interest_anomaly": -7.5733
+    },
+    {
+      "period": "2024-12-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 21.771,
+      "interest_index": 40.0323,
+      "interest_scaled": 0.5844,
+      "temperature_anomaly_c": -0.0832,
+      "interest_anomaly": -12.1935
+    },
+    {
+      "period": "2025-01-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 22.371,
+      "interest_index": 40.9677,
+      "interest_scaled": 0.6059,
+      "temperature_anomaly_c": -0.0168,
+      "interest_anomaly": -3.0065
+    },
+    {
+      "period": "2025-02-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 23.9179,
+      "interest_index": 42.3214,
+      "interest_scaled": 0.6371,
+      "temperature_anomaly_c": 1.3253,
+      "interest_anomaly": 0.4909
+    },
+    {
+      "period": "2025-03-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 22.1968,
+      "interest_index": 38.0645,
+      "interest_scaled": 0.539,
+      "temperature_anomaly_c": -0.2394,
+      "interest_anomaly": -2.1032
+    },
+    {
+      "period": "2025-04-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 19.7433,
+      "interest_index": 28.2667,
+      "interest_scaled": 0.3132,
+      "temperature_anomaly_c": -0.1307,
+      "interest_anomaly": -2.02
+    },
+    {
+      "period": "2025-05-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 18.229,
+      "interest_index": 26.4839,
+      "interest_scaled": 0.2721,
+      "temperature_anomaly_c": -0.0032,
+      "interest_anomaly": -1.5677
+    },
+    {
+      "period": "2025-06-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 16.3533,
+      "interest_index": 24.2333,
+      "interest_scaled": 0.2202,
+      "temperature_anomaly_c": -0.318,
+      "interest_anomaly": -1.7933
+    },
+    {
+      "period": "2025-07-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 14.671,
+      "interest_index": 27.3871,
+      "interest_scaled": 0.2929,
+      "temperature_anomaly_c": -1.4742,
+      "interest_anomaly": -1.7806
+    },
+    {
+      "period": "2025-08-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 16.6419,
+      "interest_index": 29.5161,
+      "interest_scaled": 0.342,
+      "temperature_anomaly_c": -0.7652,
+      "interest_anomaly": 1.0065
+    },
+    {
+      "period": "2025-09-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 18.6633,
+      "interest_index": 33.7333,
+      "interest_scaled": 0.4392,
+      "temperature_anomaly_c": -0.95,
+      "interest_anomaly": -7.5667
+    },
+    {
+      "period": "2025-10-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 19.1,
+      "interest_index": 33.7419,
+      "interest_scaled": 0.4394,
+      "temperature_anomaly_c": -0.669,
+      "interest_anomaly": -2.529
+    },
+    {
+      "period": "2025-11-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 19.5833,
+      "interest_index": 34.2,
+      "interest_scaled": 0.4499,
+      "temperature_anomaly_c": -0.656,
+      "interest_anomaly": -5.7067
+    },
+    {
+      "period": "2025-12-01",
+      "market_id": "sao_paulo",
+      "temperature_c": 23.0,
+      "interest_index": 56.6774,
+      "interest_scaled": 0.968,
+      "temperature_anomaly_c": 1.1458,
+      "interest_anomaly": 4.4516
+    },
+    {
+      "period": "2021-01-01",
+      "market_id": "singapore",
+      "temperature_c": 25.2323,
+      "interest_index": 59.7097,
+      "interest_scaled": 0.1742,
+      "temperature_anomaly_c": -0.4077,
+      "interest_anomaly": -0.929
+    },
+    {
+      "period": "2021-02-01",
+      "market_id": "singapore",
+      "temperature_c": 26.2643,
+      "interest_index": 57.1071,
+      "interest_scaled": 0.1014,
+      "temperature_anomaly_c": 0.0484,
+      "interest_anomaly": -4.7714
+    },
+    {
+      "period": "2021-03-01",
+      "market_id": "singapore",
+      "temperature_c": 26.429,
+      "interest_index": 69.0645,
+      "interest_scaled": 0.4359,
+      "temperature_anomaly_c": -0.1613,
+      "interest_anomaly": -0.7742
+    },
+    {
+      "period": "2021-04-01",
+      "market_id": "singapore",
+      "temperature_c": 26.6633,
+      "interest_index": 71.0,
+      "interest_scaled": 0.4901,
+      "temperature_anomaly_c": -0.2927,
+      "interest_anomaly": -0.8733
+    },
+    {
+      "period": "2021-05-01",
+      "market_id": "singapore",
+      "temperature_c": 26.9065,
+      "interest_index": 70.2581,
+      "interest_scaled": 0.4693,
+      "temperature_anomaly_c": -0.5903,
+      "interest_anomaly": -4.8516
+    },
+    {
+      "period": "2021-06-01",
+      "market_id": "singapore",
+      "temperature_c": 26.9,
+      "interest_index": 73.3667,
+      "interest_scaled": 0.5563,
+      "temperature_anomaly_c": -0.264,
+      "interest_anomaly": -3.4867
+    },
+    {
+      "period": "2021-07-01",
+      "market_id": "singapore",
+      "temperature_c": 27.0548,
+      "interest_index": 72.4194,
+      "interest_scaled": 0.5298,
+      "temperature_anomaly_c": -0.3006,
+      "interest_anomaly": -4.3613
+    },
+    {
+      "period": "2021-08-01",
+      "market_id": "singapore",
+      "temperature_c": 26.4161,
+      "interest_index": 74.1935,
+      "interest_scaled": 0.5794,
+      "temperature_anomaly_c": -0.4135,
+      "interest_anomaly": -2.2
+    },
+    {
+      "period": "2021-09-01",
+      "market_id": "singapore",
+      "temperature_c": 26.6533,
+      "interest_index": 73.1,
+      "interest_scaled": 0.5488,
+      "temperature_anomaly_c": -0.284,
+      "interest_anomaly": 1.9333
+    },
+    {
+      "period": "2021-10-01",
+      "market_id": "singapore",
+      "temperature_c": 26.9903,
+      "interest_index": 73.7097,
+      "interest_scaled": 0.5659,
+      "temperature_anomaly_c": -0.0052,
+      "interest_anomaly": 3.1032
+    },
+    {
+      "period": "2021-11-01",
+      "market_id": "singapore",
+      "temperature_c": 26.4767,
+      "interest_index": 68.8,
+      "interest_scaled": 0.4285,
+      "temperature_anomaly_c": -0.0207,
+      "interest_anomaly": 2.5533
+    },
+    {
+      "period": "2021-12-01",
+      "market_id": "singapore",
+      "temperature_c": 26.1581,
+      "interest_index": 74.3548,
+      "interest_scaled": 0.5839,
+      "temperature_anomaly_c": 0.0703,
+      "interest_anomaly": 4.6516
+    },
+    {
+      "period": "2022-01-01",
+      "market_id": "singapore",
+      "temperature_c": 26.1387,
+      "interest_index": 60.6129,
+      "interest_scaled": 0.1995,
+      "temperature_anomaly_c": 0.4987,
+      "interest_anomaly": -0.0258
+    },
+    {
+      "period": "2022-02-01",
+      "market_id": "singapore",
+      "temperature_c": 26.1607,
+      "interest_index": 67.8214,
+      "interest_scaled": 0.4011,
+      "temperature_anomaly_c": -0.0551,
+      "interest_anomaly": 5.9429
+    },
+    {
+      "period": "2022-03-01",
+      "market_id": "singapore",
+      "temperature_c": 26.8452,
+      "interest_index": 73.8387,
+      "interest_scaled": 0.5695,
+      "temperature_anomaly_c": 0.2548,
+      "interest_anomaly": 4.0
+    },
+    {
+      "period": "2022-04-01",
+      "market_id": "singapore",
+      "temperature_c": 26.9,
+      "interest_index": 71.1333,
+      "interest_scaled": 0.4938,
+      "temperature_anomaly_c": -0.056,
+      "interest_anomaly": -0.74
+    },
+    {
+      "period": "2022-05-01",
+      "market_id": "singapore",
+      "temperature_c": 27.6226,
+      "interest_index": 78.0323,
+      "interest_scaled": 0.6868,
+      "temperature_anomaly_c": 0.1258,
+      "interest_anomaly": 2.9226
+    },
+    {
+      "period": "2022-06-01",
+      "market_id": "singapore",
+      "temperature_c": 26.5733,
+      "interest_index": 76.2667,
+      "interest_scaled": 0.6374,
+      "temperature_anomaly_c": -0.5907,
+      "interest_anomaly": -0.5867
+    },
+    {
+      "period": "2022-07-01",
+      "market_id": "singapore",
+      "temperature_c": 27.2935,
+      "interest_index": 78.9032,
+      "interest_scaled": 0.7112,
+      "temperature_anomaly_c": -0.0619,
+      "interest_anomaly": 2.1226
+    },
+    {
+      "period": "2022-08-01",
+      "market_id": "singapore",
+      "temperature_c": 26.6548,
+      "interest_index": 76.6774,
+      "interest_scaled": 0.6489,
+      "temperature_anomaly_c": -0.1748,
+      "interest_anomaly": 0.2839
+    },
+    {
+      "period": "2022-09-01",
+      "market_id": "singapore",
+      "temperature_c": 26.6433,
+      "interest_index": 73.4333,
+      "interest_scaled": 0.5582,
+      "temperature_anomaly_c": -0.294,
+      "interest_anomaly": 2.2667
+    },
+    {
+      "period": "2022-10-01",
+      "market_id": "singapore",
+      "temperature_c": 26.329,
+      "interest_index": 76.1935,
+      "interest_scaled": 0.6354,
+      "temperature_anomaly_c": -0.6665,
+      "interest_anomaly": 5.5871
+    },
+    {
+      "period": "2022-11-01",
+      "market_id": "singapore",
+      "temperature_c": 26.2733,
+      "interest_index": 66.3333,
+      "interest_scaled": 0.3595,
+      "temperature_anomaly_c": -0.224,
+      "interest_anomaly": 0.0867
+    },
+    {
+      "period": "2022-12-01",
+      "market_id": "singapore",
+      "temperature_c": 25.7387,
+      "interest_index": 66.871,
+      "interest_scaled": 0.3745,
+      "temperature_anomaly_c": -0.349,
+      "interest_anomaly": -2.8323
+    },
+    {
+      "period": "2023-01-01",
+      "market_id": "singapore",
+      "temperature_c": 25.4032,
+      "interest_index": 64.2903,
+      "interest_scaled": 0.3023,
+      "temperature_anomaly_c": -0.2368,
+      "interest_anomaly": 3.6516
+    },
+    {
+      "period": "2023-02-01",
+      "market_id": "singapore",
+      "temperature_c": 25.7857,
+      "interest_index": 61.9643,
+      "interest_scaled": 0.2373,
+      "temperature_anomaly_c": -0.4301,
+      "interest_anomaly": 0.0857
+    },
+    {
+      "period": "2023-03-01",
+      "market_id": "singapore",
+      "temperature_c": 25.8419,
+      "interest_index": 72.9355,
+      "interest_scaled": 0.5442,
+      "temperature_anomaly_c": -0.7484,
+      "interest_anomaly": 3.0968
+    },
+    {
+      "period": "2023-04-01",
+      "market_id": "singapore",
+      "temperature_c": 26.9633,
+      "interest_index": 79.8667,
+      "interest_scaled": 0.7381,
+      "temperature_anomaly_c": 0.0073,
+      "interest_anomaly": 7.9933
+    },
+    {
+      "period": "2023-05-01",
+      "market_id": "singapore",
+      "temperature_c": 27.7806,
+      "interest_index": 81.8387,
+      "interest_scaled": 0.7933,
+      "temperature_anomaly_c": 0.2839,
+      "interest_anomaly": 6.729
+    },
+    {
+      "period": "2023-06-01",
+      "market_id": "singapore",
+      "temperature_c": 27.4467,
+      "interest_index": 86.5667,
+      "interest_scaled": 0.9256,
+      "temperature_anomaly_c": 0.2827,
+      "interest_anomaly": 9.7133
+    },
+    {
+      "period": "2023-07-01",
+      "market_id": "singapore",
+      "temperature_c": 27.071,
+      "interest_index": 89.2258,
+      "interest_scaled": 1.0,
+      "temperature_anomaly_c": -0.2845,
+      "interest_anomaly": 12.4452
+    },
+    {
+      "period": "2023-08-01",
+      "market_id": "singapore",
+      "temperature_c": 27.0645,
+      "interest_index": 86.6774,
+      "interest_scaled": 0.9287,
+      "temperature_anomaly_c": 0.2348,
+      "interest_anomaly": 10.2839
+    },
+    {
+      "period": "2023-09-01",
+      "market_id": "singapore",
+      "temperature_c": 27.2733,
+      "interest_index": 77.1667,
+      "interest_scaled": 0.6626,
+      "temperature_anomaly_c": 0.336,
+      "interest_anomaly": 6.0
+    },
+    {
+      "period": "2023-10-01",
+      "market_id": "singapore",
+      "temperature_c": 27.3419,
+      "interest_index": 74.6129,
+      "interest_scaled": 0.5912,
+      "temperature_anomaly_c": 0.3465,
+      "interest_anomaly": 4.0065
+    },
+    {
+      "period": "2023-11-01",
+      "market_id": "singapore",
+      "temperature_c": 26.6567,
+      "interest_index": 69.9,
+      "interest_scaled": 0.4593,
+      "temperature_anomaly_c": 0.1593,
+      "interest_anomaly": 3.6533
+    },
+    {
+      "period": "2023-12-01",
+      "market_id": "singapore",
+      "temperature_c": 26.1935,
+      "interest_index": 70.6452,
+      "interest_scaled": 0.4801,
+      "temperature_anomaly_c": 0.1058,
+      "interest_anomaly": 0.9419
+    },
+    {
+      "period": "2024-01-01",
+      "market_id": "singapore",
+      "temperature_c": 25.8935,
+      "interest_index": 65.0968,
+      "interest_scaled": 0.3249,
+      "temperature_anomaly_c": 0.2535,
+      "interest_anomaly": 4.4581
+    },
+    {
+      "period": "2024-02-01",
+      "market_id": "singapore",
+      "temperature_c": 26.8828,
+      "interest_index": 65.0,
+      "interest_scaled": 0.3222,
+      "temperature_anomaly_c": 0.6669,
+      "interest_anomaly": 3.1214
+    },
+    {
+      "period": "2024-03-01",
+      "market_id": "singapore",
+      "temperature_c": 27.4226,
+      "interest_index": 72.0323,
+      "interest_scaled": 0.519,
+      "temperature_anomaly_c": 0.8323,
+      "interest_anomaly": 2.1935
+    },
+    {
+      "period": "2024-04-01",
+      "market_id": "singapore",
+      "temperature_c": 27.5567,
+      "interest_index": 72.0333,
+      "interest_scaled": 0.519,
+      "temperature_anomaly_c": 0.6007,
+      "interest_anomaly": 0.16
+    },
+    {
+      "period": "2024-05-01",
+      "market_id": "singapore",
+      "temperature_c": 27.6452,
+      "interest_index": 75.871,
+      "interest_scaled": 0.6264,
+      "temperature_anomaly_c": 0.1484,
+      "interest_anomaly": 0.7613
+    },
+    {
+      "period": "2024-06-01",
+      "market_id": "singapore",
+      "temperature_c": 27.24,
+      "interest_index": 74.2,
+      "interest_scaled": 0.5796,
+      "temperature_anomaly_c": 0.076,
+      "interest_anomaly": -2.6533
+    },
+    {
+      "period": "2024-07-01",
+      "market_id": "singapore",
+      "temperature_c": 27.7065,
+      "interest_index": 71.7742,
+      "interest_scaled": 0.5117,
+      "temperature_anomaly_c": 0.351,
+      "interest_anomaly": -5.0065
+    },
+    {
+      "period": "2024-08-01",
+      "market_id": "singapore",
+      "temperature_c": 26.9774,
+      "interest_index": 72.0323,
+      "interest_scaled": 0.519,
+      "temperature_anomaly_c": 0.1477,
+      "interest_anomaly": -4.3613
+    },
+    {
+      "period": "2024-09-01",
+      "market_id": "singapore",
+      "temperature_c": 27.18,
+      "interest_index": 65.7,
+      "interest_scaled": 0.3418,
+      "temperature_anomaly_c": 0.2427,
+      "interest_anomaly": -5.4667
+    },
+    {
+      "period": "2024-10-01",
+      "market_id": "singapore",
+      "temperature_c": 27.1742,
+      "interest_index": 64.3226,
+      "interest_scaled": 0.3032,
+      "temperature_anomaly_c": 0.1787,
+      "interest_anomaly": -6.2839
+    },
+    {
+      "period": "2024-11-01",
+      "market_id": "singapore",
+      "temperature_c": 26.2833,
+      "interest_index": 59.8667,
+      "interest_scaled": 0.1786,
+      "temperature_anomaly_c": -0.214,
+      "interest_anomaly": -6.38
+    },
+    {
+      "period": "2024-12-01",
+      "market_id": "singapore",
+      "temperature_c": 26.3935,
+      "interest_index": 64.2581,
+      "interest_scaled": 0.3014,
+      "temperature_anomaly_c": 0.3058,
+      "interest_anomaly": -5.4452
+    },
+    {
+      "period": "2025-01-01",
+      "market_id": "singapore",
+      "temperature_c": 25.5323,
+      "interest_index": 53.4839,
+      "interest_scaled": 0.0,
+      "temperature_anomaly_c": -0.1077,
+      "interest_anomaly": -7.1548
+    },
+    {
+      "period": "2025-02-01",
+      "market_id": "singapore",
+      "temperature_c": 25.9857,
+      "interest_index": 57.5,
+      "interest_scaled": 0.1124,
+      "temperature_anomaly_c": -0.2301,
+      "interest_anomaly": -4.3786
+    },
+    {
+      "period": "2025-03-01",
+      "market_id": "singapore",
+      "temperature_c": 26.4129,
+      "interest_index": 61.3226,
+      "interest_scaled": 0.2193,
+      "temperature_anomaly_c": -0.1774,
+      "interest_anomaly": -8.5161
+    },
+    {
+      "period": "2025-04-01",
+      "market_id": "singapore",
+      "temperature_c": 26.6967,
+      "interest_index": 65.3333,
+      "interest_scaled": 0.3315,
+      "temperature_anomaly_c": -0.2593,
+      "interest_anomaly": -6.54
+    },
+    {
+      "period": "2025-05-01",
+      "market_id": "singapore",
+      "temperature_c": 27.529,
+      "interest_index": 69.5484,
+      "interest_scaled": 0.4495,
+      "temperature_anomaly_c": 0.0323,
+      "interest_anomaly": -5.5613
+    },
+    {
+      "period": "2025-06-01",
+      "market_id": "singapore",
+      "temperature_c": 27.66,
+      "interest_index": 73.8667,
+      "interest_scaled": 0.5703,
+      "temperature_anomaly_c": 0.496,
+      "interest_anomaly": -2.9867
+    },
+    {
+      "period": "2025-07-01",
+      "market_id": "singapore",
+      "temperature_c": 27.6516,
+      "interest_index": 71.5806,
+      "interest_scaled": 0.5063,
+      "temperature_anomaly_c": 0.2961,
+      "interest_anomaly": -5.2
+    },
+    {
+      "period": "2025-08-01",
+      "market_id": "singapore",
+      "temperature_c": 27.0355,
+      "interest_index": 72.3871,
+      "interest_scaled": 0.5289,
+      "temperature_anomaly_c": 0.2058,
+      "interest_anomaly": -4.0065
+    },
+    {
+      "period": "2025-09-01",
+      "market_id": "singapore",
+      "temperature_c": 26.9367,
+      "interest_index": 66.4333,
+      "interest_scaled": 0.3623,
+      "temperature_anomaly_c": -0.0007,
+      "interest_anomaly": -4.7333
+    },
+    {
+      "period": "2025-10-01",
+      "market_id": "singapore",
+      "temperature_c": 27.1419,
+      "interest_index": 64.1935,
+      "interest_scaled": 0.2996,
+      "temperature_anomaly_c": 0.1465,
+      "interest_anomaly": -6.4129
+    },
+    {
+      "period": "2025-11-01",
+      "market_id": "singapore",
+      "temperature_c": 26.7967,
+      "interest_index": 66.3333,
+      "interest_scaled": 0.3595,
+      "temperature_anomaly_c": 0.2993,
+      "interest_anomaly": 0.0867
+    },
+    {
+      "period": "2025-12-01",
+      "market_id": "singapore",
+      "temperature_c": 25.9548,
+      "interest_index": 72.3871,
+      "interest_scaled": 0.5289,
+      "temperature_anomaly_c": -0.1329,
+      "interest_anomaly": 2.6839
+    },
+    {
+      "period": "2021-01-01",
+      "market_id": "sydney",
+      "temperature_c": 21.7387,
+      "interest_index": 70.5161,
+      "interest_scaled": 0.5765,
+      "temperature_anomaly_c": -0.4206,
+      "interest_anomaly": -2.4968
+    },
+    {
+      "period": "2021-02-01",
+      "market_id": "sydney",
+      "temperature_c": 21.1893,
+      "interest_index": 56.0,
+      "interest_scaled": 0.2671,
+      "temperature_anomaly_c": -0.9187,
+      "interest_anomaly": -4.2532
+    },
+    {
+      "period": "2021-03-01",
+      "market_id": "sydney",
+      "temperature_c": 20.3032,
+      "interest_index": 47.4516,
+      "interest_scaled": 0.0849,
+      "temperature_anomaly_c": -1.0232,
+      "interest_anomaly": -7.2839
+    },
+    {
+      "period": "2021-04-01",
+      "market_id": "sydney",
+      "temperature_c": 17.4467,
+      "interest_index": 47.9333,
+      "interest_scaled": 0.0952,
+      "temperature_anomaly_c": -0.8793,
+      "interest_anomaly": -5.82
+    },
+    {
+      "period": "2021-05-01",
+      "market_id": "sydney",
+      "temperature_c": 15.3032,
+      "interest_index": 45.2903,
+      "interest_scaled": 0.0389,
+      "temperature_anomaly_c": -0.0981,
+      "interest_anomaly": -5.071
+    },
+    {
+      "period": "2021-06-01",
+      "market_id": "sydney",
+      "temperature_c": 12.6367,
+      "interest_index": 43.4667,
+      "interest_scaled": 0.0,
+      "temperature_anomaly_c": 0.168,
+      "interest_anomaly": -7.1133
+    },
+    {
+      "period": "2021-07-01",
+      "market_id": "sydney",
+      "temperature_c": 12.1613,
+      "interest_index": 48.8065,
+      "interest_scaled": 0.1138,
+      "temperature_anomaly_c": -0.3142,
+      "interest_anomaly": -6.1677
+    },
+    {
+      "period": "2021-08-01",
+      "market_id": "sydney",
+      "temperature_c": 13.7323,
+      "interest_index": 50.3871,
+      "interest_scaled": 0.1475,
+      "temperature_anomaly_c": -0.0781,
+      "interest_anomaly": -4.7677
+    },
+    {
+      "period": "2021-09-01",
+      "market_id": "sydney",
+      "temperature_c": 15.3567,
+      "interest_index": 54.3,
+      "interest_scaled": 0.2309,
+      "temperature_anomaly_c": -0.5173,
+      "interest_anomaly": -6.2267
+    },
+    {
+      "period": "2021-10-01",
+      "market_id": "sydney",
+      "temperature_c": 16.9645,
+      "interest_index": 49.9355,
+      "interest_scaled": 0.1379,
+      "temperature_anomaly_c": -0.8394,
+      "interest_anomaly": -14.8903
+    },
+    {
+      "period": "2021-11-01",
+      "market_id": "sydney",
+      "temperature_c": 17.9967,
+      "interest_index": 48.2,
+      "interest_scaled": 0.1009,
+      "temperature_anomaly_c": -1.2813,
+      "interest_anomaly": -16.1933
+    },
+    {
+      "period": "2021-12-01",
+      "market_id": "sydney",
+      "temperature_c": 20.3581,
+      "interest_index": 61.1613,
+      "interest_scaled": 0.3771,
+      "temperature_anomaly_c": -0.6471,
+      "interest_anomaly": -15.2258
+    },
+    {
+      "period": "2022-01-01",
+      "market_id": "sydney",
+      "temperature_c": 22.6,
+      "interest_index": 67.4516,
+      "interest_scaled": 0.5112,
+      "temperature_anomaly_c": 0.4406,
+      "interest_anomaly": -5.5613
+    },
+    {
+      "period": "2022-02-01",
+      "market_id": "sydney",
+      "temperature_c": 21.7786,
+      "interest_index": 54.6786,
+      "interest_scaled": 0.239,
+      "temperature_anomaly_c": -0.3294,
+      "interest_anomaly": -5.5746
+    },
+    {
+      "period": "2022-03-01",
+      "market_id": "sydney",
+      "temperature_c": 20.4645,
+      "interest_index": 45.871,
+      "interest_scaled": 0.0512,
+      "temperature_anomaly_c": -0.8619,
+      "interest_anomaly": -8.8645
+    },
+    {
+      "period": "2022-04-01",
+      "market_id": "sydney",
+      "temperature_c": 18.53,
+      "interest_index": 47.1333,
+      "interest_scaled": 0.0781,
+      "temperature_anomaly_c": 0.204,
+      "interest_anomaly": -6.62
+    },
+    {
+      "period": "2022-05-01",
+      "market_id": "sydney",
+      "temperature_c": 15.7968,
+      "interest_index": 43.7419,
+      "interest_scaled": 0.0059,
+      "temperature_anomaly_c": 0.3955,
+      "interest_anomaly": -6.6194
+    },
+    {
+      "period": "2022-06-01",
+      "market_id": "sydney",
+      "temperature_c": 12.04,
+      "interest_index": 46.3333,
+      "interest_scaled": 0.0611,
+      "temperature_anomaly_c": -0.4287,
+      "interest_anomaly": -4.2467
+    },
+    {
+      "period": "2022-07-01",
+      "market_id": "sydney",
+      "temperature_c": 12.5161,
+      "interest_index": 49.6774,
+      "interest_scaled": 0.1324,
+      "temperature_anomaly_c": 0.0406,
+      "interest_anomaly": -5.2968
+    },
+    {
+      "period": "2022-08-01",
+      "market_id": "sydney",
+      "temperature_c": 13.3387,
+      "interest_index": 49.8387,
+      "interest_scaled": 0.1358,
+      "temperature_anomaly_c": -0.4716,
+      "interest_anomaly": -5.3161
+    },
+    {
+      "period": "2022-09-01",
+      "market_id": "sydney",
+      "temperature_c": 14.6667,
+      "interest_index": 52.9333,
+      "interest_scaled": 0.2018,
+      "temperature_anomaly_c": -1.2073,
+      "interest_anomaly": -7.5933
+    },
+    {
+      "period": "2022-10-01",
+      "market_id": "sydney",
+      "temperature_c": 16.8935,
+      "interest_index": 58.5161,
+      "interest_scaled": 0.3207,
+      "temperature_anomaly_c": -0.9103,
+      "interest_anomaly": -6.3097
+    },
+    {
+      "period": "2022-11-01",
+      "market_id": "sydney",
+      "temperature_c": 17.5633,
+      "interest_index": 60.2,
+      "interest_scaled": 0.3566,
+      "temperature_anomaly_c": -1.7147,
+      "interest_anomaly": -4.1933
+    },
+    {
+      "period": "2022-12-01",
+      "market_id": "sydney",
+      "temperature_c": 19.1097,
+      "interest_index": 71.3548,
+      "interest_scaled": 0.5944,
+      "temperature_anomaly_c": -1.8955,
+      "interest_anomaly": -5.0323
+    },
+    {
+      "period": "2023-01-01",
+      "market_id": "sydney",
+      "temperature_c": 21.4903,
+      "interest_index": 72.7419,
+      "interest_scaled": 0.6239,
+      "temperature_anomaly_c": -0.669,
+      "interest_anomaly": -0.271
+    },
+    {
+      "period": "2023-02-01",
+      "market_id": "sydney",
+      "temperature_c": 22.1929,
+      "interest_index": 60.8214,
+      "interest_scaled": 0.3699,
+      "temperature_anomaly_c": 0.0849,
+      "interest_anomaly": 0.5682
+    },
+    {
+      "period": "2023-03-01",
+      "market_id": "sydney",
+      "temperature_c": 21.9548,
+      "interest_index": 59.129,
+      "interest_scaled": 0.3338,
+      "temperature_anomaly_c": 0.6284,
+      "interest_anomaly": 4.3935
+    },
+    {
+      "period": "2023-04-01",
+      "market_id": "sydney",
+      "temperature_c": 17.88,
+      "interest_index": 56.3333,
+      "interest_scaled": 0.2742,
+      "temperature_anomaly_c": -0.446,
+      "interest_anomaly": 2.58
+    },
+    {
+      "period": "2023-05-01",
+      "market_id": "sydney",
+      "temperature_c": 14.029,
+      "interest_index": 53.7419,
+      "interest_scaled": 0.219,
+      "temperature_anomaly_c": -1.3723,
+      "interest_anomaly": 3.3806
+    },
+    {
+      "period": "2023-06-01",
+      "market_id": "sydney",
+      "temperature_c": 12.99,
+      "interest_index": 54.5,
+      "interest_scaled": 0.2351,
+      "temperature_anomaly_c": 0.5213,
+      "interest_anomaly": 3.92
+    },
+    {
+      "period": "2023-07-01",
+      "market_id": "sydney",
+      "temperature_c": 13.1194,
+      "interest_index": 57.9032,
+      "interest_scaled": 0.3077,
+      "temperature_anomaly_c": 0.6439,
+      "interest_anomaly": 2.929
+    },
+    {
+      "period": "2023-08-01",
+      "market_id": "sydney",
+      "temperature_c": 13.9129,
+      "interest_index": 57.4516,
+      "interest_scaled": 0.2981,
+      "temperature_anomaly_c": 0.1026,
+      "interest_anomaly": 2.2968
+    },
+    {
+      "period": "2023-09-01",
+      "market_id": "sydney",
+      "temperature_c": 16.6567,
+      "interest_index": 66.4667,
+      "interest_scaled": 0.4902,
+      "temperature_anomaly_c": 0.7827,
+      "interest_anomaly": 5.94
+    },
+    {
+      "period": "2023-10-01",
+      "market_id": "sydney",
+      "temperature_c": 18.3645,
+      "interest_index": 70.0,
+      "interest_scaled": 0.5655,
+      "temperature_anomaly_c": 0.5606,
+      "interest_anomaly": 5.1742
+    },
+    {
+      "period": "2023-11-01",
+      "market_id": "sydney",
+      "temperature_c": 19.58,
+      "interest_index": 65.0,
+      "interest_scaled": 0.4589,
+      "temperature_anomaly_c": 0.302,
+      "interest_anomaly": 0.6067
+    },
+    {
+      "period": "2023-12-01",
+      "market_id": "sydney",
+      "temperature_c": 22.0226,
+      "interest_index": 76.871,
+      "interest_scaled": 0.7119,
+      "temperature_anomaly_c": 1.0174,
+      "interest_anomaly": 0.4839
+    },
+    {
+      "period": "2024-01-01",
+      "market_id": "sydney",
+      "temperature_c": 22.9806,
+      "interest_index": 74.2581,
+      "interest_scaled": 0.6562,
+      "temperature_anomaly_c": 0.8213,
+      "interest_anomaly": 1.2452
+    },
+    {
+      "period": "2024-02-01",
+      "market_id": "sydney",
+      "temperature_c": 22.8862,
+      "interest_index": 62.5517,
+      "interest_scaled": 0.4068,
+      "temperature_anomaly_c": 0.7783,
+      "interest_anomaly": 2.2985
+    },
+    {
+      "period": "2024-03-01",
+      "market_id": "sydney",
+      "temperature_c": 21.6065,
+      "interest_index": 58.871,
+      "interest_scaled": 0.3283,
+      "temperature_anomaly_c": 0.28,
+      "interest_anomaly": 4.1355
+    },
+    {
+      "period": "2024-04-01",
+      "market_id": "sydney",
+      "temperature_c": 18.4333,
+      "interest_index": 56.3333,
+      "interest_scaled": 0.2742,
+      "temperature_anomaly_c": 0.1073,
+      "interest_anomaly": 2.58
+    },
+    {
+      "period": "2024-05-01",
+      "market_id": "sydney",
+      "temperature_c": 15.4226,
+      "interest_index": 54.6452,
+      "interest_scaled": 0.2382,
+      "temperature_anomaly_c": 0.0213,
+      "interest_anomaly": 4.2839
+    },
+    {
+      "period": "2024-06-01",
+      "market_id": "sydney",
+      "temperature_c": 12.5633,
+      "interest_index": 51.4667,
+      "interest_scaled": 0.1705,
+      "temperature_anomaly_c": 0.0947,
+      "interest_anomaly": 0.8867
+    },
+    {
+      "period": "2024-07-01",
+      "market_id": "sydney",
+      "temperature_c": 12.2903,
+      "interest_index": 56.4194,
+      "interest_scaled": 0.2761,
+      "temperature_anomaly_c": -0.1852,
+      "interest_anomaly": 1.4452
+    },
+    {
+      "period": "2024-08-01",
+      "market_id": "sydney",
+      "temperature_c": 14.6968,
+      "interest_index": 57.9032,
+      "interest_scaled": 0.3077,
+      "temperature_anomaly_c": 0.8865,
+      "interest_anomaly": 2.7484
+    },
+    {
+      "period": "2024-09-01",
+      "market_id": "sydney",
+      "temperature_c": 16.32,
+      "interest_index": 62.3667,
+      "interest_scaled": 0.4028,
+      "temperature_anomaly_c": 0.446,
+      "interest_anomaly": 1.84
+    },
+    {
+      "period": "2024-10-01",
+      "market_id": "sydney",
+      "temperature_c": 17.3548,
+      "interest_index": 67.8065,
+      "interest_scaled": 0.5187,
+      "temperature_anomaly_c": -0.449,
+      "interest_anomaly": 2.9806
+    },
+    {
+      "period": "2024-11-01",
+      "market_id": "sydney",
+      "temperature_c": 20.78,
+      "interest_index": 68.2333,
+      "interest_scaled": 0.5278,
+      "temperature_anomaly_c": 1.502,
+      "interest_anomaly": 3.84
+    },
+    {
+      "period": "2024-12-01",
+      "market_id": "sydney",
+      "temperature_c": 22.3226,
+      "interest_index": 82.1613,
+      "interest_scaled": 0.8247,
+      "temperature_anomaly_c": 1.3174,
+      "interest_anomaly": 5.7742
+    },
+    {
+      "period": "2025-01-01",
+      "market_id": "sydney",
+      "temperature_c": 21.9871,
+      "interest_index": 80.0968,
+      "interest_scaled": 0.7807,
+      "temperature_anomaly_c": -0.1723,
+      "interest_anomaly": 7.0839
+    },
+    {
+      "period": "2025-02-01",
+      "market_id": "sydney",
+      "temperature_c": 22.4929,
+      "interest_index": 67.2143,
+      "interest_scaled": 0.5061,
+      "temperature_anomaly_c": 0.3849,
+      "interest_anomaly": 6.9611
+    },
+    {
+      "period": "2025-03-01",
+      "market_id": "sydney",
+      "temperature_c": 22.3032,
+      "interest_index": 62.3548,
+      "interest_scaled": 0.4026,
+      "temperature_anomaly_c": 0.9768,
+      "interest_anomaly": 7.6194
+    },
+    {
+      "period": "2025-04-01",
+      "market_id": "sydney",
+      "temperature_c": 19.34,
+      "interest_index": 61.0333,
+      "interest_scaled": 0.3744,
+      "temperature_anomaly_c": 1.014,
+      "interest_anomaly": 7.28
+    },
+    {
+      "period": "2025-05-01",
+      "market_id": "sydney",
+      "temperature_c": 16.4548,
+      "interest_index": 54.3871,
+      "interest_scaled": 0.2327,
+      "temperature_anomaly_c": 1.0535,
+      "interest_anomaly": 4.0258
+    },
+    {
+      "period": "2025-06-01",
+      "market_id": "sydney",
+      "temperature_c": 12.1133,
+      "interest_index": 57.1333,
+      "interest_scaled": 0.2913,
+      "temperature_anomaly_c": -0.3553,
+      "interest_anomaly": 6.5533
+    },
+    {
+      "period": "2025-07-01",
+      "market_id": "sydney",
+      "temperature_c": 12.2903,
+      "interest_index": 62.0645,
+      "interest_scaled": 0.3964,
+      "temperature_anomaly_c": -0.1852,
+      "interest_anomaly": 7.0903
+    },
+    {
+      "period": "2025-08-01",
+      "market_id": "sydney",
+      "temperature_c": 13.371,
+      "interest_index": 60.1935,
+      "interest_scaled": 0.3565,
+      "temperature_anomaly_c": -0.4394,
+      "interest_anomaly": 5.0387
+    },
+    {
+      "period": "2025-09-01",
+      "market_id": "sydney",
+      "temperature_c": 16.37,
+      "interest_index": 66.5667,
+      "interest_scaled": 0.4923,
+      "temperature_anomaly_c": 0.496,
+      "interest_anomaly": 6.04
+    },
+    {
+      "period": "2025-10-01",
+      "market_id": "sydney",
+      "temperature_c": 19.4419,
+      "interest_index": 77.871,
+      "interest_scaled": 0.7332,
+      "temperature_anomaly_c": 1.6381,
+      "interest_anomaly": 13.0452
+    },
+    {
+      "period": "2025-11-01",
+      "market_id": "sydney",
+      "temperature_c": 20.47,
+      "interest_index": 80.3333,
+      "interest_scaled": 0.7857,
+      "temperature_anomaly_c": 1.192,
+      "interest_anomaly": 15.94
+    },
+    {
+      "period": "2025-12-01",
+      "market_id": "sydney",
+      "temperature_c": 21.2129,
+      "interest_index": 90.3871,
+      "interest_scaled": 1.0,
+      "temperature_anomaly_c": 0.2077,
+      "interest_anomaly": 14.0
+    },
+    {
+      "period": "2021-01-01",
+      "market_id": "tokyo",
+      "temperature_c": 3.8161,
+      "interest_index": 30.8065,
+      "interest_scaled": 0.338,
+      "temperature_anomaly_c": -0.2329,
+      "interest_anomaly": -1.4581
+    },
+    {
+      "period": "2021-02-01",
+      "market_id": "tokyo",
+      "temperature_c": 6.2143,
+      "interest_index": 39.0357,
+      "interest_scaled": 0.4561,
+      "temperature_anomaly_c": 1.1316,
+      "interest_anomaly": 0.8667
+    },
+    {
+      "period": "2021-03-01",
+      "market_id": "tokyo",
+      "temperature_c": 10.8839,
+      "interest_index": 40.7097,
+      "interest_scaled": 0.4801,
+      "temperature_anomaly_c": 1.1852,
+      "interest_anomaly": 1.2774
+    },
+    {
+      "period": "2021-04-01",
+      "market_id": "tokyo",
+      "temperature_c": 13.2567,
+      "interest_index": 41.3667,
+      "interest_scaled": 0.4895,
+      "temperature_anomaly_c": -0.9913,
+      "interest_anomaly": -3.5133
+    },
+    {
+      "period": "2021-05-01",
+      "market_id": "tokyo",
+      "temperature_c": 18.6129,
+      "interest_index": 54.4839,
+      "interest_scaled": 0.6778,
+      "temperature_anomaly_c": 0.5129,
+      "interest_anomaly": -0.3032
+    },
+    {
+      "period": "2021-06-01",
+      "market_id": "tokyo",
+      "temperature_c": 21.64,
+      "interest_index": 55.5333,
+      "interest_scaled": 0.6928,
+      "temperature_anomaly_c": -0.5493,
+      "interest_anomaly": -5.6933
+    },
+    {
+      "period": "2021-07-01",
+      "market_id": "tokyo",
+      "temperature_c": 24.8226,
+      "interest_index": 62.7097,
+      "interest_scaled": 0.7958,
+      "temperature_anomaly_c": -1.8361,
+      "interest_anomaly": -7.0452
+    },
+    {
+      "period": "2021-08-01",
+      "market_id": "tokyo",
+      "temperature_c": 26.2548,
+      "interest_index": 69.6452,
+      "interest_scaled": 0.8954,
+      "temperature_anomaly_c": -1.4342,
+      "interest_anomaly": 13.5484
+    },
+    {
+      "period": "2021-09-01",
+      "market_id": "tokyo",
+      "temperature_c": 21.51,
+      "interest_index": 54.0333,
+      "interest_scaled": 0.6713,
+      "temperature_anomaly_c": -2.9047,
+      "interest_anomaly": 1.8267
+    },
+    {
+      "period": "2021-10-01",
+      "market_id": "tokyo",
+      "temperature_c": 17.1484,
+      "interest_index": 40.1935,
+      "interest_scaled": 0.4727,
+      "temperature_anomaly_c": -0.5923,
+      "interest_anomaly": -1.3806
+    },
+    {
+      "period": "2021-11-01",
+      "market_id": "tokyo",
+      "temperature_c": 11.8767,
+      "interest_index": 33.2,
+      "interest_scaled": 0.3723,
+      "temperature_anomaly_c": -0.4673,
+      "interest_anomaly": -4.16
+    },
+    {
+      "period": "2021-12-01",
+      "market_id": "tokyo",
+      "temperature_c": 6.271,
+      "interest_index": 34.6774,
+      "interest_scaled": 0.3935,
+      "temperature_anomaly_c": -0.26,
+      "interest_anomaly": -4.6129
+    },
+    {
+      "period": "2022-01-01",
+      "market_id": "tokyo",
+      "temperature_c": 2.7677,
+      "interest_index": 30.1613,
+      "interest_scaled": 0.3287,
+      "temperature_anomaly_c": -1.2813,
+      "interest_anomaly": -2.1032
+    },
+    {
+      "period": "2022-02-01",
+      "market_id": "tokyo",
+      "temperature_c": 3.2071,
+      "interest_index": 35.3929,
+      "interest_scaled": 0.4038,
+      "temperature_anomaly_c": -1.8756,
+      "interest_anomaly": -2.7761
+    },
+    {
+      "period": "2022-03-01",
+      "market_id": "tokyo",
+      "temperature_c": 9.3677,
+      "interest_index": 36.6774,
+      "interest_scaled": 0.4222,
+      "temperature_anomaly_c": -0.331,
+      "interest_anomaly": -2.7548
+    },
+    {
+      "period": "2022-04-01",
+      "market_id": "tokyo",
+      "temperature_c": 13.9533,
+      "interest_index": 41.4333,
+      "interest_scaled": 0.4905,
+      "temperature_anomaly_c": -0.2947,
+      "interest_anomaly": -3.4467
+    },
+    {
+      "period": "2022-05-01",
+      "market_id": "tokyo",
+      "temperature_c": 17.6613,
+      "interest_index": 48.9032,
+      "interest_scaled": 0.5977,
+      "temperature_anomaly_c": -0.4387,
+      "interest_anomaly": -5.8839
+    },
+    {
+      "period": "2022-06-01",
+      "market_id": "tokyo",
+      "temperature_c": 21.8067,
+      "interest_index": 59.4667,
+      "interest_scaled": 0.7493,
+      "temperature_anomaly_c": -0.3827,
+      "interest_anomaly": -1.76
+    },
+    {
+      "period": "2022-07-01",
+      "market_id": "tokyo",
+      "temperature_c": 26.1548,
+      "interest_index": 64.129,
+      "interest_scaled": 0.8162,
+      "temperature_anomaly_c": -0.5039,
+      "interest_anomaly": -5.6258
+    },
+    {
+      "period": "2022-08-01",
+      "market_id": "tokyo",
+      "temperature_c": 26.4387,
+      "interest_index": 7.2581,
+      "interest_scaled": 0.0,
+      "temperature_anomaly_c": -1.2503,
+      "interest_anomaly": -48.8387
+    },
+    {
+      "period": "2022-09-01",
+      "market_id": "tokyo",
+      "temperature_c": 23.6633,
+      "interest_index": 39.6,
+      "interest_scaled": 0.4642,
+      "temperature_anomaly_c": -0.7513,
+      "interest_anomaly": -12.6067
+    },
+    {
+      "period": "2022-10-01",
+      "market_id": "tokyo",
+      "temperature_c": 16.5194,
+      "interest_index": 37.3871,
+      "interest_scaled": 0.4324,
+      "temperature_anomaly_c": -1.2213,
+      "interest_anomaly": -4.1871
+    },
+    {
+      "period": "2022-11-01",
+      "market_id": "tokyo",
+      "temperature_c": 13.0533,
+      "interest_index": 36.1667,
+      "interest_scaled": 0.4149,
+      "temperature_anomaly_c": 0.7093,
+      "interest_anomaly": -1.1933
+    },
+    {
+      "period": "2022-12-01",
+      "market_id": "tokyo",
+      "temperature_c": 5.9194,
+      "interest_index": 34.129,
+      "interest_scaled": 0.3856,
+      "temperature_anomaly_c": -0.6116,
+      "interest_anomaly": -5.1613
+    },
+    {
+      "period": "2023-01-01",
+      "market_id": "tokyo",
+      "temperature_c": 3.9419,
+      "interest_index": 32.0968,
+      "interest_scaled": 0.3565,
+      "temperature_anomaly_c": -0.1071,
+      "interest_anomaly": -0.1677
+    },
+    {
+      "period": "2023-02-01",
+      "market_id": "tokyo",
+      "temperature_c": 5.3964,
+      "interest_index": 34.75,
+      "interest_scaled": 0.3946,
+      "temperature_anomaly_c": 0.3137,
+      "interest_anomaly": -3.419
+    },
+    {
+      "period": "2023-03-01",
+      "market_id": "tokyo",
+      "temperature_c": 11.2258,
+      "interest_index": 37.7742,
+      "interest_scaled": 0.438,
+      "temperature_anomaly_c": 1.5271,
+      "interest_anomaly": -1.6581
+    },
+    {
+      "period": "2023-04-01",
+      "market_id": "tokyo",
+      "temperature_c": 14.6833,
+      "interest_index": 43.8333,
+      "interest_scaled": 0.5249,
+      "temperature_anomaly_c": 0.4353,
+      "interest_anomaly": -1.0467
+    },
+    {
+      "period": "2023-05-01",
+      "market_id": "tokyo",
+      "temperature_c": 17.6645,
+      "interest_index": 52.871,
+      "interest_scaled": 0.6546,
+      "temperature_anomaly_c": -0.4355,
+      "interest_anomaly": -1.9161
+    },
+    {
+      "period": "2023-06-01",
+      "market_id": "tokyo",
+      "temperature_c": 21.93,
+      "interest_index": 57.1,
+      "interest_scaled": 0.7153,
+      "temperature_anomaly_c": -0.2593,
+      "interest_anomaly": -4.1267
+    },
+    {
+      "period": "2023-07-01",
+      "market_id": "tokyo",
+      "temperature_c": 27.2065,
+      "interest_index": 76.9355,
+      "interest_scaled": 1.0,
+      "temperature_anomaly_c": 0.5477,
+      "interest_anomaly": 7.1806
+    },
+    {
+      "period": "2023-08-01",
+      "market_id": "tokyo",
+      "temperature_c": 28.2452,
+      "interest_index": 69.5161,
+      "interest_scaled": 0.8935,
+      "temperature_anomaly_c": 0.5561,
+      "interest_anomaly": 13.4194
+    },
+    {
+      "period": "2023-09-01",
+      "market_id": "tokyo",
+      "temperature_c": 25.7567,
+      "interest_index": 57.2333,
+      "interest_scaled": 0.7172,
+      "temperature_anomaly_c": 1.342,
+      "interest_anomaly": 5.0267
+    },
+    {
+      "period": "2023-10-01",
+      "market_id": "tokyo",
+      "temperature_c": 17.5387,
+      "interest_index": 44.871,
+      "interest_scaled": 0.5398,
+      "temperature_anomaly_c": -0.2019,
+      "interest_anomaly": 3.2968
+    },
+    {
+      "period": "2023-11-01",
+      "market_id": "tokyo",
+      "temperature_c": 13.0033,
+      "interest_index": 40.2333,
+      "interest_scaled": 0.4733,
+      "temperature_anomaly_c": 0.6593,
+      "interest_anomaly": 2.8733
+    },
+    {
+      "period": "2023-12-01",
+      "market_id": "tokyo",
+      "temperature_c": 7.7161,
+      "interest_index": 41.4516,
+      "interest_scaled": 0.4907,
+      "temperature_anomaly_c": 1.1852,
+      "interest_anomaly": 2.1613
+    },
+    {
+      "period": "2024-01-01",
+      "market_id": "tokyo",
+      "temperature_c": 5.1613,
+      "interest_index": 33.4839,
+      "interest_scaled": 0.3764,
+      "temperature_anomaly_c": 1.1123,
+      "interest_anomaly": 1.2194
+    },
+    {
+      "period": "2024-02-01",
+      "market_id": "tokyo",
+      "temperature_c": 6.2172,
+      "interest_index": 37.3448,
+      "interest_scaled": 0.4318,
+      "temperature_anomaly_c": 1.1345,
+      "interest_anomaly": -0.8241
+    },
+    {
+      "period": "2024-03-01",
+      "market_id": "tokyo",
+      "temperature_c": 7.9323,
+      "interest_index": 37.7742,
+      "interest_scaled": 0.438,
+      "temperature_anomaly_c": -1.7665,
+      "interest_anomaly": -1.6581
+    },
+    {
+      "period": "2024-04-01",
+      "market_id": "tokyo",
+      "temperature_c": 15.3033,
+      "interest_index": 47.0667,
+      "interest_scaled": 0.5713,
+      "temperature_anomaly_c": 1.0553,
+      "interest_anomaly": 2.1867
+    },
+    {
+      "period": "2024-05-01",
+      "market_id": "tokyo",
+      "temperature_c": 18.5419,
+      "interest_index": 57.4194,
+      "interest_scaled": 0.7199,
+      "temperature_anomaly_c": 0.4419,
+      "interest_anomaly": 2.6323
+    },
+    {
+      "period": "2024-06-01",
+      "market_id": "tokyo",
+      "temperature_c": 22.0833,
+      "interest_index": 64.4333,
+      "interest_scaled": 0.8206,
+      "temperature_anomaly_c": -0.106,
+      "interest_anomaly": 3.2067
+    },
+    {
+      "period": "2024-07-01",
+      "market_id": "tokyo",
+      "temperature_c": 27.5419,
+      "interest_index": 70.3548,
+      "interest_scaled": 0.9056,
+      "temperature_anomaly_c": 0.8832,
+      "interest_anomaly": 0.6
+    },
+    {
+      "period": "2024-08-01",
+      "market_id": "tokyo",
+      "temperature_c": 28.2903,
+      "interest_index": 63.7419,
+      "interest_scaled": 0.8106,
+      "temperature_anomaly_c": 0.6013,
+      "interest_anomaly": 7.6452
+    },
+    {
+      "period": "2024-09-01",
+      "market_id": "tokyo",
+      "temperature_c": 25.6967,
+      "interest_index": 55.5667,
+      "interest_scaled": 0.6933,
+      "temperature_anomaly_c": 1.282,
+      "interest_anomaly": 3.36
+    },
+    {
+      "period": "2024-10-01",
+      "market_id": "tokyo",
+      "temperature_c": 19.6645,
+      "interest_index": 42.7419,
+      "interest_scaled": 0.5093,
+      "temperature_anomaly_c": 1.9239,
+      "interest_anomaly": 1.1677
+    },
+    {
+      "period": "2024-11-01",
+      "market_id": "tokyo",
+      "temperature_c": 12.4933,
+      "interest_index": 35.3667,
+      "interest_scaled": 0.4034,
+      "temperature_anomaly_c": 0.1493,
+      "interest_anomaly": -1.9933
+    },
+    {
+      "period": "2024-12-01",
+      "market_id": "tokyo",
+      "temperature_c": 5.9581,
+      "interest_index": 35.8387,
+      "interest_scaled": 0.4102,
+      "temperature_anomaly_c": -0.5729,
+      "interest_anomaly": -3.4516
+    },
+    {
+      "period": "2025-01-01",
+      "market_id": "tokyo",
+      "temperature_c": 4.5581,
+      "interest_index": 34.7742,
+      "interest_scaled": 0.3949,
+      "temperature_anomaly_c": 0.509,
+      "interest_anomaly": 2.5097
+    },
+    {
+      "period": "2025-02-01",
+      "market_id": "tokyo",
+      "temperature_c": 4.3786,
+      "interest_index": 44.3214,
+      "interest_scaled": 0.5319,
+      "temperature_anomaly_c": -0.7042,
+      "interest_anomaly": 6.1525
+    },
+    {
+      "period": "2025-03-01",
+      "market_id": "tokyo",
+      "temperature_c": 9.0839,
+      "interest_index": 44.2258,
+      "interest_scaled": 0.5306,
+      "temperature_anomaly_c": -0.6148,
+      "interest_anomaly": 4.7935
+    },
+    {
+      "period": "2025-04-01",
+      "market_id": "tokyo",
+      "temperature_c": 14.0433,
+      "interest_index": 50.7,
+      "interest_scaled": 0.6235,
+      "temperature_anomaly_c": -0.2047,
+      "interest_anomaly": 5.82
+    },
+    {
+      "period": "2025-05-01",
+      "market_id": "tokyo",
+      "temperature_c": 18.0194,
+      "interest_index": 60.2581,
+      "interest_scaled": 0.7606,
+      "temperature_anomaly_c": -0.0806,
+      "interest_anomaly": 5.471
+    },
+    {
+      "period": "2025-06-01",
+      "market_id": "tokyo",
+      "temperature_c": 23.4867,
+      "interest_index": 69.6,
+      "interest_scaled": 0.8947,
+      "temperature_anomaly_c": 1.2973,
+      "interest_anomaly": 8.3733
+    },
+    {
+      "period": "2025-07-01",
+      "market_id": "tokyo",
+      "temperature_c": 27.5677,
+      "interest_index": 74.6452,
+      "interest_scaled": 0.9671,
+      "temperature_anomaly_c": 0.909,
+      "interest_anomaly": 4.8903
+    },
+    {
+      "period": "2025-08-01",
+      "market_id": "tokyo",
+      "temperature_c": 29.2161,
+      "interest_index": 70.3226,
+      "interest_scaled": 0.9051,
+      "temperature_anomaly_c": 1.5271,
+      "interest_anomaly": 14.2258
+    },
+    {
+      "period": "2025-09-01",
+      "market_id": "tokyo",
+      "temperature_c": 25.4467,
+      "interest_index": 54.6,
+      "interest_scaled": 0.6794,
+      "temperature_anomaly_c": 1.032,
+      "interest_anomaly": 2.3933
+    },
+    {
+      "period": "2025-10-01",
+      "market_id": "tokyo",
+      "temperature_c": 17.8323,
+      "interest_index": 42.6774,
+      "interest_scaled": 0.5083,
+      "temperature_anomaly_c": 0.0916,
+      "interest_anomaly": 1.1032
+    },
+    {
+      "period": "2025-11-01",
+      "market_id": "tokyo",
+      "temperature_c": 11.2933,
+      "interest_index": 41.8333,
+      "interest_scaled": 0.4962,
+      "temperature_anomaly_c": -1.0507,
+      "interest_anomaly": 4.4733
+    },
+    {
+      "period": "2025-12-01",
+      "market_id": "tokyo",
+      "temperature_c": 6.7903,
+      "interest_index": 50.3548,
+      "interest_scaled": 0.6185,
+      "temperature_anomaly_c": 0.2594,
+      "interest_anomaly": 11.0645
+    },
+    {
+      "period": "2021-01-01",
+      "market_id": "toronto",
+      "temperature_c": -2.0452,
+      "interest_index": 34.7742,
+      "interest_scaled": 0.0806,
+      "temperature_anomaly_c": 1.0684,
+      "interest_anomaly": 0.2387
+    },
+    {
+      "period": "2021-02-01",
+      "market_id": "toronto",
+      "temperature_c": -4.6536,
+      "interest_index": 35.5,
+      "interest_scaled": 0.0916,
+      "temperature_anomaly_c": -1.886,
+      "interest_anomaly": -1.9951
+    },
+    {
+      "period": "2021-03-01",
+      "market_id": "toronto",
+      "temperature_c": 2.6806,
+      "interest_index": 40.871,
+      "interest_scaled": 0.1735,
+      "temperature_anomaly_c": 0.6742,
+      "interest_anomaly": -4.0839
+    },
+    {
+      "period": "2021-04-01",
+      "market_id": "toronto",
+      "temperature_c": 6.8133,
+      "interest_index": 51.8333,
+      "interest_scaled": 0.3405,
+      "temperature_anomaly_c": -0.0527,
+      "interest_anomaly": -0.2467
+    },
+    {
+      "period": "2021-05-01",
+      "market_id": "toronto",
+      "temperature_c": 12.5774,
+      "interest_index": 71.5484,
+      "interest_scaled": 0.6408,
+      "temperature_anomaly_c": -0.349,
+      "interest_anomaly": 2.5355
+    },
+    {
+      "period": "2021-06-01",
+      "market_id": "toronto",
+      "temperature_c": 20.1333,
+      "interest_index": 77.2667,
+      "interest_scaled": 0.7279,
+      "temperature_anomaly_c": 1.078,
+      "interest_anomaly": -0.3667
+    },
+    {
+      "period": "2021-07-01",
+      "market_id": "toronto",
+      "temperature_c": 20.9452,
+      "interest_index": 73.3226,
+      "interest_scaled": 0.6678,
+      "temperature_anomaly_c": -1.1774,
+      "interest_anomaly": -8.3742
+    },
+    {
+      "period": "2021-08-01",
+      "market_id": "toronto",
+      "temperature_c": 23.3839,
+      "interest_index": 71.6452,
+      "interest_scaled": 0.6423,
+      "temperature_anomaly_c": 1.649,
+      "interest_anomaly": 0.8129
+    },
+    {
+      "period": "2021-09-01",
+      "market_id": "toronto",
+      "temperature_c": 18.7367,
+      "interest_index": 48.0333,
+      "interest_scaled": 0.2826,
+      "temperature_anomaly_c": 0.1333,
+      "interest_anomaly": -2.7867
+    },
+    {
+      "period": "2021-10-01",
+      "market_id": "toronto",
+      "temperature_c": 14.3258,
+      "interest_index": 34.7742,
+      "interest_scaled": 0.0806,
+      "temperature_anomaly_c": 1.5465,
+      "interest_anomaly": -3.8903
+    },
+    {
+      "period": "2021-11-01",
+      "market_id": "toronto",
+      "temperature_c": 5.01,
+      "interest_index": 29.8,
+      "interest_scaled": 0.0048,
+      "temperature_anomaly_c": -0.4513,
+      "interest_anomaly": -4.3
+    },
+    {
+      "period": "2021-12-01",
+      "market_id": "toronto",
+      "temperature_c": 2.1839,
+      "interest_index": 29.4839,
+      "interest_scaled": 0.0,
+      "temperature_anomaly_c": 1.5194,
+      "interest_anomaly": -5.9677
+    },
+    {
+      "period": "2022-01-01",
+      "market_id": "toronto",
+      "temperature_c": -6.8548,
+      "interest_index": 32.3548,
+      "interest_scaled": 0.0437,
+      "temperature_anomaly_c": -3.7413,
+      "interest_anomaly": -2.1806
+    },
+    {
+      "period": "2022-02-01",
+      "market_id": "toronto",
+      "temperature_c": -3.9179,
+      "interest_index": 37.7143,
+      "interest_scaled": 0.1254,
+      "temperature_anomaly_c": -1.1502,
+      "interest_anomaly": 0.2192
+    },
+    {
+      "period": "2022-03-01",
+      "market_id": "toronto",
+      "temperature_c": 1.2097,
+      "interest_index": 40.5484,
+      "interest_scaled": 0.1686,
+      "temperature_anomaly_c": -0.7968,
+      "interest_anomaly": -4.4065
+    },
+    {
+      "period": "2022-04-01",
+      "market_id": "toronto",
+      "temperature_c": 5.9667,
+      "interest_index": 45.4667,
+      "interest_scaled": 0.2435,
+      "temperature_anomaly_c": -0.8993,
+      "interest_anomaly": -6.6133
+    },
+    {
+      "period": "2022-05-01",
+      "market_id": "toronto",
+      "temperature_c": 13.3323,
+      "interest_index": 63.7097,
+      "interest_scaled": 0.5214,
+      "temperature_anomaly_c": 0.4058,
+      "interest_anomaly": -5.3032
+    },
+    {
+      "period": "2022-06-01",
+      "market_id": "toronto",
+      "temperature_c": 18.3933,
+      "interest_index": 72.5667,
+      "interest_scaled": 0.6563,
+      "temperature_anomaly_c": -0.662,
+      "interest_anomaly": -5.0667
+    },
+    {
+      "period": "2022-07-01",
+      "market_id": "toronto",
+      "temperature_c": 21.7645,
+      "interest_index": 77.6452,
+      "interest_scaled": 0.7337,
+      "temperature_anomaly_c": -0.3581,
+      "interest_anomaly": -4.0516
+    },
+    {
+      "period": "2022-08-01",
+      "market_id": "toronto",
+      "temperature_c": 22.1613,
+      "interest_index": 66.9032,
+      "interest_scaled": 0.57,
+      "temperature_anomaly_c": 0.4265,
+      "interest_anomaly": -3.929
+    },
+    {
+      "period": "2022-09-01",
+      "market_id": "toronto",
+      "temperature_c": 18.1667,
+      "interest_index": 45.8333,
+      "interest_scaled": 0.2491,
+      "temperature_anomaly_c": -0.4367,
+      "interest_anomaly": -4.9867
+    },
+    {
+      "period": "2022-10-01",
+      "market_id": "toronto",
+      "temperature_c": 10.9484,
+      "interest_index": 37.5806,
+      "interest_scaled": 0.1233,
+      "temperature_anomaly_c": -1.831,
+      "interest_anomaly": -1.0839
+    },
+    {
+      "period": "2022-11-01",
+      "market_id": "toronto",
+      "temperature_c": 5.8467,
+      "interest_index": 32.0,
+      "interest_scaled": 0.0383,
+      "temperature_anomaly_c": 0.3853,
+      "interest_anomaly": -2.1
+    },
+    {
+      "period": "2022-12-01",
+      "market_id": "toronto",
+      "temperature_c": 0.4645,
+      "interest_index": 32.4516,
+      "interest_scaled": 0.0452,
+      "temperature_anomaly_c": -0.2,
+      "interest_anomaly": -3.0
+    },
+    {
+      "period": "2023-01-01",
+      "market_id": "toronto",
+      "temperature_c": -0.4129,
+      "interest_index": 33.5484,
+      "interest_scaled": 0.0619,
+      "temperature_anomaly_c": 2.7006,
+      "interest_anomaly": -0.9871
+    },
+    {
+      "period": "2023-02-01",
+      "market_id": "toronto",
+      "temperature_c": -1.2857,
+      "interest_index": 35.7143,
+      "interest_scaled": 0.0949,
+      "temperature_anomaly_c": 1.4819,
+      "interest_anomaly": -1.7808
+    },
+    {
+      "period": "2023-03-01",
+      "market_id": "toronto",
+      "temperature_c": 0.571,
+      "interest_index": 47.1613,
+      "interest_scaled": 0.2693,
+      "temperature_anomaly_c": -1.4355,
+      "interest_anomaly": 2.2065
+    },
+    {
+      "period": "2023-04-01",
+      "market_id": "toronto",
+      "temperature_c": 7.73,
+      "interest_index": 56.6,
+      "interest_scaled": 0.4131,
+      "temperature_anomaly_c": 0.864,
+      "interest_anomaly": 4.52
+    },
+    {
+      "period": "2023-05-01",
+      "market_id": "toronto",
+      "temperature_c": 12.6516,
+      "interest_index": 72.3548,
+      "interest_scaled": 0.6531,
+      "temperature_anomaly_c": -0.2748,
+      "interest_anomaly": 3.3419
+    },
+    {
+      "period": "2023-06-01",
+      "market_id": "toronto",
+      "temperature_c": 18.66,
+      "interest_index": 80.4333,
+      "interest_scaled": 0.7761,
+      "temperature_anomaly_c": -0.3953,
+      "interest_anomaly": 2.8
+    },
+    {
+      "period": "2023-07-01",
+      "market_id": "toronto",
+      "temperature_c": 22.0129,
+      "interest_index": 85.3871,
+      "interest_scaled": 0.8516,
+      "temperature_anomaly_c": -0.1097,
+      "interest_anomaly": 3.6903
+    },
+    {
+      "period": "2023-08-01",
+      "market_id": "toronto",
+      "temperature_c": 20.1968,
+      "interest_index": 69.7419,
+      "interest_scaled": 0.6133,
+      "temperature_anomaly_c": -1.5381,
+      "interest_anomaly": -1.0903
+    },
+    {
+      "period": "2023-09-01",
+      "market_id": "toronto",
+      "temperature_c": 18.72,
+      "interest_index": 55.3,
+      "interest_scaled": 0.3933,
+      "temperature_anomaly_c": 0.1167,
+      "interest_anomaly": 4.48
+    },
+    {
+      "period": "2023-10-01",
+      "market_id": "toronto",
+      "temperature_c": 13.0194,
+      "interest_index": 39.3548,
+      "interest_scaled": 0.1504,
+      "temperature_anomaly_c": 0.24,
+      "interest_anomaly": 0.6903
+    },
+    {
+      "period": "2023-11-01",
+      "market_id": "toronto",
+      "temperature_c": 4.6833,
+      "interest_index": 34.7667,
+      "interest_scaled": 0.0805,
+      "temperature_anomaly_c": -0.778,
+      "interest_anomaly": 0.6667
+    },
+    {
+      "period": "2023-12-01",
+      "market_id": "toronto",
+      "temperature_c": 3.0581,
+      "interest_index": 35.1613,
+      "interest_scaled": 0.0865,
+      "temperature_anomaly_c": 2.3935,
+      "interest_anomaly": -0.2903
+    },
+    {
+      "period": "2024-01-01",
+      "market_id": "toronto",
+      "temperature_c": -1.6677,
+      "interest_index": 35.0645,
+      "interest_scaled": 0.085,
+      "temperature_anomaly_c": 1.4458,
+      "interest_anomaly": 0.529
+    },
+    {
+      "period": "2024-02-01",
+      "market_id": "toronto",
+      "temperature_c": 0.4655,
+      "interest_index": 38.6897,
+      "interest_scaled": 0.1402,
+      "temperature_anomaly_c": 3.2331,
+      "interest_anomaly": 1.1946
+    },
+    {
+      "period": "2024-03-01",
+      "market_id": "toronto",
+      "temperature_c": 3.4613,
+      "interest_index": 45.7742,
+      "interest_scaled": 0.2482,
+      "temperature_anomaly_c": 1.4548,
+      "interest_anomaly": 0.8194
+    },
+    {
+      "period": "2024-04-01",
+      "market_id": "toronto",
+      "temperature_c": 7.4467,
+      "interest_index": 51.9667,
+      "interest_scaled": 0.3425,
+      "temperature_anomaly_c": 0.5807,
+      "interest_anomaly": -0.1133
+    },
+    {
+      "period": "2024-05-01",
+      "market_id": "toronto",
+      "temperature_c": 14.5355,
+      "interest_index": 68.6129,
+      "interest_scaled": 0.5961,
+      "temperature_anomaly_c": 1.609,
+      "interest_anomaly": -0.4
+    },
+    {
+      "period": "2024-06-01",
+      "market_id": "toronto",
+      "temperature_c": 19.0467,
+      "interest_index": 74.2333,
+      "interest_scaled": 0.6817,
+      "temperature_anomaly_c": -0.0087,
+      "interest_anomaly": -3.4
+    },
+    {
+      "period": "2024-07-01",
+      "market_id": "toronto",
+      "temperature_c": 22.2452,
+      "interest_index": 77.0,
+      "interest_scaled": 0.7238,
+      "temperature_anomaly_c": 0.1226,
+      "interest_anomaly": -4.6968
+    },
+    {
+      "period": "2024-08-01",
+      "market_id": "toronto",
+      "temperature_c": 21.3387,
+      "interest_index": 67.9677,
+      "interest_scaled": 0.5862,
+      "temperature_anomaly_c": -0.3961,
+      "interest_anomaly": -2.8645
+    },
+    {
+      "period": "2024-09-01",
+      "market_id": "toronto",
+      "temperature_c": 19.04,
+      "interest_index": 50.4,
+      "interest_scaled": 0.3186,
+      "temperature_anomaly_c": 0.4367,
+      "interest_anomaly": -0.42
+    },
+    {
+      "period": "2024-10-01",
+      "market_id": "toronto",
+      "temperature_c": 12.8387,
+      "interest_index": 38.7419,
+      "interest_scaled": 0.141,
+      "temperature_anomaly_c": 0.0594,
+      "interest_anomaly": 0.0774
+    },
+    {
+      "period": "2024-11-01",
+      "market_id": "toronto",
+      "temperature_c": 7.44,
+      "interest_index": 33.4667,
+      "interest_scaled": 0.0607,
+      "temperature_anomaly_c": 1.9787,
+      "interest_anomaly": -0.6333
+    },
+    {
+      "period": "2024-12-01",
+      "market_id": "toronto",
+      "temperature_c": 0.1645,
+      "interest_index": 35.0323,
+      "interest_scaled": 0.0845,
+      "temperature_anomaly_c": -0.5,
+      "interest_anomaly": -0.4194
+    },
+    {
+      "period": "2025-01-01",
+      "market_id": "toronto",
+      "temperature_c": -4.5871,
+      "interest_index": 36.9355,
+      "interest_scaled": 0.1135,
+      "temperature_anomaly_c": -1.4735,
+      "interest_anomaly": 2.4
+    },
+    {
+      "period": "2025-02-01",
+      "market_id": "toronto",
+      "temperature_c": -4.4464,
+      "interest_index": 39.8571,
+      "interest_scaled": 0.158,
+      "temperature_anomaly_c": -1.6788,
+      "interest_anomaly": 2.3621
+    },
+    {
+      "period": "2025-03-01",
+      "market_id": "toronto",
+      "temperature_c": 2.1097,
+      "interest_index": 50.4194,
+      "interest_scaled": 0.3189,
+      "temperature_anomaly_c": 0.1032,
+      "interest_anomaly": 5.4645
+    },
+    {
+      "period": "2025-04-01",
+      "market_id": "toronto",
+      "temperature_c": 6.3733,
+      "interest_index": 54.5333,
+      "interest_scaled": 0.3816,
+      "temperature_anomaly_c": -0.4927,
+      "interest_anomaly": 2.4533
+    },
+    {
+      "period": "2025-05-01",
+      "market_id": "toronto",
+      "temperature_c": 11.5355,
+      "interest_index": 68.8387,
+      "interest_scaled": 0.5995,
+      "temperature_anomaly_c": -1.391,
+      "interest_anomaly": -0.1742
+    },
+    {
+      "period": "2025-06-01",
+      "market_id": "toronto",
+      "temperature_c": 19.0433,
+      "interest_index": 83.6667,
+      "interest_scaled": 0.8254,
+      "temperature_anomaly_c": -0.012,
+      "interest_anomaly": 6.0333
+    },
+    {
+      "period": "2025-07-01",
+      "market_id": "toronto",
+      "temperature_c": 23.6452,
+      "interest_index": 95.129,
+      "interest_scaled": 1.0,
+      "temperature_anomaly_c": 1.5226,
+      "interest_anomaly": 13.4323
+    },
+    {
+      "period": "2025-08-01",
+      "market_id": "toronto",
+      "temperature_c": 21.5935,
+      "interest_index": 77.9032,
+      "interest_scaled": 0.7376,
+      "temperature_anomaly_c": -0.1413,
+      "interest_anomaly": 7.071
+    },
+    {
+      "period": "2025-09-01",
+      "market_id": "toronto",
+      "temperature_c": 18.3533,
+      "interest_index": 54.5333,
+      "interest_scaled": 0.3816,
+      "temperature_anomaly_c": -0.25,
+      "interest_anomaly": 3.7133
+    },
+    {
+      "period": "2025-10-01",
+      "market_id": "toronto",
+      "temperature_c": 12.7645,
+      "interest_index": 42.871,
+      "interest_scaled": 0.2039,
+      "temperature_anomaly_c": -0.0148,
+      "interest_anomaly": 4.2065
+    },
+    {
+      "period": "2025-11-01",
+      "market_id": "toronto",
+      "temperature_c": 4.3267,
+      "interest_index": 40.4667,
+      "interest_scaled": 0.1673,
+      "temperature_anomaly_c": -1.1347,
+      "interest_anomaly": 6.3667
+    },
+    {
+      "period": "2025-12-01",
+      "market_id": "toronto",
+      "temperature_c": -2.5484,
+      "interest_index": 45.129,
+      "interest_scaled": 0.2383,
+      "temperature_anomaly_c": -3.2129,
+      "interest_anomaly": 9.6774
+    }
+  ]
+}

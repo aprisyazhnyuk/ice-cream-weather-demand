@@ -61,14 +61,21 @@ Download and aggregate all ten weather series with:
 
 Follow [docs/google-trends-export.md](docs/google-trends-export.md) to acquire and validate the ten official Trends exports.
 
+Build the joined analytical table, market metrics, and web-ready JSON with:
+
+```bash
+.venv/bin/python scripts/import_google_trends.py
+.venv/bin/python scripts/build_analysis.py
+```
+
 ## Project status
 
 - [x] Dataset feasibility assessment
 - [x] Repository and environment scaffold
 - [x] Metropolitan market list plus Moscow regional deep dive
 - [x] Acquire and validate ERA5-Land temperature data
-- [ ] Acquire and snapshot Google Trends data
-- [ ] Build analytical model and insight table
+- [x] Acquire and snapshot Google Trends data
+- [x] Build analytical model and insight table
 - [ ] Build and test the interactive visualization
 - [ ] Publish with GitHub Pages
 

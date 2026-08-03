@@ -1,0 +1,11 @@
+market_id,label,country_iso2,trends_geo,hemisphere,analysis_role,seasonal_correlation,seasonal_p_value,seasonal_slope_per_c,anomaly_correlation,anomaly_p_value,anomaly_slope_per_c,anomaly_response_strength,scoop_point_c,peak_interest_month,peak_interest_index,peak_temperature_c,minimum_temperature_c,maximum_temperature_c,temperature_span_c
+toronto,Toronto · Canada,CA,CA-ON,north,comparison,0.7919,0.0,1.5322,-0.0293,0.8242,-0.0909,weak,12.9082,Jul,81.6968,22.1226,-6.8548,23.6452,30.5
+moscow,Moscow · Central Russia,RU,RU-MOW,north,deep_dive,0.7237,0.0,1.0587,0.1245,0.3434,0.2625,weak,14.5839,Jun,74.2667,18.208,-12.7607,22.4484,35.2091
+johannesburg,Johannesburg · South Africa,ZA,ZA-GT,south,comparison,0.723,0.0,2.5555,0.6173,0.0,3.3512,strong,15.1646,Oct,74.4323,18.0174,8.29,21.5871,13.2971
+london,London · United Kingdom,GB,GB-ENG,north,comparison,0.7577,0.0,2.3803,0.4898,0.0001,2.5462,moderate,15.9607,Jul,68.9613,18.5329,3.5032,20.1742,16.671
+tokyo,Tokyo · Japan,JP,JP-13,north,comparison,0.72,0.0,1.2142,0.3403,0.0078,2.8231,moderate,17.8764,Jul,69.7548,26.6587,2.7677,29.2161,26.4484
+sydney,Sydney · Australia,AU,AU-NSW,south,comparison,0.5634,0.0,1.6584,0.6168,0.0,5.2818,strong,18.7962,Dec,76.3871,21.0052,12.04,22.9806,10.9406
+sao_paulo,São Paulo · Brazil,BR,BR-SP,south,comparison,0.7261,0.0,2.8091,0.4573,0.0002,2.2769,moderate,19.8852,Dec,52.2258,21.8542,14.671,23.9179,9.2469
+rome,Rome · Italy,IT,IT-62,north,comparison,0.7984,0.0,2.7031,0.0803,0.5417,0.5839,weak,22.8023,Jul,77.7484,27.0613,7.0806,28.1935,21.1129
+singapore,Singapore,SG,SG,north,comparison,0.5667,0.0,6.4889,0.0867,0.5099,1.2549,weak,26.5542,Jun,76.8533,27.164,25.2323,27.7806,2.5484
+delhi,Delhi · India,IN,IN-DL,north,comparison,0.7571,0.0,1.6341,0.2055,0.1153,0.9129,weak,28.987,May,56.4516,31.531,12.071,34.8133,22.7424
